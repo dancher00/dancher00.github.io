@@ -1,0 +1,288 @@
+{
+  "robot_geometry_version": "registered-v1",
+  "robot_camera_profile": "geometry-v2",
+  "robot_camera_parameters": {
+    "name": "geometry-v2",
+    "base": {
+      "parent_link": "base_link",
+      "position_m": [
+        0.21,
+        0.0,
+        0.067
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.25881904510252074,
+        0.0,
+        0.9659258262890683
+      ]
+    },
+    "gripper": {
+      "parent_link": "alpha_jaw_base_link",
+      "position_m": [
+        0.055,
+        0.0,
+        -0.035
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        -0.8416218600099494,
+        0.0,
+        0.5400672594718117
+      ]
+    },
+    "rationale": "Base uses the pinned upstream camera pivot with an engineering 30-degree downward tilt. Virtual wrist camera behind/beside the palm, aimed between the fingertips. Source-mesh frustum/clearance audit; no hardware calibration or fabricated camera housing.",
+    "focal_length_mm": 12.0,
+    "horizontal_aperture_mm": 20.955,
+    "clipping_range_m": [
+      0.015,
+      30.0
+    ],
+    "orientation_convention": "world",
+    "hardware_calibrated": false,
+    "source_urls": [
+      "https://github.com/Robotic-Decision-Making-Lab/blue/blob/812fea605cd2056ba20fac504f456457594595fb/blue_description/description/bluerov2_heavy_reach/urdf.xacro"
+    ]
+  },
+  "registered_geometry_audit": {
+    "passed": true,
+    "body_bounds_m": [
+      [
+        -0.2339181900024414,
+        -0.28291651606559753,
+        -0.11216132342815399
+      ],
+      [
+        0.21628235280513763,
+        0.28291550278663635,
+        0.14072959125041962
+      ]
+    ],
+    "motors": [
+      {
+        "origin_m": [
+          0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          -0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          -0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    ],
+    "manifest_sha256": "a7484e70f667cf62703c6c44614554d1a0ed22cbac51f41ae0adbb8bc0fc5d3f"
+  },
+  "recording_version": "registered-grounded-v1",
+  "observer_encoding": {
+    "frames": 1700,
+    "fps": 30.0,
+    "duration_s": 56.67,
+    "full_decode_verified": true
+  },
+  "task": "Wasman-Underwater-OpenHatch-Direct",
+  "seed": 42,
+  "controller": "Physical state-feedback expert, not a learned policy",
+  "moviepy_version": "2.2.1",
+  "evaluation_role": "Single development demonstration, not a benchmark success rate",
+  "episodes": 1,
+  "successes": 1,
+  "automatic_resets": 0,
+  "telemetry_contract_replayed": true,
+  "duration_s": 56.666666666666664,
+  "frame_alignment_tolerance_s": 0.03333333333333333,
+  "first_success_time_s": 50.06666666666667,
+  "final_angle_deg": 85.49655142617611,
+  "max_base_attitude_deg": 2.0864797843531484,
+  "chapters": [
+    {
+      "time": 0.0,
+      "label": "Swim in"
+    },
+    {
+      "time": 9.466666666666667,
+      "label": "Deploy"
+    },
+    {
+      "time": 23.666666666666668,
+      "label": "Descend"
+    },
+    {
+      "time": 27.833333333333332,
+      "label": "Grasp"
+    },
+    {
+      "time": 30.2,
+      "label": "Lift"
+    },
+    {
+      "time": 49.5,
+      "label": "Hold"
+    },
+    {
+      "time": 50.06666666666667,
+      "label": "Complete"
+    }
+  ],
+  "conditions": "calm water; randomized initial robot pose and robot hydrodynamic coefficients",
+  "source_sha256": {
+    "scripts/check_hatch_expert.py": "d2ede2db2c002faac93c4f66f0f24f1ca237941b3c37aca3e025cd1bb5385689",
+    "src/wasman/assets/robot_cameras.py": "2437c37a296862c9886314e44afb66f0cea65223d2e9caa7d2536d5c1e0788f1",
+    "src/wasman/robot_camera_profiles.py": "603f343cd7aa9e9538e3501864c4156fa5fffde9dc3cbb44e97685b2219a54c6",
+    "src/wasman/assets/registered_bluerov.py": "78413785466c8429732a87b2058c2ccbd3908d1ba03b62eecab0fbefbecc6775",
+    "src/wasman/media.py": "6dd763e9ffa1813b7a466f437da65a239affb1bd8a267a5850a4fd5eaaed1850",
+    "src/wasman/controllers/hatch.py": "de1844ef5280a50f7e4b96ec70764736182637361a3baf8d7b957d8f9f001b2d",
+    "src/wasman/controllers/hatch_contract.py": "f2925f6b953b68f524e81b5f7b4615c3c3f245e29b906b08693b3cc60fcc8005",
+    "src/wasman/controllers/hatch_recording.py": "49dbc3a1db9d1478c1922b2948218121847eb81b500f193992df1d73e5a535c4",
+    "src/wasman/controllers/cinema.py": "9734e8387b92f7453c2c7df17a1c564cb399f0957c14ac939a4d8c88becf4b58",
+    "src/wasman/controllers/tool_pose.py": "03ab364e853be6546b81b15409085cd775ffc42f2430bc8be38f71679b7e33bd",
+    "src/wasman/tasks/underwater_hatch/env.py": "f2623bd311dbce0cefabf5a38671d51d6875bde236f568871a108bd9bd2876e0",
+    "src/wasman/tasks/underwater_hatch/env_cfg.py": "6df5a0a451f8580ab332c44bb772bc3c2a102adb1f0493310d49ec71c74ce28f",
+    "src/wasman/tasks/underwater_press_button/config/bluerov2_alpha/env.py": "90d9d8e06498c9d63df612abcc7383496e484563d4e6886b464a517d01a7b6d3",
+    "src/wasman/tasks/underwater_press_button/config/bluerov2_alpha/env_cfg.py": "c3cbf7963e49e94729c5b7dc98dd2254aa07956d80f8c9a551a3025e3cd3eb71",
+    "src/wasman/tasks/underwater_panel/env_cfg.py": "521d9e4c9c2c650cc919939c5363985998bd0a3223f9693189d993b7b944d802",
+    "src/wasman/assets/data/objects/submarine_hatch/hatch.usda": "a483dd55b03f4b7e007e404cafe21a028e11404dd95c8eb43936eb118b8c0c08"
+  },
+  "trace_sha256": "9f36a38d84254219039e4416faa759bdf0c4d3d8893ffe36ba922e66fac8f4fb",
+  "video_sha256": "d84046aa25891ed72d188c6073461246c565aa8555d987564d924be0fc3e740c",
+  "protocol": "hatch-grasp-open-hold-v1; flooded, unlocked, pressure equalized; no release required",
+  "camera_streams": [
+    {
+      "id": "gripper",
+      "label": "Gripper",
+      "src": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-gripper-sync.mp4",
+      "fps": 30,
+      "width": 256,
+      "height": 256,
+      "frames": 1700,
+      "duration_s": 56.666666666666664,
+      "sha256": "5a42e665097609aeea48f66f12e473271797477998a1f5c4c75e92792c88e3c4",
+      "source_sha256": "5a42e665097609aeea48f66f12e473271797477998a1f5c4c75e92792c88e3c4"
+    },
+    {
+      "id": "base",
+      "label": "Base",
+      "src": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-base-sync.mp4",
+      "fps": 30,
+      "width": 256,
+      "height": 256,
+      "frames": 1700,
+      "duration_s": 56.666666666666664,
+      "sha256": "48934d00890ba50635f03f48db637998ec38e22ba07ef2cdc905ce31422bf04b",
+      "source_sha256": "48934d00890ba50635f03f48db637998ec38e22ba07ef2cdc905ce31422bf04b"
+    }
+  ],
+  "camera_alignment": {
+    "same_episode": true,
+    "capture": "post-physics, same step as observer",
+    "initial_hold_s": 0.03333333333333333,
+    "observer_trimmed_frames": 1,
+    "max_pair_timestamp_difference_s": 0.0
+  },
+  "video_url": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.mp4",
+  "poster_url": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.png",
+  "report_url": "./static/recordings/open-hatch/registered-grounded-v1/report.json",
+  "trace_url": "./static/recordings/open-hatch/registered-grounded-v1/trace.json",
+  "presentation": {
+    "version": "grounded-presentation-v1",
+    "source_sha256": "3805bf1682ccdf57a4aec71ce6eaffdc9cfeb9b7ee84e296c9e13d0f286cba33",
+    "changes": [
+      {
+        "prim": "/World/envs/env_0/SandApron/Sand",
+        "change": "continuous visible sand around unchanged aperture",
+        "original_collider_preserved": true,
+        "old_half_extent_m": 1.5,
+        "new_visual_half_extent_m": 100
+      }
+    ],
+    "physics_unchanged": true,
+    "scope": "new presentation takes, not replacement benchmark trials",
+    "physics_before_sha256": "e6d8be65207835ec648109ca072e1a1fd158a26d07fe78748948939ff4af04de",
+    "physics_after_sha256": "e6d8be65207835ec648109ca072e1a1fd158a26d07fe78748948939ff4af04de"
+  }
+}

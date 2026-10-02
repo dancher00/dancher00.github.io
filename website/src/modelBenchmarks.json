@@ -1,0 +1,166 @@
+{
+  "rows": [
+    {
+      "task": "PressButton",
+      "model": "PPO",
+      "input": "State",
+      "successes": 959,
+      "episodes": 1024,
+      "median_success_time_s": null
+    },
+    {
+      "task": "RotateValve",
+      "input": "Wrist RGB + proprioception",
+      "model": "ACT",
+      "successes": 30,
+      "episodes": 30,
+      "median_success_time_s": 33.03333333333333
+    },
+    {
+      "task": "RotateValve",
+      "input": "Wrist RGB + proprioception",
+      "model": "DP",
+      "successes": 30,
+      "episodes": 30,
+      "median_success_time_s": 28.03333333333333
+    },
+    {
+      "task": "OpenHatch",
+      "input": "Wrist RGB + proprioception",
+      "model": "ACT",
+      "successes": 10,
+      "episodes": 30,
+      "median_success_time_s": 49.0
+    },
+    {
+      "task": "OpenHatch",
+      "input": "Wrist RGB + proprioception",
+      "model": "DP",
+      "successes": 30,
+      "episodes": 30,
+      "median_success_time_s": 48.516666666666666
+    },
+    {
+      "task": "CollectShell",
+      "input": "Wrist RGB + proprioception",
+      "model": "ACT",
+      "successes": 0,
+      "episodes": 30,
+      "median_success_time_s": null
+    },
+    {
+      "task": "CollectShell",
+      "input": "Wrist RGB + proprioception",
+      "model": "DP",
+      "successes": 28,
+      "episodes": 30,
+      "median_success_time_s": 78.55
+    },
+    {
+      "task": "PushSlider",
+      "model": "ACT",
+      "input": "Wrist RGB + proprioception",
+      "successes": 0,
+      "episodes": 30,
+      "median_success_time_s": null,
+      "exact_binomial_95_ci": [
+        0.0,
+        0.11570330822202743
+      ]
+    },
+    {
+      "task": "PushSlider",
+      "model": "DP",
+      "input": "Wrist RGB + proprioception",
+      "successes": 28,
+      "episodes": 30,
+      "median_success_time_s": 29.599999999999998,
+      "exact_binomial_95_ci": [
+        0.7792645984770379,
+        0.9918218655393437
+      ]
+    },
+    {
+      "task": "PullLever",
+      "model": "ACT",
+      "input": "Wrist RGB + proprioception",
+      "successes": 6,
+      "episodes": 30,
+      "median_success_time_s": 33.45,
+      "exact_binomial_95_ci": [
+        0.07713551200080211,
+        0.38566651099660665
+      ]
+    },
+    {
+      "task": "PullLever",
+      "model": "DP",
+      "input": "Wrist RGB + proprioception",
+      "successes": 22,
+      "episodes": 30,
+      "median_success_time_s": 34.11666666666667,
+      "exact_binomial_95_ci": [
+        0.5411063486052258,
+        0.8772051901276348
+      ]
+    },
+    {
+      "task": "PressButton",
+      "model": "ACT",
+      "input": "Wrist RGB + proprioception",
+      "successes": 10,
+      "episodes": 30,
+      "median_success_time_s": 5.5,
+      "exact_binomial_95_ci": [
+        0.1728742215260393,
+        0.5281200447898805
+      ]
+    },
+    {
+      "task": "PressButton",
+      "model": "DP",
+      "input": "Wrist RGB + proprioception",
+      "successes": 16,
+      "episodes": 30,
+      "median_success_time_s": 5.883333333333333,
+      "exact_binomial_95_ci": [
+        0.3432552381608776,
+        0.7165819208164624
+      ]
+    }
+  ],
+  "protocols": [
+    {
+      "task": "PressButton",
+      "description": "Short-start task, legacy-v1 geometry, T200 actuation, 16 s horizon; 1,024 episodes, evaluation seed 2031. State policy trained with seed 42. The registered-geometry approach film uses a different demonstration protocol."
+    },
+    {
+      "task": "RotateValve",
+      "description": "Signed turn \u2265170\u00b0, calm water, fixed valve position, registered-v1 geometry. 75 s horizon; 74.67 s evaluated. Thirty unseen reset seeds (2500\u20132529), 80 demonstrations, ACT 20,000 updates / DP 40 epochs. Separate single-environment seed 42 also succeeds for both models. RGB only; no object state or expert actions at evaluation."
+    },
+    {
+      "task": "OpenHatch",
+      "description": "Opening 80\u2013105\u00b0, \u226575\u00b0 grasped motion, \u22645\u00b0 ungrasped motion, opposing grasp and a stable 1 s hold. Calm water, fixed hatch, registered-v1 geometry. 60 s horizon; 59.67 s evaluated. Thirty unseen reset seeds (4400\u20134429), 80 demonstrations; ACT 20,000 updates / DP 40 epochs. Absolute base/joint/jaw targets preserve folded transit. No object state or expert actions at evaluation. Separate seed 42 is in the report. An instrumented ACT repeat scored16/30 versus the original10/30; exact rollout repeatability remains a limitation."
+    },
+    {
+      "task": "CollectShell",
+      "description": "One target shell with six coral/algae habitat groups. Opposing grasp, whole-object lift \u22654 cm, carried distance \u226510 cm, full footprint inside hoop, released and settled for 1 s. Calm water; 240 s horizon; 239.67 s evaluated. Thirty unseen reset seeds (5500\u20135529), 80 demonstrations; ACT 20,000 updates / DP 40 epochs. Wrist RGB and measured robot state only; absolute base/joint/jaw targets. Separate seed 42 is in the report."
+    },
+    {
+      "task": "PushSlider",
+      "description": "Marine-v1: grounded wall, passive mechanism, T200; 60s. 80 native30Hz wrist-RGB demonstrations; ACT20k / DP40epochs, selected on8 validation seeds. 30 fresh paired test seeds and standalone42; one training seed. Raw physical criteria replayed independently."
+    },
+    {
+      "task": "PullLever",
+      "description": "Marine-v1: grounded wall, passive mechanism, T200; 60s. 80 native30Hz wrist-RGB demonstrations; ACT20k / DP40epochs, selected on8 validation seeds. 30 fresh paired test seeds and standalone42; one training seed. Raw physical criteria replayed independently."
+    },
+    {
+      "task": "PressButton",
+      "models": [
+        "ACT",
+        "DP"
+      ],
+      "description": "Separate visual baseline: original16s smooth T200 task,21 robot-only measurements and wrist RGB,10 full actuator targets.80 frozen-PPO demonstrations;30 unseen paired resets; no teacher at inference."
+    }
+  ]
+}

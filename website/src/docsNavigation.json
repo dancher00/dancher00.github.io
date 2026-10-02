@@ -1,0 +1,157 @@
+[
+  {
+    "group": "Get started",
+    "id": "index",
+    "title": "Overview"
+  },
+  {
+    "group": "Get started",
+    "id": "installation",
+    "title": "Installation"
+  },
+  {
+    "group": "Get started",
+    "id": "first-run",
+    "title": "Verify installation"
+  },
+  {
+    "group": "Use WasserMan",
+    "id": "collect-demonstrations",
+    "title": "Collect demonstrations"
+  },
+  {
+    "group": "Use WasserMan",
+    "id": "train-policies",
+    "title": "Train ACT, DP or BC"
+  },
+  {
+    "group": "Use WasserMan",
+    "id": "studies/bimanual-valve-v1-reproduction",
+    "title": "Two-arm valve"
+  },
+  {
+    "group": "Use WasserMan",
+    "id": "wall-toss",
+    "title": "Wall Toss demonstration"
+  },
+  {
+    "group": "Configure",
+    "id": "data-and-interfaces",
+    "title": "Observations and data"
+  },
+  {
+    "group": "Configure",
+    "id": "configuration",
+    "title": "Robots, control and physics"
+  },
+  {
+    "group": "Configure",
+    "id": "physical-model-scope",
+    "title": "Physical models and assumptions"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "revision-v2-packages",
+    "title": "Data and models"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "benchmark-results",
+    "title": "Benchmark results"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "revision-v2-analysis",
+    "title": "Evaluation protocol and primary results"
+  },
+  {
+    "id": "current-contact-study",
+    "title": "Water current study",
+    "group": "Evaluate and reproduce"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "revision-v2-protocol",
+    "title": "Open-core protocol and evidence gates"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "revision-v2-reproduction",
+    "title": "Open-core reproduction evidence"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "artifacts",
+    "title": "Historical models and evidence"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "reproduction",
+    "title": "Reproduce from source"
+  },
+  {
+    "id": "second-machine-results",
+    "title": "Second-workstation results",
+    "group": "Evaluate and reproduce"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "benchmark",
+    "title": "Studies and limits"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "studies/bimanual-coordinate-audit",
+    "title": "Two-arm coordinate audit"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "extended-studies",
+    "title": "Extended task results"
+  },
+  {
+    "id": "revision-v2-execution-impact",
+    "title": "Execution sensitivity",
+    "group": "Evaluate and reproduce"
+  },
+  {
+    "id": "benchmark-positioning",
+    "title": "Benchmark contribution",
+    "group": "Evaluate and reproduce"
+  },
+  {
+    "group": "Evaluate and reproduce",
+    "id": "reproduction-archive",
+    "title": "Bundled scientific records"
+  },
+  {
+    "group": "Reference",
+    "id": "task-reference",
+    "title": "Tasks and contracts"
+  },
+  {
+    "group": "Contribute",
+    "id": "add-task",
+    "title": "Add a task"
+  },
+  {
+    "group": "Contribute",
+    "id": "add-robot-controller",
+    "title": "Add a robot or controller"
+  },
+  {
+    "group": "Contribute",
+    "id": "add-policy",
+    "title": "Add a policy"
+  },
+  {
+    "group": "Help",
+    "id": "troubleshooting",
+    "title": "Troubleshooting"
+  },
+  {
+    "group": "Help",
+    "id": "website-publication",
+    "title": "Build and publish the website"
+  }
+]

@@ -1,0 +1,2044 @@
+{
+  "version": "overview-v8",
+  "scope": "Simulation footage; edited expert demonstrations, illustrative physical effects and frozen learning results. No hardware validation.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration_seconds": 108.0,
+  "frames": 3240,
+  "full_audio_video_decode": "passed",
+  "master_sha256": "2dcdf58c6ba94d0c1b0aa27834b175688ef83dc8be5e8e26295352595ac5a475",
+  "master_bytes": 17344285,
+  "poster_sha256": "331d9f1eb2b26450f3917522a21a359fdb6fc02f890213dda57da9edcf9d8c36",
+  "storyboard_sha256": "c99dedbd52d79937b9f44135692785733f6f184342c9e8f64b0b74b18dde4866",
+  "renderer_sha256": "4e16674c3208c3d50b397baaad846895ca3066981bfae2573d498cc740de4808",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "logo_svg_sha256": "1c94f9df4276b47761053e80fa929378446302655d047c1bc82ce9b9cdb239f4",
+  "inputs": {
+    "./static/cargo-release/rope_observer.mp4": {
+      "sha256": "fe86f29aa31fc461f67769d09fa9bc162a0a9f215a5462d2bd58d801451dc299",
+      "bytes": 7780265
+    },
+    "./static/effects/optional_v1/seabed-far-on.json": {
+      "sha256": "e1ff6140328c344acd68c7a002d892d97b3c7ac8e8ee6fac6a1b8de668076d77",
+      "bytes": 10213268
+    },
+    "./static/effects/optional_v1/seabed-far-on.mp4": {
+      "sha256": "6c082285ade96c931656cb88083fe4cb05c53caa6afaf715e9e001e1e013edd6",
+      "bytes": 4528980
+    },
+    "./static/effects/optional_v1/seabed-near-on.json": {
+      "sha256": "36c495644ca4f4752a9b68f54fb4b4a9ac91d64185d4f9a84bb6ea3e21c8d3f3",
+      "bytes": 10542237
+    },
+    "./static/effects/optional_v1/seabed-near-on.mp4": {
+      "sha256": "5f5be99a4b37efac6dac9a8688406dcf2fb3371062e6b5e22b3704833ce402f1",
+      "bytes": 4463943
+    },
+    "./static/effects/optional_v1/wall-far-on.json": {
+      "sha256": "c1295e8ddaa140188a1708044e30e7d883525f63fa8ade027b3edec1231484ed",
+      "bytes": 9757675
+    },
+    "./static/effects/optional_v1/wall-far-on.mp4": {
+      "sha256": "5ba515085c941991187f7e01594f13e0afcf305cac5f81b0b139d8f59ed69181",
+      "bytes": 4424343
+    },
+    "./static/effects/optional_v1/wall-near-on.json": {
+      "sha256": "37d31a94d4a9366c16ee1dafdb3610ea239fbeec5b54b7bf206143e11bacc9bf",
+      "bytes": 9997749
+    },
+    "./static/effects/optional_v1/wall-near-on.mp4": {
+      "sha256": "8d74fffb485984d6feb6f0048c927bb55180b062a45c987ae7ac96f0b5214159",
+      "bytes": 4411637
+    },
+    "./static/effects/v3/actuator-instant.json": {
+      "sha256": "c25e135d1c7332c2bb7001b505f1f40510227d8705a053d921fe89dab4c1a4fe",
+      "bytes": 1007000
+    },
+    "./static/effects/v3/actuator-instant.mp4": {
+      "sha256": "48466b8b1cf8b6d1f1d47334974696f240780b8c99aae4a874b90c37ed17aa16",
+      "bytes": 313537
+    },
+    "./static/effects/v3/actuator-lag.json": {
+      "sha256": "80619cdf92e794e01c7ddcec7336af8a48a5df31c11e643f1d9a8c7b2fe24287",
+      "bytes": 1080888
+    },
+    "./static/effects/v3/actuator-lag.mp4": {
+      "sha256": "b8cef30fbaf2bab3e7e7fe7e0c8aafd2fd51f8b7b620670ae919793fd558ee20",
+      "bytes": 314985
+    },
+    "./static/effects/v3/current-flow.json": {
+      "sha256": "5710b84e7ab6cf2aff9e3149f26b574d4c7bcf4cc07c695248e3ec0130db41f8",
+      "bytes": 7632683
+    },
+    "./static/effects/v3/current-flow.mp4": {
+      "sha256": "e28408a6aa37a054d831cceb4116a90bbbf003b8d326973bf9fa2e5bcfc72e42",
+      "bytes": 343279
+    },
+    "./static/effects/v3/current-overload.json": {
+      "sha256": "dd5c4aca0d92564e30b81ff08a4eb2dce0f9218841613eaf42025a9fdb0f33ac",
+      "bytes": 7608253
+    },
+    "./static/effects/v3/current-overload.mp4": {
+      "sha256": "028fc33e97dbdf347e40c7b5d22d7d5beced64f18935fc14ca078f532b90c74d",
+      "bytes": 489960
+    },
+    "./static/effects/v3/current-still.json": {
+      "sha256": "e4f856f9a34bf648b5137d2a6efc3016da2132fcceb19c22b4ba0b60c5b51a46",
+      "bytes": 7461272
+    },
+    "./static/effects/v3/current-still.mp4": {
+      "sha256": "a9eb918b88e108040217cab379e0d28af90cebe35d39cb20cd88c5a06a988dec",
+      "bytes": 269026
+    },
+    "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-base-sync.mp4": {
+      "sha256": "48934d00890ba50635f03f48db637998ec38e22ba07ef2cdc905ce31422bf04b",
+      "bytes": 3417355
+    },
+    "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.mp4": {
+      "sha256": "d84046aa25891ed72d188c6073461246c565aa8555d987564d924be0fc3e740c",
+      "bytes": 6709284
+    },
+    "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-gripper-sync.mp4": {
+      "sha256": "5a42e665097609aeea48f66f12e473271797477998a1f5c4c75e92792c88e3c4",
+      "bytes": 3501223
+    },
+    "./static/recordings/press-button/registered-grounded-v1/press-button-base-sync.mp4": {
+      "sha256": "1a55c4d8eb374cabf437788c67411e1a25b0e472bd66ac0449dea6fcfd9d7d91",
+      "bytes": 2392520
+    },
+    "./static/recordings/press-button/registered-grounded-v1/press-button-gripper-sync.mp4": {
+      "sha256": "7d8c9afa28f9fb28f03510a068eb28881296bc7749b9a77326376238fd0aa888",
+      "bytes": 2215864
+    },
+    "./static/recordings/press-button/registered-grounded-v1/press-button.mp4": {
+      "sha256": "3c2272cd22e0347dd79365dc1ece321ddc8a3d6bff3d4e46b1c5b199e0177781",
+      "bytes": 3794422
+    },
+    "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-base-sync.mp4": {
+      "sha256": "da2279efd8d4ad8b7156cfa62d8d45675ad62020fedb8d6fda911cc87d1345ff",
+      "bytes": 3350675
+    },
+    "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.mp4": {
+      "sha256": "2703c50cc37a99cd4bd59dcb2854aacc4846485639c9d77a6af7538395fd9cc2",
+      "bytes": 6105141
+    },
+    "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-gripper-sync.mp4": {
+      "sha256": "949e2dbf9d7428407c475618043052e1e8571e4dda27bfd219729f944bcfbab0",
+      "bytes": 3299862
+    },
+    "./static/task-demos/cabin/base.mp4": {
+      "sha256": "993589829ee9925c3904c3b52885c8c7323895abd53726c6295b0c561d7183ba",
+      "bytes": 11245577
+    },
+    "./static/task-demos/cabin/gripper.mp4": {
+      "sha256": "e3dad4554a8bf5dc52cc11a20f720ae2bf34dc470456d32f3ca54645aaa12c50",
+      "bytes": 11044184
+    },
+    "./static/task-demos/cabin/overview.mp4": {
+      "sha256": "c681d6de9fa8b34ed72af938c62ced76b140bb08ee998501f938f16fcf5bed2e",
+      "bytes": 18838674
+    },
+    "./static/task-demos/collect-shell/base.mp4": {
+      "sha256": "27bc7d5ec5a13f8295090f017638c794865594bfc0147385e6074935ba0b0bdb",
+      "bytes": 5382426
+    },
+    "./static/task-demos/collect-shell/gripper.mp4": {
+      "sha256": "b29fc5cf7df4287577a24b98e0db19b5d89ca7db8f296ea561f02bbe52bc1b01",
+      "bytes": 8588659
+    },
+    "./static/task-demos/collect-shell/overview.mp4": {
+      "sha256": "312e9d39f32875d0153be8e94f09ade05c11c279e017acfe89bb9b989de490c2",
+      "bytes": 44022968
+    },
+    "./static/task-demos/hotstab/base.mp4": {
+      "sha256": "985d74b89426f66bc6c0d8f808149fa14aab1babafd35880717db338c4ab2657",
+      "bytes": 7886293
+    },
+    "./static/task-demos/hotstab/gripper.mp4": {
+      "sha256": "1261d6b14a16222f8da562422effbe6075eec3db28dfd0ed91087d4d91b18d3c",
+      "bytes": 9059748
+    },
+    "./static/task-demos/hotstab/overview.mp4": {
+      "sha256": "3d0a43dd204700faada87229ebda95a2b80b18ecd3eba227dcd6d63fb2fab658",
+      "bytes": 14854373
+    },
+    "./static/task-demos/pull-lever/base.mp4": {
+      "sha256": "7178654ac954f1de8ff0d872fa5aaf9f58d1bd125fa9579fa9461030bd417561",
+      "bytes": 643785
+    },
+    "./static/task-demos/pull-lever/gripper.mp4": {
+      "sha256": "36cc2e16c5901aa0a5275dadcf27a7934da7236a0ffc3762b62647aae8e3965f",
+      "bytes": 514904
+    },
+    "./static/task-demos/pull-lever/overview.mp4": {
+      "sha256": "8cb39437829d0cfba9e5a05778cfcfbbb5193fe82c777a4044237953e470a3dc",
+      "bytes": 26397822
+    },
+    "./static/task-demos/push-slider/base.mp4": {
+      "sha256": "310bddbff4ea08feee1d89e90cdf4c281aa77e1e8a56c85f4b445b5d13400836",
+      "bytes": 483004
+    },
+    "./static/task-demos/push-slider/gripper.mp4": {
+      "sha256": "d2471792a4f3757bddf8d0619cc128321e32e7840b71edaec0bcb4c4c60f0875",
+      "bytes": 423775
+    },
+    "./static/task-demos/push-slider/overview.mp4": {
+      "sha256": "37ef8425428d0f2e977d9bb918f3a313ff82a3450131a1294238f401435fe98d",
+      "bytes": 21503170
+    },
+    "./static/wall-toss-v2/calm/base.mp4": {
+      "sha256": "d6eb3b3026a7c3101d04e903db2d0a0145b56f9925a7af0b6ec3a96d6203fd8e",
+      "bytes": 1937293
+    },
+    "./static/wall-toss-v2/calm/overview.mp4": {
+      "sha256": "a3ebbcd31ba47400af77a655482ba3f0e375ecf6899adf1a3e4dc99b62dbbc60",
+      "bytes": 5747120
+    },
+    "./static/wall-toss-v2/calm/wrist.mp4": {
+      "sha256": "d36d308cb05735b3cca2989d12736109416a940461a8542d84f6694821d006b7",
+      "bytes": 2733627
+    },
+    "./static/wreck-water/rope/base_reference.mp4": {
+      "sha256": "338dd0e1fd3065b855f25387bd04db5f41eb34e877094c09609291ccaf6c363f",
+      "bytes": 4389003
+    },
+    "./static/wreck-water/rope/gripper_reference.mp4": {
+      "sha256": "6c4e76ed0e30e525cb7bb29a63d3df9ecfca6c1c76b4e6f7822f43110ff05bdc",
+      "bytes": 3166376
+    },
+    "research/button-lever-smolvla-5090/PressButton/summary.json": {
+      "sha256": "eb2a2721992f10766ba2e5aa70b86c251cd4d6f14176c0835a16aa1ac4e830b3",
+      "kind": "frozen measured outcomes"
+    },
+    "research/button-lever-smolvla-5090/PullLever/summary.json": {
+      "sha256": "98a50a4f8da90cdf7bd7f22f5c804c0499e1c0114feebd9e6af534dd1d1f0ce8",
+      "kind": "frozen measured outcomes"
+    },
+    "research/pushslider-smolvla-5090/summary.json": {
+      "sha256": "c735e9f0b360ee0a641cd9697a3c4bbf33561a9a0b08f5f617a78bc13d88a1c2",
+      "kind": "frozen measured outcomes"
+    },
+    "research/revision-v2-primary-results.json": {
+      "sha256": "e1b741e0569a63928dd000727a0a9c5e3231e575c11a44028bf0ef7d5b189d8c",
+      "kind": "frozen measured outcomes"
+    },
+    "static/bimanual-valve/two-hands.mp4": {
+      "sha256": "4cf8af997c7ca275592adc816ee7b6963cee548d432b9f0735e332910168761a",
+      "bytes": 32954436
+    },
+    "static/effects/v3/current-flow.json": {
+      "sha256": "5710b84e7ab6cf2aff9e3149f26b574d4c7bcf4cc07c695248e3ec0130db41f8",
+      "bytes": 7632683
+    },
+    "static/effects/v3/current-overload.json": {
+      "sha256": "dd5c4aca0d92564e30b81ff08a4eb2dce0f9218841613eaf42025a9fdb0f33ac",
+      "bytes": 7608253
+    },
+    "static/effects/v3/current-still.json": {
+      "sha256": "e4f856f9a34bf648b5137d2a6efc3016da2132fcceb19c22b4ba0b60c5b51a46",
+      "bytes": 7461272
+    },
+    "static/publication/overview/WasserMan-overview.mp4": {
+      "sha256": "48ddc0dfc49c527bf3e492d1f836b4bd3ebf8d20d845f4a62232505c7c2f2aff",
+      "bytes": 30954058
+    },
+    "static/wreck-water/cabin/base_clear.mp4": {
+      "sha256": "c7c0ca9725024b2ff04b92e4eeb11e8fbea02bbd8a325ac5f9995d9a76d431f4",
+      "bytes": 11602568
+    },
+    "static/wreck-water/cabin/base_coastal.mp4": {
+      "sha256": "4bb6fed69c3ef0a6c8bb4f6f72eb6fa46a79dd6f54c4dddb002e333fb33f7ab9",
+      "bytes": 11053630
+    },
+    "static/wreck-water/cabin/base_silt.mp4": {
+      "sha256": "dce797c2204bc2d98cdead655754f3e485d8a375dcdebc96d04d106163f03103",
+      "bytes": 10253674
+    },
+    "static/wreck-water/cabin/gripper_clear.mp4": {
+      "sha256": "11534523a1c12b824d9bbd53152ab915bbf4d161d7a2aac0a3ea1c066ecf3931",
+      "bytes": 10233652
+    },
+    "static/wreck-water/cabin/gripper_coastal.mp4": {
+      "sha256": "06a4d3256d3428397100af1eb73d95acc85d3847031d5fe1408765f13aa37aca",
+      "bytes": 10062816
+    },
+    "static/wreck-water/cabin/gripper_silt.mp4": {
+      "sha256": "7ba3010250ac70ddcbfb6b87e085790269363579e51fbd4db47d65b5eeed77ba",
+      "bytes": 9652923
+    }
+  },
+  "editing": "Editorial cuts with explicitly marked playback rates. Camera streams in each task cut share the same source interval and rate. Native camera ratios retained. The task mosaic uses equal 16:9 tiles, with centered crops of the two 3:2 external views; crop rectangles are recorded per stream. No footage color filters or generated robot motion.",
+  "audio": {
+    "source": "Preserved overview's original procedural composition, seed 20261001",
+    "external_samples": false,
+    "recorded_simulation_audio": false,
+    "edit": "First 108 seconds; final 2.8-second fade"
+  },
+  "physics_annotations": {
+    "component": "website/src/ProjectedEffects.tsx",
+    "component_sha256": "d0d9d973046fd83e9b71b910be61de824ee7d788cea55e6d584e4027261d6028",
+    "stylesheet_sha256": "c7bd1408b47bec87e4e756187a52b461264e434a0b3c5f030b00f7e7797ec2ec",
+    "scope": "Unmodified website SVG geometry and styles, from measured camera projections. Each video frame uses the recorded post-step telemetry clock. No fabricated paths.",
+    "rows": [
+      {
+        "id": "current-still",
+        "mode": "current",
+        "source": "./static/effects/v3/current-still.mp4",
+        "source_sha256": "a9eb918b88e108040217cab379e0d28af90cebe35d39cb20cd88c5a06a988dec",
+        "trace": "./static/effects/v3/current-still.json",
+        "trace_sha256": "e4f856f9a34bf648b5137d2a6efc3016da2132fcceb19c22b4ba0b60c5b51a46",
+        "movie": "current-still.mov",
+        "movie_sha256": "14d34fe78e984175b6c4a2318cee3fc0aa0f34c2bcb440f37ff206402549929e",
+        "frames": 240,
+        "width": 576,
+        "height": 324,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 8,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "current-flow",
+        "mode": "current",
+        "source": "./static/effects/v3/current-flow.mp4",
+        "source_sha256": "e28408a6aa37a054d831cceb4116a90bbbf003b8d326973bf9fa2e5bcfc72e42",
+        "trace": "./static/effects/v3/current-flow.json",
+        "trace_sha256": "5710b84e7ab6cf2aff9e3149f26b574d4c7bcf4cc07c695248e3ec0130db41f8",
+        "movie": "current-flow.mov",
+        "movie_sha256": "b776af41f73eb2b5e6eeb33ececcd8bb844c2071182494ec25043559ff1d4510",
+        "frames": 240,
+        "width": 576,
+        "height": 324,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 8,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "current-overload",
+        "mode": "current",
+        "source": "./static/effects/v3/current-overload.mp4",
+        "source_sha256": "028fc33e97dbdf347e40c7b5d22d7d5beced64f18935fc14ca078f532b90c74d",
+        "trace": "./static/effects/v3/current-overload.json",
+        "trace_sha256": "dd5c4aca0d92564e30b81ff08a4eb2dce0f9218841613eaf42025a9fdb0f33ac",
+        "movie": "current-overload.mov",
+        "movie_sha256": "57988a1f82d82ab814b472a3d0e8ff4578e276e34b38c43f21ccef2f72652ef4",
+        "frames": 240,
+        "width": 576,
+        "height": 324,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 8,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "seabed-far",
+        "mode": "seabed",
+        "source": "./static/effects/optional_v1/seabed-far-on.mp4",
+        "source_sha256": "6c082285ade96c931656cb88083fe4cb05c53caa6afaf715e9e001e1e013edd6",
+        "trace": "./static/effects/optional_v1/seabed-far-on.json",
+        "trace_sha256": "e1ff6140328c344acd68c7a002d892d97b3c7ac8e8ee6fac6a1b8de668076d77",
+        "movie": "seabed-far.mov",
+        "movie_sha256": "a941ea024b3d3b5150327e7c88df0a371bdf477fdf9dafffb06bc70e3ecc4262",
+        "frames": 150,
+        "width": 704,
+        "height": 396,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 5,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "seabed-near",
+        "mode": "seabed",
+        "source": "./static/effects/optional_v1/seabed-near-on.mp4",
+        "source_sha256": "5f5be99a4b37efac6dac9a8688406dcf2fb3371062e6b5e22b3704833ce402f1",
+        "trace": "./static/effects/optional_v1/seabed-near-on.json",
+        "trace_sha256": "36c495644ca4f4752a9b68f54fb4b4a9ac91d64185d4f9a84bb6ea3e21c8d3f3",
+        "movie": "seabed-near.mov",
+        "movie_sha256": "ba75819bda4fcdb142e522f4472041d86ea4d84759fac47e4ed9d32d8dab4b38",
+        "frames": 150,
+        "width": 704,
+        "height": 396,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 5,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "wall-far",
+        "mode": "wall",
+        "source": "./static/effects/optional_v1/wall-far-on.mp4",
+        "source_sha256": "5ba515085c941991187f7e01594f13e0afcf305cac5f81b0b139d8f59ed69181",
+        "trace": "./static/effects/optional_v1/wall-far-on.json",
+        "trace_sha256": "c1295e8ddaa140188a1708044e30e7d883525f63fa8ade027b3edec1231484ed",
+        "movie": "wall-far.mov",
+        "movie_sha256": "c08babf81c945d8d007d9bc1b417970941fbb6ea2081d8e98dad66d48af4b45f",
+        "frames": 150,
+        "width": 704,
+        "height": 396,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 5,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "wall-near",
+        "mode": "wall",
+        "source": "./static/effects/optional_v1/wall-near-on.mp4",
+        "source_sha256": "8d74fffb485984d6feb6f0048c927bb55180b062a45c987ae7ac96f0b5214159",
+        "trace": "./static/effects/optional_v1/wall-near-on.json",
+        "trace_sha256": "37d31a94d4a9366c16ee1dafdb3610ea239fbeec5b54b7bf206143e11bacc9bf",
+        "movie": "wall-near.mov",
+        "movie_sha256": "b06cbbc643d4ca9390ac4a50a75179563946c53313407866c375366a7b75b6c2",
+        "frames": 150,
+        "width": 704,
+        "height": 396,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 5,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "actuator-instant",
+        "mode": "actuator",
+        "source": "./static/effects/v3/actuator-instant.mp4",
+        "source_sha256": "48466b8b1cf8b6d1f1d47334974696f240780b8c99aae4a874b90c37ed17aa16",
+        "trace": "./static/effects/v3/actuator-instant.json",
+        "trace_sha256": "c25e135d1c7332c2bb7001b505f1f40510227d8705a053d921fe89dab4c1a4fe",
+        "movie": "actuator-instant.mov",
+        "movie_sha256": "fc9694b0cd1fc740b9170c3afecc9d4f4963f14b2128f5e6a714876b1146378d",
+        "frames": 150,
+        "width": 896,
+        "height": 504,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 5,
+        "telemetry_offset_s": 0.03333333333333333
+      },
+      {
+        "id": "actuator-lag",
+        "mode": "actuator",
+        "source": "./static/effects/v3/actuator-lag.mp4",
+        "source_sha256": "b8cef30fbaf2bab3e7e7fe7e0c8aafd2fd51f8b7b620670ae919793fd558ee20",
+        "trace": "./static/effects/v3/actuator-lag.json",
+        "trace_sha256": "80619cdf92e794e01c7ddcec7336af8a48a5df31c11e643f1d9a8c7b2fe24287",
+        "movie": "actuator-lag.mov",
+        "movie_sha256": "fc9694b0cd1fc740b9170c3afecc9d4f4963f14b2128f5e6a714876b1146378d",
+        "frames": 150,
+        "width": 896,
+        "height": 504,
+        "native_viewport": [
+          1280,
+          720
+        ],
+        "duration": 5,
+        "telemetry_offset_s": 0.03333333333333333
+      }
+    ]
+  },
+  "chart_palette": {
+    "ACT": "#679cf3",
+    "DP": "#ffc46b",
+    "BC": "#c0a2ff",
+    "SmolVLA": "#ff8896"
+  },
+  "cabin_geometry": {
+    "scripts/check_cabin_expert.py": "fdba44f9f2769611b2fc58d8cb04ab0448023687e003455924a295130f7f7dbc",
+    "src/wasman/tasks/underwater_cabin/__init__.py": "22165da1286bb3d403c7a9b2fcd4a36c08b2e75ad0d8dd89855aa1618853585f",
+    "src/wasman/tasks/underwater_cabin/env.py": "4e6070e662add2d5d63fdedd9be7751ca5c8a47312b7f3e3f404bc1dedb4fe1a",
+    "src/wasman/tasks/underwater_cabin/env_cfg.py": "e609da9fe48c16c75a18f6396379e54847548323280c90f71d8f109bce15e417",
+    "src/wasman/controllers/cabin.py": "6f57b103db6b09ddb8cac277af744c11561d3267fa0a8bf81ccdb9131d00bc3b",
+    "src/wasman/controllers/cabin_contract.py": "9522537cc00bb57d914649f7f65336222610255a1784b6a910963e0b97914b7d",
+    "src/wasman/controllers/tool_pose.py": "03ab364e853be6546b81b15409085cd775ffc42f2430bc8be38f71679b7e33bd",
+    "src/wasman/cabin_layout.py": "2b1422698841311c040ceb1ef2a03fa80a040f462c2d6a0708eadb0233915fd7",
+    "src/wasman/assets/data/captain_cabin/cassette.usda": "ce12f39cc2a18318e97269bb7db3988460ef8753f91be14d975bfdf00cec87d1",
+    "src/wasman/assets/data/captain_cabin/cabinet.usda": "4d2e8cecbc075f49eb3ad883acb62b531789fe67d876e6fe54347bb4a8e726e2",
+    "src/wasman/assets/data/captain_cabin/cabin.usda": "fbafe4f25c86f28aeef5176f26062096668db1f0da32fc412ab8027abb309e36",
+    "src/wasman/assets/data/captain_cabin/fallen_panel.usda": "2ef2b824a23421b6b5e43a645b8b279a0f544d40f03acc3b40332309a4548b0c",
+    "src/wasman/assets/data/captain_cabin/fallen_chair.usda": "b55aa72d493ccabd4f1fa39c2031aaba2aaa624b0e5eae0ff53f837b5f595255"
+  },
+  "water_recording_version": "wreck-water-v3",
+  "clips": [
+    {
+      "id": "two-arms",
+      "layout": "hero",
+      "duration": 5,
+      "start": 0,
+      "rate": 2,
+      "source": "static/bimanual-valve/two-hands.mp4",
+      "chapter": "COOPERATIVE MANIPULATION",
+      "title": "Two-arm valve manipulation",
+      "caption": "RexROV2 + twin Oberon7",
+      "timeline_start": 0,
+      "timeline_end": 5,
+      "streams": [
+        {
+          "source": "static/bimanual-valve/two-hands.mp4",
+          "start": 0,
+          "rate": 2,
+          "box": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "two-arms-contact",
+      "layout": "hero",
+      "duration": 4,
+      "start": 111,
+      "rate": 2,
+      "source": "static/bimanual-valve/two-hands.mp4",
+      "chapter": "COOPERATIVE MANIPULATION",
+      "title": "Valve rotation",
+      "caption": "",
+      "timeline_start": 5,
+      "timeline_end": 9,
+      "streams": [
+        {
+          "source": "static/bimanual-valve/two-hands.mp4",
+          "start": 111,
+          "rate": 2,
+          "box": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "coupling",
+      "layout": "task",
+      "task": "OpenHatch",
+      "duration": 5,
+      "start": 35,
+      "chapter": "FLOATING-BASE CONTACT",
+      "title": "Open hatch",
+      "caption": "",
+      "timeline_start": 9,
+      "timeline_end": 14,
+      "streams": [
+        {
+          "source": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.mp4",
+          "start": 35,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-base-sync.mp4",
+          "start": 35,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            256,
+            256
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-gripper-sync.mp4",
+          "start": 35,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            256,
+            256
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "layout": "identity",
+      "duration": 3,
+      "chapter": "INTRODUCING",
+      "title": "WasserMan",
+      "caption": "Benchmark for Underwater Manipulation Policy Learning",
+      "timeline_start": 14,
+      "timeline_end": 17,
+      "streams": []
+    },
+    {
+      "id": "architecture",
+      "layout": "architecture",
+      "duration": 5,
+      "chapter": "POLICY AND CONTROL",
+      "title": "Policy and control",
+      "caption": "",
+      "timeline_start": 17,
+      "timeline_end": 22,
+      "streams": []
+    },
+    {
+      "id": "cabin-open",
+      "layout": "task",
+      "task": "CabinRecovery",
+      "duration": 4,
+      "start": 25,
+      "chapter": "UNDERWATER INTERVENTION",
+      "title": "Open cabinet",
+      "caption": "Cabin recovery",
+      "timeline_start": 22,
+      "timeline_end": 26,
+      "streams": [
+        {
+          "source": "./static/task-demos/cabin/overview.mp4",
+          "start": 25,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/cabin/base.mp4",
+          "start": 25,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/cabin/gripper.mp4",
+          "start": 25,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "cabin-recover",
+      "layout": "task",
+      "task": "CabinRecovery",
+      "duration": 5,
+      "start": 115,
+      "rate": 2,
+      "chapter": "UNDERWATER INTERVENTION",
+      "title": "Recover hard drive",
+      "caption": "Cabin recovery",
+      "timeline_start": 26,
+      "timeline_end": 31,
+      "streams": [
+        {
+          "source": "./static/task-demos/cabin/overview.mp4",
+          "start": 115,
+          "rate": 2,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/cabin/base.mp4",
+          "start": 115,
+          "rate": 2,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/cabin/gripper.mp4",
+          "start": 115,
+          "rate": 2,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "cargo",
+      "layout": "task",
+      "task": "CargoRelease",
+      "duration": 5,
+      "start": 61,
+      "chapter": "UNDERWATER INTERVENTION",
+      "title": "Cut retaining rope",
+      "caption": "Cargo release",
+      "timeline_start": 31,
+      "timeline_end": 36,
+      "streams": [
+        {
+          "source": "./static/cargo-release/rope_observer.mp4",
+          "start": 61,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/wreck-water/rope/base_reference.mp4",
+          "start": 61,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/wreck-water/rope/gripper_reference.mp4",
+          "start": 61,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "hotstab",
+      "layout": "task",
+      "task": "HotStab",
+      "duration": 4,
+      "start": 26,
+      "chapter": "INSERTION",
+      "title": "Hot-stab insertion",
+      "caption": "",
+      "timeline_start": 36,
+      "timeline_end": 40,
+      "streams": [
+        {
+          "source": "./static/task-demos/hotstab/overview.mp4",
+          "start": 26,
+          "rate": 1,
+          "box": [
+            134,
+            234,
+            1188,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            960,
+            640
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/hotstab/base.mp4",
+          "start": 26,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/hotstab/gripper.mp4",
+          "start": 26,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "collect",
+      "layout": "task",
+      "task": "CollectShell",
+      "duration": 4,
+      "start": 57,
+      "chapter": "OBJECT TRANSPORT",
+      "title": "Collect shell",
+      "caption": "",
+      "timeline_start": 40,
+      "timeline_end": 44,
+      "streams": [
+        {
+          "source": "./static/task-demos/collect-shell/overview.mp4",
+          "start": 57,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/collect-shell/base.mp4",
+          "start": 57,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/collect-shell/gripper.mp4",
+          "start": 57,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "button",
+      "layout": "task",
+      "task": "PressButton",
+      "duration": 3,
+      "start": 20,
+      "chapter": "PRECISE CONTACT",
+      "title": "Press button",
+      "caption": "",
+      "timeline_start": 44,
+      "timeline_end": 47,
+      "streams": [
+        {
+          "source": "./static/recordings/press-button/registered-grounded-v1/press-button.mp4",
+          "start": 20,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/recordings/press-button/registered-grounded-v1/press-button-base-sync.mp4",
+          "start": 20,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            256,
+            256
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/recordings/press-button/registered-grounded-v1/press-button-gripper-sync.mp4",
+          "start": 20,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            256,
+            256
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "slider",
+      "layout": "task",
+      "task": "PushSlider",
+      "duration": 3,
+      "start": 12,
+      "chapter": "CONSTRAINED CONTACT",
+      "title": "Push slider",
+      "caption": "",
+      "timeline_start": 47,
+      "timeline_end": 50,
+      "streams": [
+        {
+          "source": "./static/task-demos/push-slider/overview.mp4",
+          "start": 12,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/push-slider/base.mp4",
+          "start": 12,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/push-slider/gripper.mp4",
+          "start": 12,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "lever",
+      "layout": "task",
+      "task": "PullLever",
+      "duration": 3,
+      "start": 16,
+      "chapter": "CONSTRAINED CONTACT",
+      "title": "Pull lever",
+      "caption": "",
+      "timeline_start": 50,
+      "timeline_end": 53,
+      "streams": [
+        {
+          "source": "./static/task-demos/pull-lever/overview.mp4",
+          "start": 16,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/pull-lever/base.mp4",
+          "start": 16,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/task-demos/pull-lever/gripper.mp4",
+          "start": 16,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "valve",
+      "layout": "task",
+      "task": "RotateValve",
+      "duration": 3,
+      "start": 32,
+      "chapter": "ARTICULATED OBJECTS",
+      "title": "Rotate valve",
+      "caption": "",
+      "timeline_start": 53,
+      "timeline_end": 56,
+      "streams": [
+        {
+          "source": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.mp4",
+          "start": 32,
+          "rate": 1,
+          "box": [
+            24,
+            234,
+            1408,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-base-sync.mp4",
+          "start": 32,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            256,
+            256
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-gripper-sync.mp4",
+          "start": 32,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            256,
+            256
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "toss",
+      "layout": "task",
+      "task": "WallToss",
+      "duration": 3,
+      "start": 1,
+      "chapter": "DYNAMIC RELEASE",
+      "title": "Wall toss",
+      "caption": "",
+      "timeline_start": 56,
+      "timeline_end": 59,
+      "streams": [
+        {
+          "source": "./static/wall-toss-v2/calm/overview.mp4",
+          "start": 1,
+          "rate": 1,
+          "box": [
+            134,
+            234,
+            1188,
+            792
+          ],
+          "label": "",
+          "native_size": [
+            960,
+            640
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/wall-toss-v2/calm/base.mp4",
+          "start": 1,
+          "rate": 1,
+          "box": [
+            1496,
+            234,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "./static/wall-toss-v2/calm/wrist.mp4",
+          "start": 1,
+          "rate": 1,
+          "box": [
+            1496,
+            650,
+            376,
+            376
+          ],
+          "label": "",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "suite",
+      "layout": "suite",
+      "duration": 4,
+      "chapter": "TASK ENVIRONMENTS",
+      "title": "Ten task environments",
+      "caption": "Nine with learned-policy evaluations",
+      "timeline_start": 59,
+      "timeline_end": 63,
+      "streams": [
+        {
+          "source": "./static/recordings/press-button/registered-grounded-v1/press-button.mp4",
+          "start": 20,
+          "rate": 1,
+          "box": [
+            48,
+            300,
+            352,
+            198
+          ],
+          "label": "Press button",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.mp4",
+          "start": 32,
+          "rate": 1,
+          "box": [
+            416,
+            300,
+            352,
+            198
+          ],
+          "label": "Rotate valve",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.mp4",
+          "start": 35,
+          "rate": 1,
+          "box": [
+            784,
+            300,
+            352,
+            198
+          ],
+          "label": "Open hatch",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/task-demos/collect-shell/overview.mp4",
+          "start": 57,
+          "rate": 1,
+          "box": [
+            1152,
+            300,
+            352,
+            198
+          ],
+          "label": "Collect shell",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/task-demos/push-slider/overview.mp4",
+          "start": 12,
+          "rate": 1,
+          "box": [
+            1520,
+            300,
+            352,
+            198
+          ],
+          "label": "Push slider",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/task-demos/pull-lever/overview.mp4",
+          "start": 16,
+          "rate": 1,
+          "box": [
+            48,
+            648,
+            352,
+            198
+          ],
+          "label": "Pull lever",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/task-demos/hotstab/overview.mp4",
+          "start": 26,
+          "rate": 1,
+          "box": [
+            416,
+            648,
+            352,
+            198
+          ],
+          "label": "Hot stab",
+          "native_size": [
+            960,
+            640
+          ],
+          "crop": [
+            0,
+            50,
+            960,
+            540
+          ]
+        },
+        {
+          "source": "./static/task-demos/cabin/overview.mp4",
+          "start": 25,
+          "rate": 1,
+          "box": [
+            784,
+            648,
+            352,
+            198
+          ],
+          "label": "Cabin recovery",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/cargo-release/rope_observer.mp4",
+          "start": 61,
+          "rate": 1,
+          "box": [
+            1152,
+            648,
+            352,
+            198
+          ],
+          "label": "Cargo release",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": [
+            0,
+            0,
+            1280,
+            720
+          ]
+        },
+        {
+          "source": "./static/wall-toss-v2/calm/overview.mp4",
+          "start": 1,
+          "rate": 1,
+          "box": [
+            1520,
+            648,
+            352,
+            198
+          ],
+          "label": "Wall toss",
+          "native_size": [
+            960,
+            640
+          ],
+          "crop": [
+            0,
+            50,
+            960,
+            540
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optics",
+      "layout": "optics",
+      "duration": 8,
+      "start": 29,
+      "chapter": "UNDERWATER IMAGING",
+      "title": "Water clarity",
+      "caption": "Same trajectory",
+      "timeline_start": 63,
+      "timeline_end": 71,
+      "streams": [
+        {
+          "source": "static/wreck-water/cabin/base_clear.mp4",
+          "start": 29,
+          "rate": 1,
+          "box": [
+            256,
+            234,
+            376,
+            376
+          ],
+          "label": "CLEAR",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "static/wreck-water/cabin/base_coastal.mp4",
+          "start": 29,
+          "rate": 1,
+          "box": [
+            768,
+            234,
+            376,
+            376
+          ],
+          "label": "COASTAL",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "static/wreck-water/cabin/base_silt.mp4",
+          "start": 29,
+          "rate": 1,
+          "box": [
+            1280,
+            234,
+            376,
+            376
+          ],
+          "label": "SILTY",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "static/wreck-water/cabin/gripper_clear.mp4",
+          "start": 29,
+          "rate": 1,
+          "box": [
+            256,
+            650,
+            376,
+            376
+          ],
+          "label": "CLEAR",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "static/wreck-water/cabin/gripper_coastal.mp4",
+          "start": 29,
+          "rate": 1,
+          "box": [
+            768,
+            650,
+            376,
+            376
+          ],
+          "label": "COASTAL",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        },
+        {
+          "source": "static/wreck-water/cabin/gripper_silt.mp4",
+          "start": 29,
+          "rate": 1,
+          "box": [
+            1280,
+            650,
+            376,
+            376
+          ],
+          "label": "SILTY",
+          "native_size": [
+            384,
+            384
+          ],
+          "crop": null
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "layout": "current",
+      "duration": 8,
+      "chapter": "UNDERWATER PHYSICS",
+      "title": "Current",
+      "caption": "Same position target",
+      "timeline_start": 71,
+      "timeline_end": 79,
+      "streams": [
+        {
+          "source": "./static/effects/v3/current-still.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            48,
+            328,
+            576,
+            324
+          ],
+          "label": "CURRENT \u00b7 0.0 m/s",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "current-still",
+            "mode": "current",
+            "source": "./static/effects/v3/current-still.mp4",
+            "source_sha256": "a9eb918b88e108040217cab379e0d28af90cebe35d39cb20cd88c5a06a988dec",
+            "trace": "./static/effects/v3/current-still.json",
+            "trace_sha256": "e4f856f9a34bf648b5137d2a6efc3016da2132fcceb19c22b4ba0b60c5b51a46",
+            "movie": "current-still.mov",
+            "movie_sha256": "14d34fe78e984175b6c4a2318cee3fc0aa0f34c2bcb440f37ff206402549929e",
+            "frames": 240,
+            "width": 576,
+            "height": 324,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 8,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        },
+        {
+          "source": "./static/effects/v3/current-flow.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            672,
+            328,
+            576,
+            324
+          ],
+          "label": "CURRENT \u00b7 0.9 m/s",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "current-flow",
+            "mode": "current",
+            "source": "./static/effects/v3/current-flow.mp4",
+            "source_sha256": "e28408a6aa37a054d831cceb4116a90bbbf003b8d326973bf9fa2e5bcfc72e42",
+            "trace": "./static/effects/v3/current-flow.json",
+            "trace_sha256": "5710b84e7ab6cf2aff9e3149f26b574d4c7bcf4cc07c695248e3ec0130db41f8",
+            "movie": "current-flow.mov",
+            "movie_sha256": "b776af41f73eb2b5e6eeb33ececcd8bb844c2071182494ec25043559ff1d4510",
+            "frames": 240,
+            "width": 576,
+            "height": 324,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 8,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        },
+        {
+          "source": "./static/effects/v3/current-overload.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            1296,
+            328,
+            576,
+            324
+          ],
+          "label": "CURRENT \u00b7 1.7 m/s",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "current-overload",
+            "mode": "current",
+            "source": "./static/effects/v3/current-overload.mp4",
+            "source_sha256": "028fc33e97dbdf347e40c7b5d22d7d5beced64f18935fc14ca078f532b90c74d",
+            "trace": "./static/effects/v3/current-overload.json",
+            "trace_sha256": "dd5c4aca0d92564e30b81ff08a4eb2dce0f9218841613eaf42025a9fdb0f33ac",
+            "movie": "current-overload.mov",
+            "movie_sha256": "57988a1f82d82ab814b472a3d0e8ff4578e276e34b38c43f21ccef2f72652ef4",
+            "frames": 240,
+            "width": 576,
+            "height": 324,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 8,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "id": "proximity",
+      "layout": "proximity",
+      "duration": 5,
+      "chapter": "UNDERWATER PHYSICS",
+      "title": "Wall and seabed proximity",
+      "caption": "Reduced-order models",
+      "timeline_start": 79,
+      "timeline_end": 84,
+      "streams": [
+        {
+          "source": "./static/effects/optional_v1/wall-far-on.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            232,
+            224,
+            704,
+            396
+          ],
+          "label": "WALL \u00b7 FAR",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "wall-far",
+            "mode": "wall",
+            "source": "./static/effects/optional_v1/wall-far-on.mp4",
+            "source_sha256": "5ba515085c941991187f7e01594f13e0afcf305cac5f81b0b139d8f59ed69181",
+            "trace": "./static/effects/optional_v1/wall-far-on.json",
+            "trace_sha256": "c1295e8ddaa140188a1708044e30e7d883525f63fa8ade027b3edec1231484ed",
+            "movie": "wall-far.mov",
+            "movie_sha256": "c08babf81c945d8d007d9bc1b417970941fbb6ea2081d8e98dad66d48af4b45f",
+            "frames": 150,
+            "width": 704,
+            "height": 396,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 5,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        },
+        {
+          "source": "./static/effects/optional_v1/wall-near-on.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            984,
+            224,
+            704,
+            396
+          ],
+          "label": "WALL \u00b7 NEAR",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "wall-near",
+            "mode": "wall",
+            "source": "./static/effects/optional_v1/wall-near-on.mp4",
+            "source_sha256": "8d74fffb485984d6feb6f0048c927bb55180b062a45c987ae7ac96f0b5214159",
+            "trace": "./static/effects/optional_v1/wall-near-on.json",
+            "trace_sha256": "37d31a94d4a9366c16ee1dafdb3610ea239fbeec5b54b7bf206143e11bacc9bf",
+            "movie": "wall-near.mov",
+            "movie_sha256": "b06cbbc643d4ca9390ac4a50a75179563946c53313407866c375366a7b75b6c2",
+            "frames": 150,
+            "width": 704,
+            "height": 396,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 5,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        },
+        {
+          "source": "./static/effects/optional_v1/seabed-far-on.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            232,
+            668,
+            704,
+            396
+          ],
+          "label": "POOL FLOOR \u00b7 FAR",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "seabed-far",
+            "mode": "seabed",
+            "source": "./static/effects/optional_v1/seabed-far-on.mp4",
+            "source_sha256": "6c082285ade96c931656cb88083fe4cb05c53caa6afaf715e9e001e1e013edd6",
+            "trace": "./static/effects/optional_v1/seabed-far-on.json",
+            "trace_sha256": "e1ff6140328c344acd68c7a002d892d97b3c7ac8e8ee6fac6a1b8de668076d77",
+            "movie": "seabed-far.mov",
+            "movie_sha256": "a941ea024b3d3b5150327e7c88df0a371bdf477fdf9dafffb06bc70e3ecc4262",
+            "frames": 150,
+            "width": 704,
+            "height": 396,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 5,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        },
+        {
+          "source": "./static/effects/optional_v1/seabed-near-on.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            984,
+            668,
+            704,
+            396
+          ],
+          "label": "POOL FLOOR \u00b7 NEAR",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "seabed-near",
+            "mode": "seabed",
+            "source": "./static/effects/optional_v1/seabed-near-on.mp4",
+            "source_sha256": "5f5be99a4b37efac6dac9a8688406dcf2fb3371062e6b5e22b3704833ce402f1",
+            "trace": "./static/effects/optional_v1/seabed-near-on.json",
+            "trace_sha256": "36c495644ca4f4752a9b68f54fb4b4a9ac91d64185d4f9a84bb6ea3e21c8d3f3",
+            "movie": "seabed-near.mov",
+            "movie_sha256": "ba75819bda4fcdb142e522f4472041d86ea4d84759fac47e4ed9d32d8dab4b38",
+            "frames": 150,
+            "width": 704,
+            "height": 396,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 5,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "id": "actuators",
+      "layout": "actuators",
+      "duration": 5,
+      "chapter": "UNDERWATER PHYSICS",
+      "title": "Actuator response",
+      "caption": "Same commands",
+      "timeline_start": 84,
+      "timeline_end": 89,
+      "streams": [
+        {
+          "source": "./static/effects/v3/actuator-instant.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            48,
+            312,
+            896,
+            504
+          ],
+          "label": "INSTANTANEOUS",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "actuator-instant",
+            "mode": "actuator",
+            "source": "./static/effects/v3/actuator-instant.mp4",
+            "source_sha256": "48466b8b1cf8b6d1f1d47334974696f240780b8c99aae4a874b90c37ed17aa16",
+            "trace": "./static/effects/v3/actuator-instant.json",
+            "trace_sha256": "c25e135d1c7332c2bb7001b505f1f40510227d8705a053d921fe89dab4c1a4fe",
+            "movie": "actuator-instant.mov",
+            "movie_sha256": "fc9694b0cd1fc740b9170c3afecc9d4f4963f14b2128f5e6a714876b1146378d",
+            "frames": 150,
+            "width": 896,
+            "height": 504,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 5,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        },
+        {
+          "source": "./static/effects/v3/actuator-lag.mp4",
+          "start": 0,
+          "rate": 1,
+          "box": [
+            976,
+            312,
+            896,
+            504
+          ],
+          "label": "MOTOR LAG + DELAY",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null,
+          "annotation": {
+            "id": "actuator-lag",
+            "mode": "actuator",
+            "source": "./static/effects/v3/actuator-lag.mp4",
+            "source_sha256": "b8cef30fbaf2bab3e7e7fe7e0c8aafd2fd51f8b7b620670ae919793fd558ee20",
+            "trace": "./static/effects/v3/actuator-lag.json",
+            "trace_sha256": "80619cdf92e794e01c7ddcec7336af8a48a5df31c11e643f1d9a8c7b2fe24287",
+            "movie": "actuator-lag.mov",
+            "movie_sha256": "fc9694b0cd1fc740b9170c3afecc9d4f4963f14b2128f5e6a714876b1146378d",
+            "frames": 150,
+            "width": 896,
+            "height": 504,
+            "native_viewport": [
+              1280,
+              720
+            ],
+            "duration": 5,
+            "telemetry_offset_s": 0.03333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "id": "policies",
+      "layout": "policies",
+      "duration": 8,
+      "chapter": "POLICY LEARNING",
+      "title": "Policy results",
+      "caption": "Six tasks \u00b7 three training seeds",
+      "timeline_start": 89,
+      "timeline_end": 97,
+      "streams": []
+    },
+    {
+      "id": "vla",
+      "layout": "vla",
+      "duration": 5,
+      "chapter": "VISION\u2013LANGUAGE\u2013ACTION",
+      "title": "SmolVLA",
+      "caption": "Three tasks \u00b7 three training seeds \u00b7 270 test episodes",
+      "timeline_start": 97,
+      "timeline_end": 102,
+      "streams": []
+    },
+    {
+      "id": "outro",
+      "layout": "outro",
+      "duration": 6,
+      "start": 120,
+      "rate": 1,
+      "source": "static/bimanual-valve/two-hands.mp4",
+      "chapter": "EXPLORE AND REPRODUCE",
+      "title": "WasserMan",
+      "caption": "",
+      "timeline_start": 102,
+      "timeline_end": 108,
+      "streams": [
+        {
+          "source": "static/bimanual-valve/two-hands.mp4",
+          "start": 120,
+          "rate": 1,
+          "box": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "label": "",
+          "native_size": [
+            1280,
+            720
+          ],
+          "crop": null
+        }
+      ]
+    }
+  ]
+}

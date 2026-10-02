@@ -1,0 +1,10 @@
+{
+  "source": "final-campaign-pool-coordinate-audit-20260928/demo-two-hands/pool-render/observer_4050.png",
+  "demo_seed": 91003,
+  "time_s": 135,
+  "mode": "two-hands",
+  "image_sha256": "a014b795408fc3d97ae730d2726ffadf1edeb2dcb1455aa81beeacfb7d71b714",
+  "source_trace_sha256": "d83f360d68f69f01ca2d6fb738f9b81eb6232f4c3f060a3b963a9d093c43bb07",
+  "presentation_only": true,
+  "overlays": false
+}

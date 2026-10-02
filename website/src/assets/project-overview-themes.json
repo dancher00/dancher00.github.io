@@ -1,0 +1,41 @@
+{
+  "source": "paper/build_revision_overview.py",
+  "source_sha256": "932bce31c484721327ff6b5190b1b483d0c408e7a2a1389046bc6537c6a9ebfc",
+  "renderer": "scripts/build_website_teaser.py",
+  "scope": "Website palette variants of the editable teaser; original photographs, viewports, geometry and labels retained",
+  "dark_panel_palette": {
+    "#dcecf7": "#183448",
+    "#edf5fa": "#0e2536",
+    "#f1f4f6": "#0c2231"
+  },
+  "inputs": {
+    "data/illustrations/robot-schematics.png": "6bcbdfeb55cc6b90620d4b56ece09ad36f1c95db5ea9a47af4a3a7c9f776b892",
+    "data/visuals/bimanual-pool.png": "7d7ecc219d6902b2a15cddc9a23d9f76edfefd7323b815b832064d23550a0e85",
+    "data/visuals/button-1.png": "310f3c82934ff7f45164dbdb8f090afca2520a30bddabcb465151c9536d26107",
+    "data/visuals/hatch-1.png": "e2c174203f6e35797cacd2cab88b7bb530ac72e79a907f382a7ba436844703d4",
+    "data/visuals/shell-1.png": "7c5da635bf11bbccc1ebfc83453755c5821cf1c7b4a26e60b953be3fa0af803b",
+    "data/visuals/valve-1.png": "aeec34cc05aab3a8b94cbc74bf8ebd7675f89611e2b9fa139539633eb390a624",
+    "data/visuals/slider-1.png": "26dfb2d0b838b40fedc7170d05b057bf469baf92d139d1086c40a6fb946a3e78",
+    "data/visuals/lever-1.png": "7425059b02f6207ba6f8412f4479e2bb6800e1b955aeda469e68e10f1a985d2a",
+    "data/visuals/overview-environment_1.jpg": "ee50e5ca1067a6606f2fbb8d4c2e089dd7b27bafa678a3d72f389b9c313d8aa8",
+    "data/visuals/overview-environment_2.jpg": "909d0bedcf085764899ed676a03f2aeef094a8b580230c94956851c7ccd6bb76",
+    "data/visuals/overview-environment_3.jpg": "ab8c714af2198598b130aa2e61d5832b5ee0331d28a79fdaf6ed6c335e1d59da",
+    "data/visuals/overview-appearance_3.jpg": "16133718d69df2623c132157121324d8b41b985a1fdb82853567ee8399bba76b",
+    "data/visuals/water-cabin-reference.jpg": "0e2c6b25f7c407dd7c753e5d37f7ba555a09fc57423c16d1b1a280ea6c017c9b",
+    "data/visuals/water-rope-reference.jpg": "95b9adbc45652927fecb5a0f1443345a29e6c792d0507041814a481d59e19f97"
+  },
+  "variants": {
+    "light": {
+      "asset": "project-overview-light.svg",
+      "sha256": "30c432206f91c037ed5d1bffe29d825e7a9036e818c32ac413a3ef2d291a043b",
+      "github_asset": "project-overview-light.png",
+      "github_sha256": "a275083c69ce93a270da6f7e74865bb6b1d7a658df90d1ef83cb31db444aa632"
+    },
+    "dark": {
+      "asset": "project-overview-dark.svg",
+      "sha256": "cd7f083abd8c16b15ab6507f59454145fdea00e9d556d5a84e90851a7f177c65",
+      "github_asset": "project-overview-dark.png",
+      "github_sha256": "919aebd44ef244dbb623671a9ee844f9a7b8e3f215c7bc9f2d80b5f7c21a0052"
+    }
+  }
+}

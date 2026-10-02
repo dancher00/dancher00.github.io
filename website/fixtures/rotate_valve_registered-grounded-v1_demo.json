@@ -1,0 +1,330 @@
+{
+  "task": "Wasman-Underwater-RotateValve-Approach-T200-Direct",
+  "controller": "Cartesian state-feedback expert; not PPO",
+  "checkpoint_sha256": null,
+  "seed": 42,
+  "episodes": 1,
+  "successes": 1,
+  "evaluation_role": "Single demonstration, not a benchmark success rate",
+  "telemetry_contract_replayed": true,
+  "success_contract": {
+    "version": "valve-grasp-turn-release-v1",
+    "goal_angle_deg": [
+      170,
+      175
+    ],
+    "minimum_bilateral_turn_deg": 165,
+    "hold_s": 1.0,
+    "release_s": 0.5,
+    "withdrawal_clearance_m": 0.08,
+    "success_ends_episode": false
+  },
+  "automatic_resets": 0,
+  "duration_s": 60.233,
+  "first_success_time_s": 57.233,
+  "final_angle_deg": 173.13850625178824,
+  "max_base_attitude_deg": 2.0999414468770086,
+  "chapters": [
+    {
+      "time": 0.0,
+      "label": "Swim in"
+    },
+    {
+      "time": 23.067,
+      "label": "Grasp"
+    },
+    {
+      "time": 23.9,
+      "label": "Turn"
+    },
+    {
+      "time": 53.733,
+      "label": "Hold"
+    },
+    {
+      "time": 56.733,
+      "label": "Release"
+    },
+    {
+      "time": 57.2,
+      "label": "Complete"
+    }
+  ],
+  "protocol": {
+    "version": "valve-grasp-turn-release-v1",
+    "goal_angle_deg": [
+      170,
+      175
+    ],
+    "minimum_bilateral_turn_deg": 165,
+    "hold_s": 1.0,
+    "release_s": 0.5,
+    "withdrawal_clearance_m": 0.08,
+    "success_ends_episode": false,
+    "physics_dt_s": 0.004166666666666667,
+    "policy_dt_s": 0.03333333333333333,
+    "horizon_s": 95.0,
+    "current_speed_range_m_s": [
+      0.0,
+      0.0
+    ],
+    "volume_scale_range": [
+      0.97,
+      1.03
+    ],
+    "seal_static_friction_nm": 0.012,
+    "seal_dynamic_friction_nm": 0.008,
+    "seal_viscous_damping_nm_s_rad": 0.08,
+    "observation_dim": 50,
+    "action_dim": 11
+  },
+  "source_sha256_at_start": {
+    "src/wasman/controllers/valve.py": "5d4d72d6bb8783bb39234c454e6ff0fae58e9233024691aa9e05ba667f232a3b",
+    "src/wasman/controllers/valve_contract.py": "45518632d0c6b89508b999e6276a1a94190936343fb4e65e61ae265357257860",
+    "src/wasman/controllers/valve_success.py": "c31ce9425a2b5c81cddcf32998d1ec916ca36a0f7d08bbae8bd086cf7d2a7436",
+    "src/wasman/controllers/tool_pose.py": "03ab364e853be6546b81b15409085cd775ffc42f2430bc8be38f71679b7e33bd",
+    "src/wasman/tasks/underwater_panel/valve.py": "b8b85f460a6b5a6e343ba9de83437d05c0da0cd012876716d131d3023125c3a1",
+    "src/wasman/tasks/underwater_panel/env_cfg.py": "521d9e4c9c2c650cc919939c5363985998bd0a3223f9693189d993b7b944d802",
+    "src/wasman/assets/grasp_geometry.py": "25d459407a50a35ec9f25e83d9e3193121df00118a51de89688410e31e1e7f07",
+    "src/wasman/assets/grasp_hydrodynamics.py": "004a5c9d854968d52d61ebc913a70ad4b7fe2e2d6e1251dc42d86677133498ff",
+    "src/wasman/controllers/valve_policy.py": "c6afafd57dfd9bb7036910f8503021f239f5d12f83a3a94e9ccaf4667db1366b",
+    "src/wasman/controllers/valve_execution.py": "64bdd84daee012461b5c3598bb20b186dbc0cf24b4a9888645c5c42f65e3d7f8",
+    "src/wasman/controllers/valve_local_policy.py": "30ba9e50bbc29bf0d3bb4cb46d680737cff58e8ab383f1e418f6fc36745961e3",
+    "src/wasman/controllers/valve_recurrent_policy.py": "746e841bc34bf3be0d2f471a57fd1d4c725151f9fbcdbea077da6401d28a9db0",
+    "src/wasman/controllers/valve_mixture_policy.py": "224305d7176bc8bc4796191d68312924c0ba1538097dc093a2040407a5595bf8",
+    "src/wasman/controllers/valve_policy_batch.py": "a94c1c714adedb7fde3a7aa9882674942cc87f46c2520d0e2589628e54c5f278",
+    "src/wasman/controllers/valve_mode_router.py": "6d29734c99d75720ca516dc214683b914328a5b16952841bcd5d026805676da5",
+    "src/wasman/controllers/valve_sequential_router.py": "be6730a77352a179dcbcbcab52538993d9ca6b463d5412cd69d183b48d980dce",
+    "src/wasman/tasks/underwater_panel/approach.py": "265a1cfb8284783d92ab1bc4c8f263c9b2fa097495382a42d8152a5b031a284c",
+    "src/wasman/tasks/underwater_press_button/config/bluerov2_alpha/env.py": "90d9d8e06498c9d63df612abcc7383496e484563d4e6886b464a517d01a7b6d3",
+    "src/wasman/assets/panels.py": "15e270dc9868401cd2a57b423b57c7eecc1e62567ea8ab4145be0aa14ca15401",
+    "src/wasman/controllers/approach.py": "6b60c6ba733404f2911edf8a344357fab2b24113b3e9d3111a5fd4f90c73765b",
+    "src/wasman/controllers/cinema.py": "9734e8387b92f7453c2c7df17a1c564cb399f0957c14ac939a4d8c88becf4b58",
+    "scripts/check_valve_expert.py": "bad07bce2cb5094e00ef6ce2efa2c03c81b59ca5e04ec6e5c281acf5835b3a4f",
+    "src/wasman/camera_recording.py": "6ea2d8e0b49a6733ff98635b33269da1134acb15574a502657783a74d90ff54b",
+    "src/wasman/assets/robot_cameras.py": "2437c37a296862c9886314e44afb66f0cea65223d2e9caa7d2536d5c1e0788f1",
+    "src/wasman/robot_camera_profiles.py": "603f343cd7aa9e9538e3501864c4156fa5fffde9dc3cbb44e97685b2219a54c6",
+    "src/wasman/assets/registered_bluerov.py": "78413785466c8429732a87b2058c2ccbd3908d1ba03b62eecab0fbefbecc6775",
+    "src/wasman/media.py": "6dd763e9ffa1813b7a466f437da65a239affb1bd8a267a5850a4fd5eaaed1850"
+  },
+  "robot_geometry_version": "registered-v1",
+  "robot_camera_profile": "geometry-v2",
+  "robot_camera_parameters": {
+    "name": "geometry-v2",
+    "base": {
+      "parent_link": "base_link",
+      "position_m": [
+        0.21,
+        0.0,
+        0.067
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.25881904510252074,
+        0.0,
+        0.9659258262890683
+      ]
+    },
+    "gripper": {
+      "parent_link": "alpha_jaw_base_link",
+      "position_m": [
+        0.055,
+        0.0,
+        -0.035
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        -0.8416218600099494,
+        0.0,
+        0.5400672594718117
+      ]
+    },
+    "rationale": "Base uses the pinned upstream camera pivot with an engineering 30-degree downward tilt. Virtual wrist camera behind/beside the palm, aimed between the fingertips. Source-mesh frustum/clearance audit; no hardware calibration or fabricated camera housing.",
+    "focal_length_mm": 12.0,
+    "horizontal_aperture_mm": 20.955,
+    "clipping_range_m": [
+      0.015,
+      30.0
+    ],
+    "orientation_convention": "world",
+    "hardware_calibrated": false,
+    "source_urls": [
+      "https://github.com/Robotic-Decision-Making-Lab/blue/blob/812fea605cd2056ba20fac504f456457594595fb/blue_description/description/bluerov2_heavy_reach/urdf.xacro"
+    ]
+  },
+  "registered_geometry_audit": {
+    "passed": true,
+    "body_bounds_m": [
+      [
+        -0.2339181900024414,
+        -0.28291651606559753,
+        -0.11216132342815399
+      ],
+      [
+        0.21628235280513763,
+        0.28291550278663635,
+        0.14072959125041962
+      ]
+    ],
+    "motors": [
+      {
+        "origin_m": [
+          0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          -0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          -0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    ],
+    "manifest_sha256": "a7484e70f667cf62703c6c44614554d1a0ed22cbac51f41ae0adbb8bc0fc5d3f"
+  },
+  "recording_version": "registered-grounded-v1",
+  "moviepy_version": "2.2.1",
+  "observer_encoding": {
+    "frames": 1807,
+    "fps": 30.0,
+    "duration_s": 60.23,
+    "full_decode_verified": true
+  },
+  "video_sha256": "2703c50cc37a99cd4bd59dcb2854aacc4846485639c9d77a6af7538395fd9cc2",
+  "trace_sha256": "d0680d8f6bb15a9edd5b95b9d0ced35cd1aae106d4ed446319985d04d638792a",
+  "camera_streams": [
+    {
+      "id": "gripper",
+      "label": "Gripper",
+      "src": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-gripper-sync.mp4",
+      "fps": 30,
+      "width": 256,
+      "height": 256,
+      "frames": 1807,
+      "duration_s": 60.233,
+      "sha256": "949e2dbf9d7428407c475618043052e1e8571e4dda27bfd219729f944bcfbab0"
+    },
+    {
+      "id": "base",
+      "label": "Base",
+      "src": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-base-sync.mp4",
+      "fps": 30,
+      "width": 256,
+      "height": 256,
+      "frames": 1807,
+      "duration_s": 60.233,
+      "sha256": "da2279efd8d4ad8b7156cfa62d8d45675ad62020fedb8d6fda911cc87d1345ff"
+    }
+  ],
+  "camera_alignment": {
+    "same_episode": true,
+    "capture": "post-physics, same step as observer",
+    "initial_hold_s": 0.03333333333333333,
+    "observer_trimmed_frames": 1,
+    "max_pair_timestamp_difference_s": 0.0
+  },
+  "video_url": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.mp4",
+  "poster_url": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.png",
+  "report_url": "./static/recordings/rotate-valve/registered-grounded-v1/report.json",
+  "trace_url": "./static/recordings/rotate-valve/registered-grounded-v1/trace.json",
+  "presentation": {
+    "version": "grounded-presentation-v1",
+    "source_sha256": "3805bf1682ccdf57a4aec71ce6eaffdc9cfeb9b7ee84e296c9e13d0f286cba33",
+    "changes": [
+      {
+        "prim": "/World/envs/env_0/Panel/Surface",
+        "change": "extend visible slab down",
+        "old_bottom": -0.574999988079071,
+        "new_bottom": -2.0
+      }
+    ],
+    "physics_unchanged": true,
+    "scope": "new presentation takes, not replacement benchmark trials",
+    "physics_before_sha256": "3df4cc477ea822be09a18cc5cad05b1a030e62f72b39db5a186912afa9664b0a",
+    "physics_after_sha256": "3df4cc477ea822be09a18cc5cad05b1a030e62f72b39db5a186912afa9664b0a"
+  }
+}

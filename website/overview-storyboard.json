@@ -1,0 +1,223 @@
+{
+  "version": "overview-v8",
+  "scope": "Simulation footage; edited expert demonstrations, illustrative physical effects and frozen learning results. No hardware validation.",
+  "clips": [
+    {
+      "id": "two-arms",
+      "layout": "hero",
+      "duration": 5,
+      "start": 0,
+      "rate": 2,
+      "source": "static/bimanual-valve/two-hands.mp4",
+      "chapter": "COOPERATIVE MANIPULATION",
+      "title": "Two-arm valve manipulation",
+      "caption": "RexROV2 + twin Oberon7"
+    },
+    {
+      "id": "two-arms-contact",
+      "layout": "hero",
+      "duration": 4,
+      "start": 111,
+      "rate": 2,
+      "source": "static/bimanual-valve/two-hands.mp4",
+      "chapter": "COOPERATIVE MANIPULATION",
+      "title": "Valve rotation",
+      "caption": ""
+    },
+    {
+      "id": "coupling",
+      "layout": "task",
+      "task": "OpenHatch",
+      "duration": 5,
+      "start": 35,
+      "chapter": "FLOATING-BASE CONTACT",
+      "title": "Open hatch",
+      "caption": ""
+    },
+    {
+      "id": "identity",
+      "layout": "identity",
+      "duration": 3,
+      "chapter": "INTRODUCING",
+      "title": "WasserMan",
+      "caption": "Benchmark for Underwater Manipulation Policy Learning"
+    },
+    {
+      "id": "architecture",
+      "layout": "architecture",
+      "duration": 5,
+      "chapter": "POLICY AND CONTROL",
+      "title": "Policy and control",
+      "caption": ""
+    },
+    {
+      "id": "cabin-open",
+      "layout": "task",
+      "task": "CabinRecovery",
+      "duration": 4,
+      "start": 25,
+      "chapter": "UNDERWATER INTERVENTION",
+      "title": "Open cabinet",
+      "caption": "Cabin recovery"
+    },
+    {
+      "id": "cabin-recover",
+      "layout": "task",
+      "task": "CabinRecovery",
+      "duration": 5,
+      "start": 115,
+      "rate": 2,
+      "chapter": "UNDERWATER INTERVENTION",
+      "title": "Recover hard drive",
+      "caption": "Cabin recovery"
+    },
+    {
+      "id": "cargo",
+      "layout": "task",
+      "task": "CargoRelease",
+      "duration": 5,
+      "start": 61,
+      "chapter": "UNDERWATER INTERVENTION",
+      "title": "Cut retaining rope",
+      "caption": "Cargo release"
+    },
+    {
+      "id": "hotstab",
+      "layout": "task",
+      "task": "HotStab",
+      "duration": 4,
+      "start": 26,
+      "chapter": "INSERTION",
+      "title": "Hot-stab insertion",
+      "caption": ""
+    },
+    {
+      "id": "collect",
+      "layout": "task",
+      "task": "CollectShell",
+      "duration": 4,
+      "start": 57,
+      "chapter": "OBJECT TRANSPORT",
+      "title": "Collect shell",
+      "caption": ""
+    },
+    {
+      "id": "button",
+      "layout": "task",
+      "task": "PressButton",
+      "duration": 3,
+      "start": 20,
+      "chapter": "PRECISE CONTACT",
+      "title": "Press button",
+      "caption": ""
+    },
+    {
+      "id": "slider",
+      "layout": "task",
+      "task": "PushSlider",
+      "duration": 3,
+      "start": 12,
+      "chapter": "CONSTRAINED CONTACT",
+      "title": "Push slider",
+      "caption": ""
+    },
+    {
+      "id": "lever",
+      "layout": "task",
+      "task": "PullLever",
+      "duration": 3,
+      "start": 16,
+      "chapter": "CONSTRAINED CONTACT",
+      "title": "Pull lever",
+      "caption": ""
+    },
+    {
+      "id": "valve",
+      "layout": "task",
+      "task": "RotateValve",
+      "duration": 3,
+      "start": 32,
+      "chapter": "ARTICULATED OBJECTS",
+      "title": "Rotate valve",
+      "caption": ""
+    },
+    {
+      "id": "toss",
+      "layout": "task",
+      "task": "WallToss",
+      "duration": 3,
+      "start": 1,
+      "chapter": "DYNAMIC RELEASE",
+      "title": "Wall toss",
+      "caption": ""
+    },
+    {
+      "id": "suite",
+      "layout": "suite",
+      "duration": 4,
+      "chapter": "TASK ENVIRONMENTS",
+      "title": "Ten task environments",
+      "caption": "Nine with learned-policy evaluations"
+    },
+    {
+      "id": "optics",
+      "layout": "optics",
+      "duration": 8,
+      "start": 29,
+      "chapter": "UNDERWATER IMAGING",
+      "title": "Water clarity",
+      "caption": "Same trajectory"
+    },
+    {
+      "id": "current",
+      "layout": "current",
+      "duration": 8,
+      "chapter": "UNDERWATER PHYSICS",
+      "title": "Current",
+      "caption": "Same position target"
+    },
+    {
+      "id": "proximity",
+      "layout": "proximity",
+      "duration": 5,
+      "chapter": "UNDERWATER PHYSICS",
+      "title": "Wall and seabed proximity",
+      "caption": "Reduced-order models"
+    },
+    {
+      "id": "actuators",
+      "layout": "actuators",
+      "duration": 5,
+      "chapter": "UNDERWATER PHYSICS",
+      "title": "Actuator response",
+      "caption": "Same commands"
+    },
+    {
+      "id": "policies",
+      "layout": "policies",
+      "duration": 8,
+      "chapter": "POLICY LEARNING",
+      "title": "Policy results",
+      "caption": "Six tasks \u00b7 three training seeds"
+    },
+    {
+      "id": "vla",
+      "layout": "vla",
+      "duration": 5,
+      "chapter": "VISION\u2013LANGUAGE\u2013ACTION",
+      "title": "SmolVLA",
+      "caption": "Three tasks \u00b7 three training seeds \u00b7 270 test episodes"
+    },
+    {
+      "id": "outro",
+      "layout": "outro",
+      "duration": 6,
+      "start": 120,
+      "rate": 1,
+      "source": "static/bimanual-valve/two-hands.mp4",
+      "chapter": "EXPLORE AND REPRODUCE",
+      "title": "WasserMan",
+      "caption": ""
+    }
+  ]
+}

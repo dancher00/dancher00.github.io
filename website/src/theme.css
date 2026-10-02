@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light;
+  --theme-ink: #20384c;
+  --theme-surface: #fff;
+  --theme-line: #dce5ed;
+  --theme-accent: #146da9;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --theme-ink: #edf7ff;
+  --theme-surface: #0e2536;
+  --theme-line: #345268;
+  --theme-accent: #69c5ff;
+  --dark-ink: var(--theme-ink);
+  --dark-surface: var(--theme-surface);
+  --dark-paper: #081a28;
+  --dark-raised: #183448;
+  --dark-line: var(--theme-line);
+  --dark-link: var(--theme-accent);
+  --dark-amber: #ffd17c;
+  --chart-first: #72c8ff;
+  --chart-second: #2f99ec;
+  --chart-third: #a4bed1;
+}
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 40px; height: 40px; border: 1px solid var(--theme-line); background: var(--theme-surface); color: var(--theme-ink); border-radius: 2px; padding: 8px; cursor: pointer; }
+.theme-toggle:hover { color: var(--theme-accent); border-color: currentColor; }
+.theme-toggle:focus-visible { outline: 3px solid var(--theme-accent); outline-offset: 4px; }
+.landing-header .landing-header-actions { display: flex; align-items: center; gap: 12px; }
+.landing-header-actions { order: 2; }
+.landing-header nav { order: 1; margin-left: auto; }
+.nav-shell > .theme-toggle { order: 2; }
+@media (max-width: 760px) { .landing-header nav { order: 3; margin-left: 0; } }
+:root[data-theme="dark"] svg text { fill: var(--theme-ink); }
+:root[data-theme="dark"] .research-tabs button[aria-selected="true"],
+:root[data-theme="dark"] .research-tabs button[aria-selected="true"] small { color: white; }
+:root[data-theme="dark"] .appendix-back,
+:root[data-theme="dark"] .research-appendix-link a { color: var(--theme-accent); }
+
+:root[data-theme="dark"] :is(.study-panel, .research-plot, .research-appendix) :is(line, path)[stroke="#e2eaf0"],
+:root[data-theme="dark"] :is(.study-panel, .research-plot, .research-appendix) :is(line, path)[stroke="#e0e6eb"],
+:root[data-theme="dark"] :is(.study-panel, .research-plot, .research-appendix) :is(line, path)[stroke="#dce5ed"],
+:root[data-theme="dark"] :is(.study-panel, .research-plot, .research-appendix) :is(line, path)[stroke="#dfe4e7"] { stroke: var(--theme-line); }

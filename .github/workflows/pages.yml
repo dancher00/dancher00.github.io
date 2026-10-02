@@ -1,0 +1,79 @@
+name: Build and optionally deploy website
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Deploy the checked artifact to GitHub Pages
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: website/.node-version
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - name: Restore bundled scientific records
+        run: python scripts/restore_reproduction_sources.py
+      - name: Verify sources and recorded results
+        run: |
+          python scripts/verify_presentation.py
+      - name: Restore pinned publication media
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/fetch_website_media.py --destination "$RUNNER_TEMP/website-media.tar.gz"
+          python scripts/prepare_website.py restore-media --archive "$RUNNER_TEMP/website-media.tar.gz"
+      - name: Install website and documentation tools
+        run: |
+          python -m pip install -r website/docs-requirements.txt
+          npm ci --prefix website
+      - name: Build and check complete publication site
+        run: npm run build:publication --prefix website
+      - name: Install browser
+        working-directory: website
+        run: npx playwright install --with-deps chromium
+      - name: Check publication routes, videos and mobile layout
+        working-directory: website
+        env:
+          WM_SITE_TEST_PUBLICATION: '1'
+        run: npm test -- tests/publication-ready.spec.ts tests/current-results.spec.ts tests/landing.spec.ts tests/theme.spec.ts tests/overview-video.spec.ts tests/corrected-hdd-media.spec.ts tests/variation.spec.ts --workers=2
+      - name: Prepare and check the account Pages project path
+        run: |
+          python scripts/prepare_website.py pages
+          node website/scripts/verify-pages.mjs
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: website/.publication/pages
+
+  deploy:
+    if: ${{ inputs.deploy }}
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

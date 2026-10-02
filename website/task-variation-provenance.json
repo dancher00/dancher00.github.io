@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "cabins": [
+    {
+      "preview": "static/variations/cabins_1.jpg",
+      "source": "static/task-demos/cabin/overview.mp4",
+      "source_sha256": "c681d6de9fa8b34ed72af938c62ced76b140bb08ee998501f938f16fcf5bed2e",
+      "time_seconds": 35,
+      "preview_sha256": "7498b318f1749d0bd69024dd8de806065b56227dcb4fe80901e6b61748c1cdd6",
+      "size": [
+        1280,
+        720
+      ],
+      "processing": "One frame from the original external recording; native aspect ratio, no image edits"
+    },
+    {
+      "preview": "static/variations/cabins_2.jpg",
+      "source": "static/cargo-release/rope_observer.mp4",
+      "source_sha256": "fe86f29aa31fc461f67769d09fa9bc162a0a9f215a5462d2bd58d801451dc299",
+      "time_seconds": 50,
+      "preview_sha256": "b4d1cb1c98c5d32cbfbdb5604e5e6204d316c30d4d9d730b65a34c656c8d0cb5",
+      "size": [
+        1280,
+        720
+      ],
+      "processing": "One frame from the original external recording; native aspect ratio, no image edits"
+    }
+  ]
+}

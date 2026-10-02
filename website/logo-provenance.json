@@ -1,0 +1,17 @@
+{
+  "source_image": "Nautical Robotics Icon Collection.png",
+  "source_sha256": "0180405909c1414ea6e2272ee34ab0596a9051d1b64e719d05027b49d4c7ffb9",
+  "selected_mark": "bottom right: wave and robotic gripper",
+  "operation": "transparent extraction preserving selected logo",
+  "asset": "public/static/wasserman-logo.png",
+  "asset_sha256": "758e6e830d195abec32f552eabc395636b3a05850713a5c6ae138bd158453d3c",
+  "dark_variant": {
+    "asset": "public/static/wasserman-logo-dark.svg",
+    "source_palette_asset": "src/assets/wasserman-logo-dark-color.png",
+    "palette_method": "Built-in imagegen, navy surfaces recolored ice white with original blue parts retained",
+    "geometry_method": "SVG mask from the original alpha channel preserves the original silhouette and transparent holes",
+    "asset_sha256": "1c94f9df4276b47761053e80fa929378446302655d047c1bc82ce9b9cdb239f4",
+    "palette_asset_sha256": "8e1e19b01c87692d152dd88e40fb82e6a162585cd676f90169a3393792b9548a",
+    "prompt": "Precise color-only edit of this EXISTING logo. Return a clean production logo asset, NOT an illustration. Keep this exact existing wave and two-bubble robotic gripper logo silhouette and proportions. Keep its original approximately 10% empty transparent margins on all sides, entire design fully inside canvas. Change ONLY the existing darkest navy surfaces to solid clean icy white (#edf7ff). Leave the existing vivid blue inner curl and two bubbles blue. Preserve all transparent holes exactly and a transparent canvas. Edges must be smooth, crisp and fully antialiased; absolutely NO speckles, NO distressed edges, NO stray pixels, NO cyan fringe, NO added shapes, NO debris in the transparent holes, NO stroke outlines, NO glow, NO shadows, NO badge or background, NO text. Treat this as professional flat logo recoloring, minimize artistic interpretation. Use one flat white for the formerly navy parts and the original blue gradient for the blue parts. Exact original geometry and clean transparent space are the highest priority."
+  }
+}

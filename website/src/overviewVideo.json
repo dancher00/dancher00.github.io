@@ -1,0 +1,45 @@
+{
+  "src": "./static/publication/overview-v8/WasserMan-overview-v8.mp4?v=2dcdf58c6ba9",
+  "poster": "./static/publication/overview-v8/poster.jpg",
+  "captions": "./static/publication/overview-v8/overview.vtt",
+  "duration_seconds": 108,
+  "master_sha256": "2dcdf58c6ba94d0c1b0aa27834b175688ef83dc8be5e8e26295352595ac5a475",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Two-arm manipulation"
+    },
+    {
+      "start": 17,
+      "title": "Policy and control"
+    },
+    {
+      "start": 22,
+      "title": "Underwater intervention"
+    },
+    {
+      "start": 44,
+      "title": "Contact tasks"
+    },
+    {
+      "start": 59,
+      "title": "Task catalogue"
+    },
+    {
+      "start": 63,
+      "title": "Underwater imaging"
+    },
+    {
+      "start": 71,
+      "title": "Physical effects"
+    },
+    {
+      "start": 89,
+      "title": "Policy learning"
+    },
+    {
+      "start": 97,
+      "title": "VLA / SmolVLA"
+    }
+  ]
+}

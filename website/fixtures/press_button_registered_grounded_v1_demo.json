@@ -1,0 +1,418 @@
+{
+  "task": "Wasman-Underwater-PressButton-Approach-T200-Pool-Registered-Direct",
+  "seed": 42,
+  "controller": "waypoint transit, measured deployment, PPO alignment, measured-depth contact hold",
+  "checkpoint_sha256": "5b6da4e1acc202096df3a0ac371749b456c9fe7ac7120ca187fe5668e9e7807a",
+  "source_sha256": {
+    "scripts/record_policy.py": "1d791c902a3dea1ee4f30504b5f0f20eefc640403ec384938969e31039a94551",
+    "src/wasman/camera_recording.py": "6ea2d8e0b49a6733ff98635b33269da1134acb15574a502657783a74d90ff54b",
+    "src/wasman/assets/robot_cameras.py": "2437c37a296862c9886314e44afb66f0cea65223d2e9caa7d2536d5c1e0788f1",
+    "src/wasman/tasks/underwater_press_button/config/bluerov2_alpha/env.py": "90d9d8e06498c9d63df612abcc7383496e484563d4e6886b464a517d01a7b6d3",
+    "src/wasman/tasks/underwater_press_button/config/bluerov2_alpha/smooth.py": "56512da271e4bf6ffab7bda646132e659f0d4cdfe73efaa74be795e9ccc4d36a",
+    "src/wasman/controllers/approach.py": "6b60c6ba733404f2911edf8a344357fab2b24113b3e9d3111a5fd4f90c73765b",
+    "src/wasman/assets/pool_geometry.py": "e84a57996e2034531192489251dad76e43a0e33ef99a4f90817e930adfc9e86c",
+    "src/wasman/assets/data/environments/standard_pool/pool.usda": "afc89bc2dd7269ae509b741d8b7738e3e961c641980035e4d84bdac3952da489",
+    "src/wasman/tasks/underwater_press_button/config/bluerov2_alpha/pool_cfg.py": "aa3810ff61f8810a4a384dde232aafaae9262b93f81ae7bf6690fa1dbe1151d3"
+  },
+  "moviepy_version": "2.2.1",
+  "automatic_resets": 0,
+  "telemetry_contract_replayed": true,
+  "episodes": 1,
+  "successes": 1,
+  "evaluation_role": "Selected hybrid-controller demonstration, not an end-to-end learned approach",
+  "duration_s": 36.0,
+  "first_success_time_s": 34.233333333333334,
+  "chapters": [
+    {
+      "time": 0.0,
+      "label": "Swim in"
+    },
+    {
+      "time": 9.166666666666666,
+      "label": "Deploy"
+    },
+    {
+      "time": 13.5,
+      "label": "Align"
+    },
+    {
+      "time": 26.4,
+      "label": "Hold"
+    }
+  ],
+  "robot_geometry_version": "registered-v1",
+  "robot_urdf_sha256": "c36c2831c2ba8ac92f914c277a2445f679e2a7c0602509e314e4f2ccaf0ec247",
+  "thruster_positions_m": [
+    [
+      0.088,
+      -0.102,
+      -0.04
+    ],
+    [
+      0.088,
+      0.102,
+      -0.04
+    ],
+    [
+      -0.088,
+      -0.102,
+      -0.04
+    ],
+    [
+      -0.088,
+      0.102,
+      -0.04
+    ],
+    [
+      0.118,
+      -0.215,
+      0.064
+    ],
+    [
+      0.118,
+      0.215,
+      0.064
+    ],
+    [
+      -0.118,
+      -0.215,
+      0.064
+    ],
+    [
+      -0.118,
+      0.215,
+      0.064
+    ]
+  ],
+  "robot_camera_profile": "geometry-v2",
+  "robot_camera_parameters": {
+    "name": "geometry-v2",
+    "base": {
+      "parent_link": "base_link",
+      "position_m": [
+        0.21,
+        0.0,
+        0.067
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.25881904510252074,
+        0.0,
+        0.9659258262890683
+      ]
+    },
+    "gripper": {
+      "parent_link": "alpha_jaw_base_link",
+      "position_m": [
+        0.055,
+        0.0,
+        -0.035
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        -0.8416218600099494,
+        0.0,
+        0.5400672594718117
+      ]
+    },
+    "rationale": "Base uses the pinned upstream camera pivot with an engineering 30-degree downward tilt. Virtual wrist camera behind/beside the palm, aimed between the fingertips. Source-mesh frustum/clearance audit; no hardware calibration or fabricated camera housing.",
+    "focal_length_mm": 12.0,
+    "horizontal_aperture_mm": 20.955,
+    "clipping_range_m": [
+      0.015,
+      30.0
+    ],
+    "orientation_convention": "world",
+    "hardware_calibrated": false,
+    "source_urls": [
+      "https://github.com/Robotic-Decision-Making-Lab/blue/blob/812fea605cd2056ba20fac504f456457594595fb/blue_description/description/bluerov2_heavy_reach/urdf.xacro"
+    ]
+  },
+  "converted_geometry_audit": {
+    "passed": true,
+    "body_bounds_m": [
+      [
+        -0.2339181900024414,
+        -0.28291651606559753,
+        -0.11216132342815399
+      ],
+      [
+        0.21628235280513763,
+        0.28291550278663635,
+        0.14072959125041962
+      ]
+    ],
+    "motors": [
+      {
+        "origin_m": [
+          0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          -0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          -0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    ],
+    "manifest_sha256": "a7484e70f667cf62703c6c44614554d1a0ed22cbac51f41ae0adbb8bc0fc5d3f"
+  },
+  "registered_geometry_audit": {
+    "passed": true,
+    "body_bounds_m": [
+      [
+        -0.2339181900024414,
+        -0.28291651606559753,
+        -0.11216132342815399
+      ],
+      [
+        0.21628235280513763,
+        0.28291550278663635,
+        0.14072959125041962
+      ]
+    ],
+    "motors": [
+      {
+        "origin_m": [
+          0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          -0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          -0.8660254084143602,
+          0.4999999919807375,
+          -5.7811414100328307e-08
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          -0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          -0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          -0.088,
+          0.102,
+          -0.04
+        ],
+        "axis": [
+          0.8660253979058374,
+          0.5000000101820361,
+          -2.263955689585373e-09
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          -0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "origin_m": [
+          -0.118,
+          0.215,
+          0.064
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    ],
+    "manifest_sha256": "a7484e70f667cf62703c6c44614554d1a0ed22cbac51f41ae0adbb8bc0fc5d3f"
+  },
+  "recording_version": "registered-grounded-v1",
+  "observer_encoding": {
+    "frames": 1080,
+    "fps": 30.0,
+    "duration_s": 36.0,
+    "full_decode_verified": true
+  },
+  "video_sha256": "3c2272cd22e0347dd79365dc1ece321ddc8a3d6bff3d4e46b1c5b199e0177781",
+  "trace_sha256": "2c58c86f6354ca2e1fcffc78984e0d6f938a2cc5544abb8d4888c07a287362af",
+  "camera_streams": [
+    {
+      "id": "gripper",
+      "label": "Gripper",
+      "src": "./static/recordings/press-button/registered-grounded-v1/press-button-gripper-sync.mp4",
+      "fps": 30,
+      "width": 256,
+      "height": 256,
+      "frames": 1080,
+      "duration_s": 36.0,
+      "sha256": "7d8c9afa28f9fb28f03510a068eb28881296bc7749b9a77326376238fd0aa888"
+    },
+    {
+      "id": "base",
+      "label": "Base",
+      "src": "./static/recordings/press-button/registered-grounded-v1/press-button-base-sync.mp4",
+      "fps": 30,
+      "width": 256,
+      "height": 256,
+      "frames": 1080,
+      "duration_s": 36.0,
+      "sha256": "1a55c4d8eb374cabf437788c67411e1a25b0e472bd66ac0449dea6fcfd9d7d91"
+    }
+  ],
+  "camera_alignment": {
+    "same_episode": true,
+    "capture": "post-physics, same step as observer",
+    "initial_hold_s": 0.03333333333333333,
+    "observer_trimmed_frames": 1,
+    "max_pair_timestamp_difference_s": 0.0
+  },
+  "video_url": "./static/recordings/press-button/registered-grounded-v1/press-button.mp4",
+  "report_url": "./static/recordings/press-button/registered-grounded-v1/report.json",
+  "trace_url": "./static/recordings/press-button/registered-grounded-v1/trace.json",
+  "presentation": {
+    "version": "grounded-presentation-v1",
+    "source_sha256": "3805bf1682ccdf57a4aec71ce6eaffdc9cfeb9b7ee84e296c9e13d0f286cba33",
+    "changes": [
+      {
+        "prim": "/World/envs/env_0/Panel/Surface",
+        "change": "extend visible slab down",
+        "old_bottom": -0.574999988079071,
+        "new_bottom": -2.0
+      }
+    ],
+    "physics_unchanged": true,
+    "scope": "new presentation takes, not replacement benchmark trials",
+    "physics_before_sha256": "3cc4f161d994994915d0c6fb66c7de35a8733ea503ececf89a86b23528633755",
+    "physics_after_sha256": "3cc4f161d994994915d0c6fb66c7de35a8733ea503ececf89a86b23528633755"
+  }
+}

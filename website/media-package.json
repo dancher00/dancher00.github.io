@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "release_tag": "v0.1.0",
+  "name": "wasserman-website-media-v0.1.0-r9.tar.gz",
+  "bytes": 231912319,
+  "sha256": "d39f06f5e7a5f3d2e09bf0c4379a16eec21f33eab14ec805251c1c4ff391bf3d",
+  "scope": "Compact web media; Full HD overview with canonical /wasserman/ URL, aligned task mosaic, measured physics overlays and corrected HDD footage; report links point to the authoritative public guides",
+  "status": "Publication media package; remote asset verified by pinned size and SHA256"
+}

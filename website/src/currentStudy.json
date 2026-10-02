@@ -1,0 +1,149 @@
+{
+  "source": "research/current-contact-5090/results/training-seeds.csv",
+  "rows": [
+    {
+      "task": "OpenHatch",
+      "training_seed": 17.0,
+      "speed_m_s": 0.0,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.7792724694259343,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 43.0,
+      "speed_m_s": 0.0,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.4852598378170114,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 101.0,
+      "speed_m_s": 0.0,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.678572207345744,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 17.0,
+      "speed_m_s": 0.1,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.805611211703513,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 43.0,
+      "speed_m_s": 0.1,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.5161331382818437,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 101.0,
+      "speed_m_s": 0.1,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.7068351700511597,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 17.0,
+      "speed_m_s": 0.2,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 3.0211770574052426,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 43.0,
+      "speed_m_s": 0.2,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.745200830601206,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "OpenHatch",
+      "training_seed": 101.0,
+      "speed_m_s": 0.2,
+      "success_rate": 1.0,
+      "motor_force_rms_N": 2.9251709646334025,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 17.0,
+      "speed_m_s": 0.0,
+      "success_rate": 0.8,
+      "motor_force_rms_N": 0.7765188735479047,
+      "contact_lost": 0.03333333333333333
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 43.0,
+      "speed_m_s": 0.0,
+      "success_rate": 0.9666666666666667,
+      "motor_force_rms_N": 0.8137302375929354,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 101.0,
+      "speed_m_s": 0.0,
+      "success_rate": 0.8666666666666667,
+      "motor_force_rms_N": 0.8032448490204707,
+      "contact_lost": 0.0
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 17.0,
+      "speed_m_s": 0.1,
+      "success_rate": 0.6333333333333333,
+      "motor_force_rms_N": 1.1969103719547685,
+      "contact_lost": 0.26666666666666666
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 43.0,
+      "speed_m_s": 0.1,
+      "success_rate": 0.6666666666666666,
+      "motor_force_rms_N": 1.1414696334371728,
+      "contact_lost": 0.4
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 101.0,
+      "speed_m_s": 0.1,
+      "success_rate": 0.6333333333333333,
+      "motor_force_rms_N": 1.3157936595956765,
+      "contact_lost": 0.43333333333333335
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 17.0,
+      "speed_m_s": 0.2,
+      "success_rate": 0.5666666666666667,
+      "motor_force_rms_N": 1.6028151241300075,
+      "contact_lost": 0.5333333333333333
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 43.0,
+      "speed_m_s": 0.2,
+      "success_rate": 0.7666666666666667,
+      "motor_force_rms_N": 1.428373520718092,
+      "contact_lost": 0.3
+    },
+    {
+      "task": "RotateValve",
+      "training_seed": 101.0,
+      "speed_m_s": 0.2,
+      "success_rate": 0.7333333333333333,
+      "motor_force_rms_N": 1.480412452752837,
+      "contact_lost": 0.5666666666666667
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+import { expect, test } from "@playwright/test";
+
+test("theme follows the system until chosen, persists and is shared with documentation", async ({ page }) => {
+  const errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+  await page.emulateMedia({ colorScheme: "dark" });
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.emulateMedia({ colorScheme: "light" });
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  expect(await page.evaluate(() => localStorage.getItem("wasserman-theme"))).toBeNull();
+  const toggle = page.getByRole("button", {name: "Switch to dark theme", exact: true});
+  await toggle.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  expect(await page.evaluate(() => localStorage.getItem("wasserman-theme"))).toBe("dark");
+  await page.reload();
+  await expect(page.getByRole("button", {name:"Switch to light theme",exact:true})).toBeVisible();
+  await expect(page.locator('.landing-brand img')).toHaveAttribute("src", "./static/wasserman-logo-dark.svg");
+  await page.goto("/?view=explore");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.getByRole("button", {name:"Switch to light theme",exact:true})).toBeVisible();
+  if (process.env.WM_SITE_TEST_PUBLICATION === "1") {
+    await page.goto("/docs/installation/");
+    await expect(page.locator("body")).toHaveAttribute("data-md-color-scheme", "slate");
+    await expect(page.locator(".md-logo img").first()).toHaveAttribute("src", /wasserman-logo-dark\.svg$/);
+    await page.locator('label[title="Switch to light theme"]').click();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    await expect(page.locator("body")).toHaveAttribute("data-md-color-scheme", "default");
+    await expect(page.locator(".md-logo img").first()).toHaveAttribute("src", /wasserman-logo\.png$/);
+    await page.locator('label[title="Switch to dark theme"]').click();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+    await page.goto("/docs/studies/bimanual-valve-v1-reproduction/");
+    await expect(page.locator("body")).toHaveAttribute("data-md-color-scheme", "slate");
+  } else {
+    await page.goto("/?view=docs");
+    await expect(page.getByRole("button", {name:"Switch to light theme",exact:true})).toBeVisible();
+  }
+  await page.goto("/");
+  await page.getByRole("button", {name:"Switch to light theme",exact:true}).click();
+  await page.emulateMedia({colorScheme:"dark"});
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect(errors).toEqual([]);
+});
+
+test("dark task media and result plots remain visible with readable text", async ({ page }, testInfo) => {
+  await page.emulateMedia({colorScheme:"dark"});
+  await page.goto("/");
+  await expect(page.locator(".landing")).toHaveCSS("background-color", "rgb(14, 37, 54)");
+  await expect(page.locator("h1")).toHaveCSS("color", "rgb(237, 247, 255)");
+  await expect(page.locator('link[rel="icon"]')).toHaveAttribute("href", /wasserman-logo-dark\.svg$/);
+  await expect(page.locator('.landing-teaser img')).toHaveAttribute("src", /project-overview-dark/);
+  const teaser = page.locator('.landing-teaser img');
+  expect(await teaser.evaluate(async (img:HTMLImageElement) => { await img.decode(); return img.naturalWidth; })).toBeGreaterThan(0);
+  await page.screenshot({path:testInfo.outputPath("home-dark.png")});
+  const streams = page.locator(".landing-task-card").first().locator("video");
+  await expect(streams).toHaveCount(3);
+  const sources = await streams.evaluateAll(videos => videos.map(video => video.getAttribute("src")));
+  for (const video of await streams.all()) await expect(video).toHaveCSS("filter", "none");
+  await page.locator("#results").scrollIntoViewIfNeeded();
+  await page.getByRole("tab", {name:/VLA \/ SmolVLA/}).click();
+  await expect(page.locator(".vla-results svg")).toHaveCount(3);
+  for (const text of await page.locator(".vla-results svg text").all()) await expect(text).toHaveCSS("fill", "rgb(237, 247, 255)");
+  await expect(page.locator(".vla-results svg circle").first()).toHaveCSS("fill", "rgb(114, 200, 255)");
+  await expect(page.locator(".vla-results")).toContainText("54.4");
+  await page.screenshot({path:testInfo.outputPath("results-dark.png")});
+  await page.locator("footer").scrollIntoViewIfNeeded();
+  await expect(page.locator("footer")).toHaveCSS("background-color", "rgb(8, 26, 40)");
+  await expect(page.locator("footer p").first()).toHaveCSS("color", "rgb(237, 247, 255)");
+  await expect(page.locator('footer img')).toHaveAttribute("src", "./static/wasserman-logo-dark.svg");
+  await expect(page.getByRole('button', {name:'Copy BibTeX',exact:true})).toHaveCSS("color", "rgb(237, 247, 255)");
+  await page.getByRole("button", {name:"Switch to light theme",exact:true}).click();
+  await expect(page.locator(".landing")).toHaveCSS("background-color", "rgb(255, 255, 255)");
+  await expect(page.locator('.landing-teaser img')).toHaveAttribute("src", /project-overview-light/);
+  await expect(page.locator('footer img')).toHaveAttribute("src", "./static/wasserman-logo.png");
+  expect(await streams.evaluateAll(videos => videos.map(video => video.getAttribute("src")))).toEqual(sources);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});

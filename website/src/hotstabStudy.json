@@ -1,0 +1,35 @@
+{
+  "methods": {
+    "expert": {
+      "successes": 28,
+      "episodes": 30
+    },
+    "ACT": {
+      "successes": 2,
+      "episodes": 30,
+      "failure_categories": {
+        "alignment_or_insertion_incomplete": 5,
+        "dropped_after_lift": 2,
+        "finger_contact_not_released": 17,
+        "grasp_without_lift": 1,
+        "no_verified_grasp": 3,
+        "success": 2
+      }
+    },
+    "DP": {
+      "successes": 0,
+      "episodes": 30,
+      "failure_categories": {
+        "grasp_without_lift": 3,
+        "no_verified_grasp": 27
+      }
+    }
+  },
+  "source_sha256": {
+    "benchmarks/hotstab-v1/results/expert/summary.json": "eac6e7963cf81ca052e23a282e94dc687d9079e3087288b82214d16d184b9804",
+    "benchmarks/hotstab-v1/results/ACT/summary.json": "b332e308297d1bf5ffdf462acb749bf8d4ba2aa8add71e63a4accb09c1ea05db",
+    "benchmarks/hotstab-v1/results/ACT/outcomes.json": "f46744a46b16082cb7978e53400b8e7b46e4b3166fd2770c1f7dcfd4ba52be40",
+    "benchmarks/hotstab-v1/results/DP/summary.json": "7fc13bccc28af18e8543dc2ff3d9b79b76deb1d4bf44d80bb42668d6d762c636",
+    "benchmarks/hotstab-v1/results/DP/outcomes.json": "5dd3d0a12fe1f63beedb8a030e6e2b852df72699461443834e666062d4bf9ae0"
+  }
+}

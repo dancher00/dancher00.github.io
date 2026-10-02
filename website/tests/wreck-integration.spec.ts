@@ -1,0 +1,40 @@
+import { test, expect } from "@playwright/test";
+
+test("shipwreck evidence, clean films and partial local comparisons", async ({page,request}, info) => {
+  const full=await (await request.get("/static/research-core-studies.json")).json();
+  const data=full.complete ? full : await (await request.get("/static/research-core-progress.json")).json();
+  const errors:string[]=[];page.on("pageerror", e=>errors.push(e.message));
+  await page.goto("/?view=explore");
+  await page.locator(".environment-optics > summary").click();
+  const water=page.locator("#wreck-water");
+  await water.scrollIntoViewIfNeeded();
+  await water.getByRole("button",{name:"Cargo release",exact:true}).click();
+  await water.getByRole("button",{name:"Silty",exact:true}).click();
+  await expect(water.locator("video")).toHaveAttribute("src",/rope\/gripper_silt.mp4/);
+  await expect.poll(()=>water.locator("video").evaluate((v:HTMLVideoElement)=>v.readyState)).toBeGreaterThan(0);
+  const videoBox=await water.locator("video").boundingBox();
+  const frameBox=await water.locator(".wreck-water-film").boundingBox();
+  expect(Math.abs(videoBox!.width-frameBox!.width)).toBeLessThan(2);
+  await water.screenshot({path:info.outputPath("water.png")});
+  const media=await request.get("/static/wreck-water/rope/gripper_silt.mp4",{headers:{Range:"bytes=0-31"}});
+  expect([200,206]).toContain(media.status());
+  await page.locator("#results .model-study > summary").click();
+  await page.getByRole("link",{name:"Additional studies and diagnostics ↗"}).click();
+  await page.getByText("Historical v1 results and development diagnostics", { exact: true }).click();
+  const wreck=page.locator("#wreck-results");
+  await expect(wreck.locator('[data-wreck-model="DP"]')).toHaveAttribute("data-successes","1");
+  await wreck.getByRole("button",{name:"HDD recovery · historical v1"}).click();
+  await expect(wreck).toContainText("cabinet-door collision defect");
+  await expect(wreck.locator('[data-wreck-model="DP"]')).toHaveAttribute("data-successes","0");
+  await wreck.screenshot({path:info.outputPath("wreck-results.png")});
+  await page.getByRole("link",{name:"← WasserMan results",exact:true}).click();
+  await page.locator("#results .model-study > summary").click();
+  await page.getByRole("tab",{name:/Policy × control/}).click();
+  await page.getByRole("button",{name:"Action interface",exact:true}).click();
+  const comparison=page.locator(".research-core-study").filter({has:page.locator("summary",{hasText:"Action interface"})});
+
+  await expect(comparison.locator('[data-study="Action interface"]')).toHaveCount(data.records.filter((r:{study:string})=>r.study === "interface").length);
+  if(!data.complete)await expect(comparison).toContainText("Comparison in progress");
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect(errors).toEqual([]);
+});

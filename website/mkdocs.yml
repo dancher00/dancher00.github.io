@@ -1,0 +1,177 @@
+{
+  "site_name": "WasserMan documentation",
+  "site_description": "WasserMan: Benchmark for Underwater Manipulation Policy Learning",
+  "site_url": "https://dancher00.github.io/wasserman/docs/",
+  "docs_dir": ".publication/docs",
+  "site_dir": "dist/docs",
+  "theme": {
+    "name": "material",
+    "logo": "assets/wasserman-logo.png",
+    "favicon": "assets/wasserman-logo.png",
+    "font": false,
+    "palette": [
+      {
+        "scheme": "default",
+        "toggle": {
+          "icon": "material/weather-night",
+          "name": "Switch to dark theme"
+        }
+      },
+      {
+        "scheme": "slate",
+        "toggle": {
+          "icon": "material/weather-sunny",
+          "name": "Switch to light theme"
+        }
+      }
+    ],
+    "features": [
+      "navigation.sections",
+      "navigation.path",
+      "content.code.copy",
+      "search.highlight"
+    ]
+  },
+  "nav": [
+    {
+      "Project website": "https://dancher00.github.io/wasserman/"
+    },
+    {
+      "Get started": [
+        {
+          "Overview": "index.md"
+        },
+        {
+          "Installation": "installation.md"
+        },
+        {
+          "Verify installation": "first-run.md"
+        }
+      ]
+    },
+    {
+      "Use WasserMan": [
+        {
+          "Collect demonstrations": "collect-demonstrations.md"
+        },
+        {
+          "Train ACT, DP or BC": "train-policies.md"
+        },
+        {
+          "Two-arm valve": "studies/bimanual-valve-v1-reproduction.md"
+        },
+        {
+          "Wall Toss demonstration": "wall-toss.md"
+        }
+      ]
+    },
+    {
+      "Configure": [
+        {
+          "Observations and data": "data-and-interfaces.md"
+        },
+        {
+          "Robots, control and physics": "configuration.md"
+        },
+        {
+          "Physical models and assumptions": "physical-model-scope.md"
+        }
+      ]
+    },
+    {
+      "Evaluate and reproduce": [
+        {
+          "Data and models": "revision-v2-packages.md"
+        },
+        {
+          "Benchmark results": "benchmark-results.md"
+        },
+        {
+          "Evaluation protocol and primary results": "revision-v2-analysis.md"
+        },
+        {
+          "Water current study": "current-contact-study.md"
+        },
+        {
+          "Open-core protocol and evidence gates": "revision-v2-protocol.md"
+        },
+        {
+          "Open-core reproduction evidence": "revision-v2-reproduction.md"
+        },
+        {
+          "Historical models and evidence": "artifacts.md"
+        },
+        {
+          "Reproduce from source": "reproduction.md"
+        },
+        {
+          "Second-workstation results": "second-machine-results.md"
+        },
+        {
+          "Studies and limits": "benchmark.md"
+        },
+        {
+          "Two-arm coordinate audit": "studies/bimanual-coordinate-audit.md"
+        },
+        {
+          "Extended task results": "extended-studies.md"
+        },
+        {
+          "Execution sensitivity": "revision-v2-execution-impact.md"
+        },
+        {
+          "Benchmark contribution": "benchmark-positioning.md"
+        },
+        {
+          "Bundled scientific records": "reproduction-archive.md"
+        }
+      ]
+    },
+    {
+      "Reference": [
+        {
+          "Tasks and contracts": "task-reference.md"
+        }
+      ]
+    },
+    {
+      "Contribute": [
+        {
+          "Add a task": "add-task.md"
+        },
+        {
+          "Add a robot or controller": "add-robot-controller.md"
+        },
+        {
+          "Add a policy": "add-policy.md"
+        }
+      ]
+    },
+    {
+      "Help": [
+        {
+          "Troubleshooting": "troubleshooting.md"
+        },
+        {
+          "Build and publish the website": "website-publication.md"
+        }
+      ]
+    }
+  ],
+  "markdown_extensions": [
+    "admonition",
+    "attr_list",
+    "md_in_html",
+    "pymdownx.details",
+    "pymdownx.superfences",
+    "tables",
+    {
+      "toc": {
+        "permalink": true
+      }
+    }
+  ],
+  "extra_css": [
+    "assets/extra.css"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "PressButton": {
+    "external": {
+      "src": "./static/recordings/press-button/registered-grounded-v1/press-button.mp4",
+      "poster": "./static/recordings/press-button/registered-grounded-v1/poster.jpg"
+    },
+    "gripper": {
+      "src": "./static/recordings/press-button/registered-grounded-v1/press-button-gripper-sync.mp4",
+      "poster": "./static/task-demos/posters/PressButton-gripper.png"
+    },
+    "base": {
+      "src": "./static/recordings/press-button/registered-grounded-v1/press-button-base-sync.mp4",
+      "poster": "./static/task-demos/posters/PressButton-base.png"
+    }
+  },
+  "RotateValve": {
+    "external": {
+      "src": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.mp4",
+      "poster": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-demo.png"
+    },
+    "gripper": {
+      "src": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-gripper-sync.mp4",
+      "poster": "./static/task-demos/posters/RotateValve-gripper.png"
+    },
+    "base": {
+      "src": "./static/recordings/rotate-valve/registered-grounded-v1/rotate-valve-base-sync.mp4",
+      "poster": "./static/task-demos/posters/RotateValve-base.png"
+    }
+  },
+  "OpenHatch": {
+    "external": {
+      "src": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.mp4",
+      "poster": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-demo.png"
+    },
+    "gripper": {
+      "src": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-gripper-sync.mp4",
+      "poster": "./static/task-demos/posters/OpenHatch-gripper.png"
+    },
+    "base": {
+      "src": "./static/recordings/open-hatch/registered-grounded-v1/open-hatch-base-sync.mp4",
+      "poster": "./static/task-demos/posters/OpenHatch-base.png"
+    }
+  },
+  "CollectShell": {
+    "external": {
+      "src": "./static/task-demos/collect-shell/overview.mp4",
+      "poster": "./static/task-demos/collect-shell/overview.png"
+    },
+    "base": {
+      "src": "./static/task-demos/collect-shell/base.mp4",
+      "poster": "./static/task-demos/collect-shell/base.png"
+    },
+    "gripper": {
+      "src": "./static/task-demos/collect-shell/gripper.mp4",
+      "poster": "./static/task-demos/collect-shell/gripper.png"
+    }
+  },
+  "PushSlider": {
+    "external": {
+      "src": "./static/task-demos/push-slider/overview.mp4",
+      "poster": "./static/task-demos/push-slider/overview.png"
+    },
+    "base": {
+      "src": "./static/task-demos/push-slider/base.mp4",
+      "poster": "./static/task-demos/push-slider/base.png"
+    },
+    "gripper": {
+      "src": "./static/task-demos/push-slider/gripper.mp4",
+      "poster": "./static/task-demos/push-slider/gripper.png"
+    }
+  },
+  "PullLever": {
+    "external": {
+      "src": "./static/task-demos/pull-lever/overview.mp4",
+      "poster": "./static/task-demos/pull-lever/overview.png"
+    },
+    "base": {
+      "src": "./static/task-demos/pull-lever/base.mp4",
+      "poster": "./static/task-demos/pull-lever/base.png"
+    },
+    "gripper": {
+      "src": "./static/task-demos/pull-lever/gripper.mp4",
+      "poster": "./static/task-demos/pull-lever/gripper.png"
+    }
+  },
+  "CabinRecovery": {
+    "external": {
+      "src": "./static/task-demos/cabin/overview.mp4",
+      "poster": "./static/task-demos/cabin/overview.png"
+    },
+    "base": {
+      "src": "./static/task-demos/cabin/base.mp4",
+      "poster": "./static/task-demos/cabin/base.png"
+    },
+    "gripper": {
+      "src": "./static/task-demos/cabin/gripper.mp4",
+      "poster": "./static/task-demos/cabin/gripper.png"
+    }
+  },
+  "HotStab": {
+    "external": {
+      "src": "./static/task-demos/hotstab/overview.mp4",
+      "poster": "./static/task-demos/hotstab/overview.png",
+      "aspectRatio": 1.5
+    },
+    "base": {
+      "src": "./static/task-demos/hotstab/base.mp4",
+      "poster": "./static/task-demos/hotstab/base.png"
+    },
+    "gripper": {
+      "src": "./static/task-demos/hotstab/gripper.mp4",
+      "poster": "./static/task-demos/hotstab/gripper.png"
+    }
+  },
+  "WallToss": {
+    "external": {
+      "src": "./static/wall-toss-v2/calm/overview.mp4",
+      "poster": "./static/wall-toss-v2/calm/overview.png",
+      "aspectRatio": 1.5
+    },
+    "base": {
+      "src": "./static/wall-toss-v2/calm/base.mp4",
+      "poster": "./static/wall-toss-v2/calm/base.png"
+    },
+    "gripper": {
+      "src": "./static/wall-toss-v2/calm/wrist.mp4",
+      "poster": "./static/wall-toss-v2/calm/wrist.png"
+    }
+  },
+  "CargoRelease": {
+    "external": {
+      "src": "./static/cargo-release/rope_observer.mp4",
+      "poster": "./static/cargo-release/observer.png"
+    },
+    "base": {
+      "src": "./static/wreck-water/rope/base_reference.mp4",
+      "poster": "./static/wreck-water/rope/base_reference.jpg"
+    },
+    "gripper": {
+      "src": "./static/wreck-water/rope/gripper_reference.mp4",
+      "poster": "./static/wreck-water/rope/gripper_reference.jpg"
+    }
+  }
+}

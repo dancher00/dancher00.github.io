@@ -1,0 +1,9 @@
+{
+  "site_url": "https://dancher00.github.io/wasserman/",
+  "repository_url": "https://github.com/dancher00/wasserman",
+  "title": "WasserMan: Benchmark for Underwater Manipulation Policy Learning",
+  "version": "0.1.0",
+  "authors": [],
+  "citation": "@software{wasserman2026,\n  title = {{WasserMan}: Benchmark for Underwater Manipulation Policy Learning},\n  year = {2026},\n  version = {0.1.0},\n  url = {https://github.com/dancher00/wasserman}\n}",
+  "media_repository_url": "https://github.com/dancher00/dancher00.github.io"
+}

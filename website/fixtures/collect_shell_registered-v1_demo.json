@@ -1,0 +1,63 @@
+{
+  "task": "CollectShell",
+  "kind": "Full scripted expert demonstration",
+  "full_task_success": true,
+  "target_shells": 1,
+  "habitat_groups": 6,
+  "seeds": [
+    5100
+  ],
+  "duration_s": 78.53333333333333,
+  "frames": 2356,
+  "fps": 30,
+  "video_size": [
+    1280,
+    720
+  ],
+  "playback_speed": 1,
+  "telemetry_contract_replayed": true,
+  "automatic_resets": 0,
+  "expert_acceptance": [
+    {
+      "run": "supported_release_expert_video",
+      "seeds": [
+        5100
+      ],
+      "successes": 1,
+      "episodes": 1,
+      "resets": 0,
+      "contract_replayed": true,
+      "rollout_sha256": "ca7717e3bd6ba24563f0c50f291ad5437dbd7ba712d8255827bb7ccdf25a986d",
+      "summary_sha256": "e9c732b0b64faa03f7019e09d78e4940c46c727b9264345e7701a88bf1d80492"
+    },
+    {
+      "run": "supported_release_acceptance9",
+      "seeds": [
+        5210,
+        5211,
+        5212,
+        5213,
+        5214,
+        5215,
+        5216,
+        5217,
+        42
+      ],
+      "successes": 9,
+      "episodes": 9,
+      "resets": 0,
+      "contract_replayed": true,
+      "rollout_sha256": "86259e7691ed7569955bd92866b77f3b0d1bc8c8463db9762a649cc31adbe7d4",
+      "summary_sha256": "e66b9ac568e5263cc33df0a0e328bc920eb3d53074dd4a23642a1735bcd09fed"
+    }
+  ],
+  "success_time_s": 78.53333333333333,
+  "video_url": "./static/recordings/collect-shell/registered-v1/expert.mp4",
+  "poster_url": "./static/recordings/collect-shell/registered-v1/poster.png",
+  "video_sha256": "c511fe996bc6f0b16885baa772fcc262da1ff86c04ec2e7138206dc961101f5f",
+  "poster_sha256": "db2b283ee627200da9e9626b0443af6091538f4a40bff90df40c44fea093bfae",
+  "source_trace_sha256": "ca7717e3bd6ba24563f0c50f291ad5437dbd7ba712d8255827bb7ccdf25a986d",
+  "source_summary_sha256": "e9c732b0b64faa03f7019e09d78e4940c46c727b9264345e7701a88bf1d80492",
+  "verification_sha256": "2bbc1ea6f387b8dab6105fae3d9ae6985a791e1278f25befd32d24b3220d2ae5",
+  "note": "Expert demonstration, not a learned-model benchmark. Entire episode, no overlays or speed change."
+}

@@ -1,0 +1,117 @@
+{
+  "test_seeds": [
+    2500,
+    2501,
+    2502,
+    2503,
+    2504,
+    2505,
+    2506,
+    2507,
+    2508,
+    2509,
+    2510,
+    2511,
+    2512,
+    2513,
+    2514,
+    2515,
+    2516,
+    2517,
+    2518,
+    2519,
+    2520,
+    2521,
+    2522,
+    2523,
+    2524,
+    2525,
+    2526,
+    2527,
+    2528,
+    2529
+  ],
+  "methods": [
+    {
+      "model": "Expert",
+      "successes": 30,
+      "episodes": 30,
+      "rate": 1.0,
+      "exact_binomial_95_ci": [
+        0.8842966917779725,
+        1.0
+      ],
+      "median_success_time_s": 27.6,
+      "max_success_time_s": 34.86666666666667,
+      "resets": 0,
+      "seed42_vector_batch_success": true,
+      "seed42_vector_batch_time_s": 27.333333333333332,
+      "initial_pose_max_error_vs_expert": 0.0,
+      "raw_report": "/home/aida/wasman/artifacts/valve_visual_20260923/expert_test31/summary.json"
+    },
+    {
+      "model": "ACT",
+      "successes": 30,
+      "episodes": 30,
+      "rate": 1.0,
+      "exact_binomial_95_ci": [
+        0.8842966917779725,
+        1.0
+      ],
+      "median_success_time_s": 33.03333333333333,
+      "max_success_time_s": 48.8,
+      "resets": 0,
+      "seed42_vector_batch_success": true,
+      "seed42_vector_batch_time_s": 51.93333333333333,
+      "initial_pose_max_error_vs_expert": 0.0,
+      "raw_report": "/home/aida/wasman/artifacts/valve_visual_20260923/act_test31/summary.json",
+      "bilateral_contact_episodes": 30,
+      "seed42_single_environment": {
+        "successes": 1,
+        "episodes": 1,
+        "time_s": 31.866666666666667,
+        "resets": 0
+      }
+    },
+    {
+      "model": "DP",
+      "successes": 30,
+      "episodes": 30,
+      "rate": 1.0,
+      "exact_binomial_95_ci": [
+        0.8842966917779725,
+        1.0
+      ],
+      "median_success_time_s": 28.03333333333333,
+      "max_success_time_s": 36.1,
+      "resets": 0,
+      "seed42_vector_batch_success": true,
+      "seed42_vector_batch_time_s": 28.0,
+      "initial_pose_max_error_vs_expert": 0.0,
+      "raw_report": "/home/aida/wasman/artifacts/valve_visual_20260923/dp_test31/summary.json",
+      "bilateral_contact_episodes": 30,
+      "seed42_single_environment": {
+        "successes": 1,
+        "episodes": 1,
+        "time_s": 28.53333333333333,
+        "resets": 0
+      }
+    }
+  ],
+  "final_methods_pending": [],
+  "conditions": {
+    "success": "signed angle >=170 degrees",
+    "horizon_s": 75,
+    "evaluated_window_s": 74.66666666666667,
+    "physics_hz": 240,
+    "control_hz": 30,
+    "policy_hz": 20,
+    "water": "calm",
+    "valve_position": "fixed Y=-.10, Z=.78",
+    "geometry": "registered-v1",
+    "camera": "geometry-v2",
+    "model_training_seeds": 1
+  },
+  "interpretation": "Intervals describe reset variability for one trained model; not variability across training runs.",
+  "amb_comparison": "Different robot, physics, raw-data rate and horizon; not a direct AM-Bench score reproduction."
+}
