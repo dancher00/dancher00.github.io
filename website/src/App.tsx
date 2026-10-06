@@ -489,8 +489,8 @@ function App() {
         </section>
         <section className="section-block page-shell citation">
           <div>
-            <h2>Project reference</h2>
-            <p>Development software reference, not a paper citation.</p>
+            <h2>Paper citation</h2>
+            <p>Please cite the <a href={publication.paper_url}>WasserMan paper on arXiv</a>.</p>
             <button className="button" onClick={copy}>
               Copy BibTeX
             </button>

@@ -32,7 +32,8 @@ test("project metadata, citation and first-run links work in the prepared site",
   await page.getByRole("button", { name: "Copy BibTeX", exact: true }).click();
   await expect(page.locator("#citation [role=status]")).toHaveText("Copied");
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(publication.citation);
-  await expect(page.locator("#citation code")).not.toContainText("author =");
+  await expect(page.locator("#citation code")).toContainText("author = {Belov, Danil and Erkhov, Artem and Parsegov, Sergei and Osinenko, Pavel}");
+  await expect(page.locator("#citation code")).toContainText("eprint = {2610.04536}");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   for (const href of await page.locator("#get-started a").evaluateAll(links => links.map(link => link.getAttribute("href")!))) {
     await page.goto(href);

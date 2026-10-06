@@ -39,12 +39,12 @@ function DeferredSection({ children, id }: { children: ReactNode; id?: string })
 function Citation() {
   const [status, setStatus] = useState("");
   return <section className="landing-width landing-section" id="citation" aria-labelledby="citation-title">
-    <div className="landing-heading"><h2 id="citation-title">Citation</h2><p>Software citation for this benchmark. The accompanying manuscript is available above.</p></div>
-    <div className="landing-citation"><div><span>BibTeX · software v{publication.version}</span><button type="button" onClick={async () => {
+    <div className="landing-heading"><h2 id="citation-title">Citation</h2><p>Please cite the <a href={publication.paper_url}>WasserMan paper on arXiv</a>.</p></div>
+    <div className="landing-citation"><div><span>BibTeX · arXiv:2610.04536</span><button type="button" onClick={async () => {
       try { await navigator.clipboard.writeText(publication.citation); setStatus("Copied"); }
       catch { setStatus("Select the text below to copy the citation."); }
     }}>Copy BibTeX</button></div><pre><code>{publication.citation}</code></pre><p role="status">{status}</p></div>
-    <p className="landing-note"><a href={`${publication.repository_url}/blob/main/CITATION.cff`}>Machine-readable software citation ↗</a></p>
+    <p className="landing-note"><a href={`${publication.repository_url}/blob/main/CITATION.cff`}>Machine-readable citation ↗</a></p>
   </section>;
 }
 
@@ -96,7 +96,7 @@ export default function LandingPage() {
         <p className="landing-kicker">Simulation benchmark · Isaac Lab</p>
         <h1><strong>WasserMan:</strong><span>Benchmark for <em>Underwater Manipulation</em> Policy Learning</span></h1>
         <p>A shared testbed for visual policy learning, floating-base control and underwater contact.</p>
-        <div className="landing-links"><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
+        <div className="landing-links"><a className="landing-button" href={publication.paper_url} target="_blank" rel="noreferrer">Paper (arXiv) ↗</a><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
       </section>
       <OverviewVideo />
       <figure className="landing-width landing-teaser"><ThemedImage src={overview} darkSrc={overviewDark} loading="lazy" decoding="async" alt="WasserMan overview: two native robots, cooperative two-arm valve manipulation, control, task environments, policies and underwater disturbances"/><figcaption>Overview of WasserMan · task tiles and the two-arm inset show recorded simulation views. </figcaption></figure>
