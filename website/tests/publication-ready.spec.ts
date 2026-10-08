@@ -35,7 +35,11 @@ test("project metadata, citation and first-run links work in the prepared site",
   await expect(page.locator("#citation code")).toContainText("author = {Belov, Danil and Erkhov, Artem and Parsegov, Sergei and Osinenko, Pavel}");
   await expect(page.locator("#citation code")).toContainText("eprint = {2610.04536}");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  for (const href of await page.locator("#get-started a").evaluateAll(links => links.map(link => link.getAttribute("href")!))) {
+  await expect(page.locator('.landing-links a', { hasText: 'Dataset (HF)' })).toHaveAttribute('href', publication.dataset_url);
+  await expect(page.locator('#get-started a', { hasText: 'Download expert trajectories' })).toHaveAttribute('href', publication.dataset_url);
+  const guideLinks = page.locator("#get-started a[href^='./docs/']");
+  await expect(guideLinks).toHaveCount(2);
+  for (const href of await guideLinks.evaluateAll(links => links.map(link => link.getAttribute("href")!))) {
     await page.goto(href);
     await expect(page.locator("article h1")).toHaveCount(1);
   }
