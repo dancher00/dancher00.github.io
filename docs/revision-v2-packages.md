@@ -1,5 +1,18 @@
 # Data and models
 
+## Public demonstration dataset
+
+The original six-task demonstrations are available on
+[Hugging Face: dancher00/WasserMan](https://huggingface.co/datasets/dancher00/WasserMan).
+The dataset retains all 504 collection attempts and the 480 selected demonstrations
+(76 training and 4 validation episodes per task), including lossless RGB,
+commands, measured state, physical traces and original audit records.
+The download is 35.69 GiB; one-task and one-episode downloads are supported.
+Follow the dataset card for checksummed download and restoration.
+This publication contains demonstrations; fitted models and complete policy
+evaluation packages have separate availability.
+
+
 WasserMan 0.1.0 provides the runtime, task experts, collection tools, dataset audits,
 ACT/DP/BC trainers and evaluation contracts. Installation and first run require
 no pretrained visual-policy download.
@@ -24,9 +37,9 @@ provides the films and paper in its 0.1.0 release.
 
 ## Precomputed campaign packages
 
-The canonical six-task datasets, 60 fitted models and complete raw evaluation
-packages remain in the private research archive. They are not downloadable from
-the public 0.1.0 code release. The recorded tables describe that retained campaign;
+The 60 fitted models and complete raw evaluation packages remain in the private
+research archive. They are not downloadable from the public 0.1.0 code release.
+The six-task demonstrations are now available separately on Hugging Face above. The recorded tables describe that retained campaign;
 a newly generated dataset or training run is a new reproduction, not an identical
 copy of the original artifacts. Historical CAD and task-specific studies use
 separate source and observation contracts.

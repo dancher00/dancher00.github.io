@@ -96,7 +96,7 @@ export default function LandingPage() {
         <p className="landing-kicker">Simulation benchmark · Isaac Lab</p>
         <h1><strong>WasserMan:</strong><span>Benchmark for <em>Underwater Manipulation</em> Policy Learning</span></h1>
         <p>A shared testbed for visual policy learning, floating-base control and underwater contact.</p>
-        <div className="landing-links"><a className="landing-button" href={publication.paper_url} target="_blank" rel="noreferrer">Paper (arXiv) ↗</a><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
+        <div className="landing-links"><a className="landing-button" href={publication.paper_url} target="_blank" rel="noreferrer">Paper (arXiv) ↗</a><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={publication.dataset_url}>Dataset (HF) ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
       </section>
       <OverviewVideo />
       <figure className="landing-width landing-teaser"><ThemedImage src={overview} darkSrc={overviewDark} loading="lazy" decoding="async" alt="WasserMan overview: two native robots, cooperative two-arm valve manipulation, control, task environments, policies and underwater disturbances"/><figcaption>Overview of WasserMan · task tiles and the two-arm inset show recorded simulation views. </figcaption></figure>
@@ -148,7 +148,7 @@ export default function LandingPage() {
         <div className="landing-heading"><h2 id="get-started-title">Use WasserMan</h2><p>Install the open procedural core, collect demonstrations and train or evaluate a policy with its recorded contract.</p></div>
         <div className="landing-start-grid">
           <a href={docsHref("installation")}><span>Installation</span><h3>Set up the simulator ↗</h3><p>Linux, Python 3.12 and a compatible NVIDIA GPU. Procedural assets require no restricted robot CAD.</p></a>
-          <a href={docsHref("revision-v2-packages")}><span>Data & models</span><h3>Generate data and models ↗</h3><p>Collect audited demonstrations, train reference policies and inspect artifact availability.</p></a>
+          <a href={publication.dataset_url}><span>Dataset · Hugging Face</span><h3>Download expert trajectories ↗</h3><p>480 selected demonstrations across six tasks, lossless RGB, fixed train/validation splits and verified hashes.</p></a>
           <a href={docsHref("first-run")}><span>First run</span><h3>Check policy inference ↗</h3><p>A short bounded run checks installation. The full protocol uses 30 evaluation resets per training seed.</p></a>
         </div>
       </section>

@@ -6,5 +6,6 @@
   "authors": [],
   "citation": "@misc{belov2026wasserman,\n  title = {{WasserMan}: Benchmark for Underwater Manipulation Policy Learning},\n  author = {Belov, Danil and Erkhov, Artem and Parsegov, Sergei and Osinenko, Pavel},\n  year = {2026},\n  eprint = {2610.04536},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.RO},\n  doi = {10.48550/arXiv.2610.04536},\n  url = {https://arxiv.org/abs/2610.04536}\n}",
   "media_repository_url": "https://github.com/dancher00/dancher00.github.io",
-  "paper_url": "https://arxiv.org/abs/2610.04536"
+  "paper_url": "https://arxiv.org/abs/2610.04536",
+  "dataset_url": "https://huggingface.co/datasets/dancher00/WasserMan"
 }
