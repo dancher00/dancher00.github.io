@@ -15,6 +15,7 @@ import { OverviewVideo } from "./OverviewVideo";
 const CurrentResults = lazy(() => import("./CurrentResults").then(module => ({ default: module.CurrentResults })));
 const EffectsDemos = lazy(() => import("./EffectsDemos").then(module => ({ default: module.EffectsDemos })));
 const TaskVariation = lazy(() => import("./TaskVariation").then(module => ({ default: module.TaskVariation })));
+const VisualTransferStudy = lazy(() => import("./VisualTransferStudy").then(module => ({ default: module.VisualTransferStudy })));
 
 function DeferredSection({ children, id }: { children: ReactNode; id?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -96,7 +97,7 @@ export default function LandingPage() {
         <p className="landing-kicker">Simulation benchmark · Isaac Lab</p>
         <h1><strong>WasserMan:</strong><span>Benchmark for <em>Underwater Manipulation</em> Policy Learning</span></h1>
         <p>A shared testbed for visual policy learning, floating-base control and underwater contact.</p>
-        <div className="landing-links"><a className="landing-button" href={publication.paper_url} target="_blank" rel="noreferrer">Paper (arXiv) ↗</a><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={publication.dataset_url}>Dataset (HF) ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
+        <div className="landing-links"><a className="landing-button" href={publication.paper_url} target="_blank" rel="noreferrer">Paper (arXiv) ↗</a><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={publication.dataset_url}>Dataset (HF) ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#new-experiments">New experiments ↓</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
       </section>
       <OverviewVideo />
       <figure className="landing-width landing-teaser"><ThemedImage src={overview} darkSrc={overviewDark} loading="lazy" decoding="async" alt="WasserMan overview: two native robots, cooperative two-arm valve manipulation, control, task environments, policies and underwater disturbances"/><figcaption>Overview of WasserMan · task tiles and the two-arm inset show recorded simulation views. </figcaption></figure>
@@ -139,6 +140,7 @@ export default function LandingPage() {
         <p className="landing-note">Buoyancy, relative-water forces and bounded thruster response; optional proximity effects. <a href={docsHref("physical-model-scope")}>Model scope and assumptions ↗</a></p>
       </section>
       <DeferredSection id="results"><CurrentResults /></DeferredSection>
+      <DeferredSection id="new-experiments"><VisualTransferStudy /></DeferredSection>
       <section className="landing-section landing-width" id="abstract">
         <div className="landing-heading"><h2>Abstract</h2></div>
         <div className="landing-abstract"><p>WasserMan is, to our knowledge, the first multi-task simulation benchmark for visuomotor learning of floating-base underwater contact manipulation. It includes ten implemented task environments, learned-policy results on nine tasks, two native vehicle–arm platforms and a custom bimanual configuration.</p><p>A shared six-task evaluation compares ACT, diffusion policy and chunked behavioral cloning over three independent trainings per configuration. SmolVLA adds a vision–language–action baseline on three tasks, evaluated over three training seeds and 270 test episodes. Across 3,780 episodes in the shared learning and intervention studies, controlled comparisons show that successful expert replay does not guarantee comparable learned completion across interfaces, integral control can determine task completion, and water current can change both completion and actuator effort.</p><p>The suite provides versioned task contracts, demonstrations, trained models and per-episode evidence. Paired expert-controlled platform studies achieve 30/30 for each robot on PressButton and 30/30 in each of three twin-arm RotateValve modes. These studies retain their task and asset protocols.</p></div>

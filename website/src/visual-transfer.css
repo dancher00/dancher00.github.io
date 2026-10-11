@@ -1,0 +1,13 @@
+.visual-transfer-controls { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; margin-bottom: 24px; }
+.visual-transfer-chart { max-width: 860px; }
+.visual-transfer-chart h3 { font-size: 21px; margin: 0 0 18px; }
+.visual-transfer-chart svg { width: 100%; max-width: 760px; }
+.visual-transfer-table { max-width: 100%; overflow-x: auto; }
+.visual-transfer table { width: 100%; min-width: 580px; }
+.visual-transfer caption { text-align: left; padding: 16px 0; font-size: 14px; }
+.visual-transfer-downloads { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; }
+.visual-transfer-resources { margin-top: 48px; }
+@media (max-width: 600px) {
+  .visual-transfer-chart { overflow-x: auto; }
+  .visual-transfer-chart svg { min-width: 440px; }
+}

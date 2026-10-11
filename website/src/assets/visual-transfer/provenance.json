@@ -1,0 +1,322 @@
+{
+  "scope": "Published visual study summary and per-episode audit outcomes, not raw evaluation traces.",
+  "source_figure_manifest": {
+    "scope": "Complete visual study only; other campaign studies remain pending",
+    "complete_visual_study": true,
+    "cohorts": 72,
+    "episodes": 2160,
+    "training_seeds": [
+      17,
+      43,
+      101
+    ],
+    "resets_per_training_run": 30,
+    "success_scope": "Unchanged full-horizon physical task predicates",
+    "uncertainty_scope": "Descriptive crossed training-run/reset intervals; three independent retrainings per variant",
+    "source": "/home/aida/wasman/work/artifacts/review-v3-20261008/analysis-progress.json",
+    "source_sha256": "b5a684e7827b4e5201663d7d2d842cc1407089f916dbc06abb5c5dfce8dcc7a7",
+    "generator_sha256": "3c767650584a94ef79e8d5a64e711a843a5f9dd5784fdd9fd0aa7914cdb5c813",
+    "cohort_reports": [
+      {
+        "folder": "visual/RotateValve-DP-17-native-light1.0",
+        "sha256": "748a3f7c8a73577de1a56d6e93806e9815bf95049f1f20a7f832e0d76e819f1f"
+      },
+      {
+        "folder": "visual/RotateValve-DP-17-clear-light1.0",
+        "sha256": "7303da8f2a18674aa34f55d769b3b47bfcc72b39911fe1b90879aeeca101d7bb"
+      },
+      {
+        "folder": "visual/RotateValve-DP-17-coastal-light1.0",
+        "sha256": "166fbe21b52cad39d2be128c0833f689e0e508129d5dc4a032ecc0b591655022"
+      },
+      {
+        "folder": "visual/RotateValve-DP-17-harbor-light1.0",
+        "sha256": "318d3f2fe9aa48eafa52f0c12ab41fd6553f7a327c8cfff47c5b311ffe59a47c"
+      },
+      {
+        "folder": "visual/RotateValve-DP-17-native-light0.5",
+        "sha256": "bc5addb92044f86f4553e35f1a909a650512d5d94807995187011eddfbb34d39"
+      },
+      {
+        "folder": "visual/RotateValve-DP-17-native-light1.5",
+        "sha256": "13fe5b454cb58938b3307e0715c89af30ff0985679fec41aeb9207b34662bde1"
+      },
+      {
+        "folder": "visual/RotateValve-DP-43-native-light1.0",
+        "sha256": "5993d0d89874139184c850bee03ce5fa62e01e993a3fb0b9a6c65726040e44d5"
+      },
+      {
+        "folder": "visual/RotateValve-DP-43-clear-light1.0",
+        "sha256": "bc838c468b4551dfe1241527bd916d2a192daf6604a8e3b2dd46a36d7d3ed6ac"
+      },
+      {
+        "folder": "visual/RotateValve-DP-43-coastal-light1.0",
+        "sha256": "cdab2cf542a4f9cd0d7757c34cd1047275715cf5574599ceaeae7e621aac01fa"
+      },
+      {
+        "folder": "visual/RotateValve-DP-43-harbor-light1.0",
+        "sha256": "68ec865c838bc935aa2df778d53d6cb8153c936bae8eb491706bb2db0d591642"
+      },
+      {
+        "folder": "visual/RotateValve-DP-43-native-light0.5",
+        "sha256": "187ba2cebd26127ab670c9b15411f23657d185fcfc793409da05f8185ac539ad"
+      },
+      {
+        "folder": "visual/RotateValve-DP-43-native-light1.5",
+        "sha256": "aef7039c4b69371bb7ebdf07d99195210db77fc758a1d895cf2f84f1153ad531"
+      },
+      {
+        "folder": "visual/RotateValve-DP-101-native-light1.0",
+        "sha256": "0311425404ea973d4287771e43e637e50a06826367cecb8ddff4b0fc06956e14"
+      },
+      {
+        "folder": "visual/RotateValve-DP-101-clear-light1.0",
+        "sha256": "2602272c51ed8d4049a4ec96370f8c9254705bfb2517fa55cdaa8ad1c57ba942"
+      },
+      {
+        "folder": "visual/RotateValve-DP-101-coastal-light1.0",
+        "sha256": "a3ffa76c29afce2cb1af1b5c0286c68bfa60900bdcd2686ab8ea5548cda90de3"
+      },
+      {
+        "folder": "visual/RotateValve-DP-101-harbor-light1.0",
+        "sha256": "c93f37b662b549ad94ba5d9e83b9a503f82623612aa058689b9c335c6f919a1e"
+      },
+      {
+        "folder": "visual/RotateValve-DP-101-native-light0.5",
+        "sha256": "418c4fabf1902d27dff01f17e9f947637f9b48792066343c2eb021b8685be0d1"
+      },
+      {
+        "folder": "visual/RotateValve-DP-101-native-light1.5",
+        "sha256": "50fb97e80340e06f5b3c425867695da6ba2e011c7c64a0bc2f2e0c5a9bae4b41"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-17-native-light1.0",
+        "sha256": "9b4f3b8f08e13157629d8b3bd5bea2df45c0c467685b18bb445a3b655aca5988"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-17-clear-light1.0",
+        "sha256": "e1e5d2704c6cc2345f0a2f88a4a456d4d4df55e9a44325094fc250e865b2fc54"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-17-coastal-light1.0",
+        "sha256": "af93acb6aafbe1f6e3900508d28827e9fa14fc33e50be6eca0bc0a0e847bac2e"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-17-harbor-light1.0",
+        "sha256": "f8a2bf7f4cda4424aed366381efa5c002e458df9d3e9a6d6780fe29c58b7da70"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-17-native-light0.5",
+        "sha256": "a320b4392e6bfdaf64fcc927091281497c03d3624f1fbded45cdce7bc1c1d200"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-17-native-light1.5",
+        "sha256": "a52e717420e05a0b55a261033c1d7e0dd6312057e86e9aaa6d6ff0f5ffea7d75"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-43-native-light1.0",
+        "sha256": "ea9dfd6d751a94b881463555d69904a92a7736ba11e64915a239404b5c87aadd"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-43-clear-light1.0",
+        "sha256": "fbcff634eacacaf4937b67b9a231cf63020ca35ad611a5f69b036d90812c8d47"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-43-coastal-light1.0",
+        "sha256": "43ad529cf58efb48b76df7b8b95ddd38a8f18f2bad25f2767cffdedb7b888280"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-43-harbor-light1.0",
+        "sha256": "2ea83aa6fbc5779f2b98d314f63fc65afa60b706594b0b76710114576be66629"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-43-native-light0.5",
+        "sha256": "86d3cf400f4f4c20b9701ee9c1163bae82c9df3b01a5e80ecf8f6ce06085f57b"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-43-native-light1.5",
+        "sha256": "9d732370806be00eebd440b6e5b37495a61567ddbb6d2acff94d4c27a26ba36b"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-101-native-light1.0",
+        "sha256": "6eeb88e3859d34737e92e382f9e2f679c651c56cd603b960cf5de5a7d56b1a8d"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-101-clear-light1.0",
+        "sha256": "ffeadcb95891bfa5dbe2238a98eed87909f9bfbdab66530129c49e02741dce6a"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-101-coastal-light1.0",
+        "sha256": "33887dff952263b99802b39928d93f0412d3c1ac024744f7d2b0d1c9db7d0e1f"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-101-harbor-light1.0",
+        "sha256": "86c4b522c8ce53fac625099b9e114cc7445b64bea18eb40dd687509c207fd8b8"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-101-native-light0.5",
+        "sha256": "f66c90abe012518085bc56093a07ad8f58f39b3c7abbb72c2ae64c1fbc9af230"
+      },
+      {
+        "folder": "visual/RotateValve-ACT-101-native-light1.5",
+        "sha256": "a06455855ab6eebe6d84dc135430a8a9d39b902527a37f55ec7e8a84159a50b6"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-17-native-light1.0",
+        "sha256": "7d598e1e6fd96a29e0498cfd398db64d701f606aaf2fb3aa11130695647fb890"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-17-clear-light1.0",
+        "sha256": "3f996550b6737270899477c97a5577a17fc123762457fa2af045d20aaae92f94"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-17-coastal-light1.0",
+        "sha256": "698b51c1a76f7d372dcd4983901f2b1c6f6f664a80cb36fd931a74bc2a65309f"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-17-harbor-light1.0",
+        "sha256": "25442ff8ab34220cd216eb2ec04977e9b4470c60cbd8aac84b22abace2f10397"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-17-native-light0.5",
+        "sha256": "55f5dd43816fa7c5ba6b27120c93225ff2d5ea8403334ffd071ac8b9f396322e"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-17-native-light1.5",
+        "sha256": "020ecd90fa24ca94c5dd88d04c414c96567bd6dfccd2f28b8d85a82a40fc37e4"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-43-native-light1.0",
+        "sha256": "5337119fc8a6eac09733f5b3cfcd57cc8f2ca0cfca15ab58344e86e40e40cb28"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-43-clear-light1.0",
+        "sha256": "2f4753e70d4e65854729ee127eea763ec963d392c90b6288c6c96dc627736015"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-43-coastal-light1.0",
+        "sha256": "4b2bd13aad8160313a3ed3582e43f655de1a4f739e31837b9878c793f3969df2"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-43-harbor-light1.0",
+        "sha256": "86b4ce5e994ac5839b7ae53c00d5bb6e5c2602d150979b3a3b922968130c7047"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-43-native-light0.5",
+        "sha256": "460924e1028ab33472e6b4c22200dc5d34885ae0f6341d96b969a214955d59d8"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-43-native-light1.5",
+        "sha256": "09344c260b98d98568bae48312550bbde5c15b1cae8c2ab38c72ef889f3824e3"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-101-native-light1.0",
+        "sha256": "c74f6c35a5156b3702a8d81ba7ae6dc380d00663f0440ea27f5097e1ff2d44ce"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-101-clear-light1.0",
+        "sha256": "863106e816b0bcca1f69d72bfb7a09b6994776ccaaad34bc95659d9021fa8a17"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-101-coastal-light1.0",
+        "sha256": "89dc367db238cdbd1092787bf74353a04a2062fd888cc3d5563cf9ed5b7bc21e"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-101-harbor-light1.0",
+        "sha256": "347baa96ce3a6838276715f4168429e48e4f63eb2b9e466387d5cd8a3cc912a3"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-101-native-light0.5",
+        "sha256": "9a10ca3ddcff831b8ceca2c2fb6127691f741d39528159f0d10fe5fc7997cffe"
+      },
+      {
+        "folder": "visual/OpenHatch-DP-101-native-light1.5",
+        "sha256": "c1310256990ff26d6187b74d5a93b920206011f464b61278cf3bc4d03c752e36"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-17-native-light1.0",
+        "sha256": "12221b76e3c4a5363a4647f202cd05d2a40269073e4ccaf649d8c5668b188d86"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-17-clear-light1.0",
+        "sha256": "d4e95b1130644447293e0304d91cd14de3e35c60a1ae919885cedada77eaffa8"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-17-coastal-light1.0",
+        "sha256": "dba3a2ed4ab2cc4041aaf1b11672a1600443fc3df00f018dafec07e6eff86d6b"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-17-harbor-light1.0",
+        "sha256": "edc19993693643d7c25875bab787f5e942a53f6eadeba6250f7bc89ab8579126"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-17-native-light0.5",
+        "sha256": "d92e0b7a1b34c7989770fc2157e45c01973da254dc536153e0340d0f1bd9e4af"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-17-native-light1.5",
+        "sha256": "25c53414f62bfe5c4397becf49e9eaadbbdc1f624e6b3b814ee0daf7f73df6f2"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-43-native-light1.0",
+        "sha256": "9a2be7c47246149b2da821680a630bf3eb9fef8e28bcdce5747ac2a1edd196bc"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-43-clear-light1.0",
+        "sha256": "e9a0cbccd6dcd3e56c9efd92f89502217bfd403d8a74c43e879542e243928c35"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-43-coastal-light1.0",
+        "sha256": "70028cc94dbccd9fe3b505387e5829ec37c024bbd37d3d14b98a920a7a62aa17"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-43-harbor-light1.0",
+        "sha256": "eab868a8eaa88ecdd9f5b6c9189869fe79142dfde1f018a3e8cd12ad06bd3935"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-43-native-light0.5",
+        "sha256": "ef75b38529ebd78277f834747b0a6fdc1bc7b96aa89477d6ec4ef5688f2aa89f"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-43-native-light1.5",
+        "sha256": "beb1194f3a5d93f2e9698a28cb3ebcaf033a6215c110140c9f5f5b9590eef2c0"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-101-native-light1.0",
+        "sha256": "5564f89319a6edbacb8af5ced11bd2a2e05898382e0b12eace33770abdf082c8"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-101-clear-light1.0",
+        "sha256": "a2c5fbbe7d39ce2e20856e40d9207257cdc552558b02e586a59369a4e019a0d3"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-101-coastal-light1.0",
+        "sha256": "1677c1267e952a39d58bb9d866df2470819809deb58323df722a6162f1ea50bf"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-101-harbor-light1.0",
+        "sha256": "2eae0ca2696cbcc100106ea80b11ca4858af08be668f708dad4ceca160b5cd3b"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-101-native-light0.5",
+        "sha256": "23daa68a14ac697c1c1199cb20bde6deee8b35b3ff6614308cd0b6feead738b8"
+      },
+      {
+        "folder": "visual/OpenHatch-ACT-101-native-light1.5",
+        "sha256": "f5276289afcf94b91e9f7d0ffd697ee0dc82bc26772d1e33af70e7467ff18c66"
+      }
+    ],
+    "outputs": {
+      "data/visual-transfer.csv": "8f9cb4541930ad69d7ab5cbee75e4d03d8dbc23d48bbbf0f52f63060df6fa412",
+      "figures/visual-transfer.pdf": "cfee120e05246ad344207dc503d93d4b63b6e61bc310a0d5a77fd55191350857",
+      "figures/visual-transfer.png": "4ad3b188cf3fd800c050b52e7a1801bf93f0249578a90ae1017bfdbd7cb5809a"
+    },
+    "source_snapshot": "/home/aida/wasman/work/artifacts/review-v3-20261008/analysis-progress-before-recovery-v6.json"
+  },
+  "outputs": {
+    "audit.json": "359d52f83a9dcdd1a11fb27d3638f78d795c51fa291d76154a9adde1c3ac8455",
+    "results.csv": "8f9cb4541930ad69d7ab5cbee75e4d03d8dbc23d48bbbf0f52f63060df6fa412",
+    "results.json": "debfce22d85bc0c3449c5b4bda47361b1c3a7960905309c966925aa08d870624"
+  },
+  "crosschecked_against_complete_190_cohort_audit": true
+}

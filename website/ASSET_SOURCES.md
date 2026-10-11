@@ -75,3 +75,16 @@ streams in the selected presentation copies. Raw takes are retained separately.
 
 The embodiments section shows the custom twin-Oberon Rex configuration during cooperative valve manipulation. Its
 expert film retains the separate bimanual study's protocol.
+
+## Visual transfer experiment
+
+`src/assets/visual-transfer/` contains the audited summary CSV, the same numerical
+rows used by the interactive chart, per-episode paired binary outcomes and their
+provenance. The source visual study contains 72 cohorts and 2,160 episodes. Its
+results are cross-checked against the completed 190-cohort audit; its original
+figure manifest and source snapshot checksum are retained in `provenance.json`.
+The study uses fixed ACT and DP checkpoints, a separate research reset block and
+the unchanged full-horizon physical success criteria. Descriptive intervals
+account for training runs and reset identities. The download records contain
+audited outcomes; raw evaluation traces are published separately as their data
+subsets finish publication.
