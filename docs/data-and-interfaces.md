@@ -3,7 +3,7 @@
 For the current open asset version, the
 [revision protocol](revision-v2-protocol.md) and packaged `revision_audit.json`
 records define the data contract. The table below describes historical protocols;
-its configuration paths do not replace the new per-model training configurations.
+its configuration paths do not replace the per-model training configurations.
 
 The frozen release preserves task-specific schemas. It does not claim a single
 canonical LeRobot dataset across all tasks. Pinned LeRobot ACT and AM-Bench-derived

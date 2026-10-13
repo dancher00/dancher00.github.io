@@ -64,10 +64,10 @@ export function VisualTransferStudy() {
       </table></div>
     </details>
     <p className="landing-note visual-transfer-downloads"><a href={csvUrl} download="wasserMan-visual-transfer.csv">Results & per-training-seed rates (CSV) ↓</a><a href={auditUrl} download="wasserMan-visual-transfer-audit.json">Paired episode outcomes (JSON) ↓</a><a href={provenanceUrl} download="wasserMan-visual-transfer-provenance.json">Checksums & provenance ↓</a></p>
-    <div className="landing-heading visual-transfer-resources"><h3>Additional data and models</h3><p>New experiment materials are available on <a href={extension}>Hugging Face ↗</a>.</p></div>
+    <div className="landing-heading visual-transfer-resources"><h3>Data and models</h3><p>Datasets, policy checkpoints and evaluation records are available on <a href={extension}>Hugging Face ↗</a>.</p></div>
     <div className="landing-start-grid">
-      <a href={`${extension}/tree/main/diverse-demonstrations/OpenHatch`}><span>Expert trajectories</span><h3>Additional OpenHatch demonstrations ↗</h3><p>Recorded approach and opening variations, lossless RGB, robot state, commands and physical task evidence.</p></a>
-      <a href={`${extension}/tree/main/models`}><span>Policy checkpoints</span><h3>Observation history & demonstration mixture ↗</h3><p>Nine Diffusion Policy checkpoints, with training configurations and logs for the added experiments.</p></a>
+      <a href={`${extension}/tree/main/diverse-demonstrations/OpenHatch`}><span>Expert trajectories</span><h3>OpenHatch demonstrations ↗</h3><p>Recorded approach and opening variations, lossless RGB, robot state, commands and physical task evidence.</p></a>
+      <a href={`${extension}/tree/main/models`}><span>Policy checkpoints</span><h3>Observation history & demonstration mixture ↗</h3><p>Diffusion Policy checkpoints, training configurations and logs for the observation-history and demonstration-mixture studies.</p></a>
       <a href={`${extension}/tree/main/coverage`}><span>Expert coverage</span><h3>Complete candidate streams ↗</h3><p>Initial states and physical outcomes for PressButton, RotateValve and OpenHatch, including the original selected-demonstration mask.</p></a>
     </div>
   </section>;

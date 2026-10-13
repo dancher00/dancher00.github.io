@@ -8,8 +8,8 @@ The current open-core [protocol](revision-v2-protocol.md) pins its runtime throu
 `research/revision-v2-runtime.json`; per-model configs travel with the
 [task packages](revision-v2-packages.md). Paths under `benchmarks/core/configs/`
 and the completed comparisons described below belong to the historical release.
-The new controller study uses three DP trainings on each of Hatch and Valve and
-is still in progress.
+The controller study evaluates three DP training runs on each of OpenHatch and
+RotateValve across 42 completed cohorts; see the [results](benchmark-results.md).
 
 ## Where settings live
 

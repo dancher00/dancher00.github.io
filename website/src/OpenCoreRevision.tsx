@@ -5,10 +5,10 @@ import results from "../../research/revision-v2-primary-results.json";
 export function OpenCoreRevision() {
   return <article className="open-core-revision" aria-label="Open core revision">
     <div>
-      <span className="eyebrow">Open procedural core · completed experiments</span>
+      <span className="eyebrow">Open procedural core</span>
       <h3>Six tasks without restricted arm CAD</h3>
-      <p>The new version uses distributable arm geometry and a fixed evaluation protocol. It specifies three independent training runs for ACT, diffusion policy and a simple behavioral-cloning baseline, matched training sample budgets and the same final-checkpoint rule.</p>
-      <p>All six task packages passed authenticated download, restoration and physical data-audit checks, including 480 selected demonstrations and all 60 final models. All 54 primary evaluations passed physical success rescoring. All 42 controller and 12 interface cohorts are complete. Anonymous delivery of the full new release remains pending.</p>
+      <p>The open procedural core uses distributable arm geometry and a fixed evaluation protocol. It specifies three independent training runs for ACT, diffusion policy and a simple behavioral-cloning baseline, matched training sample budgets and the same final-checkpoint rule.</p>
+      <p>All six task packages passed authenticated download, restoration and physical data-audit checks, including 480 selected demonstrations and all 60 final models. All 54 primary evaluations passed physical success rescoring. All 42 controller and 12 interface cohorts are complete. Data and model access is described in the <a href={docsHref("revision-v2-packages")}>package documentation</a>.</p>
       <div className="table-scroll">
         <table>
           <caption>Open-core success (%): mean ± sample SD across three trainings, 30 resets each</caption>

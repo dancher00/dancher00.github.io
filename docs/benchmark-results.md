@@ -17,7 +17,7 @@ Success (%) · mean ± sample SD over **three trainings**, each evaluated on 30 
 
 Equal training sample exposure does not equalize compute, encoders or observation
 history. All runs, including failures, remain in the table. Zero sample SD is not
-population certainty. These new procedural-asset results are separate from the
+population certainty. These procedural-asset results are separate from the
 historical CAD-profile scores.
 
 **Policy × control.** Removing integral action changes OpenHatch from 30/30 to

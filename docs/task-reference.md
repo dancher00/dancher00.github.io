@@ -18,8 +18,8 @@ steps; OpenHatch policy targets use 20 Hz, while the other policies use 30 Hz.
 The [revision protocol](revision-v2-protocol.md) declares separate training,
 validation, controller and interface streams. Follow the
 [open-core package workflow](revision-v2-packages.md) for data and model restoration.
-The complete new evaluation remains in progress; historical rows cannot fill
-missing new-profile results.
+The [primary results](benchmark-results.md) report the complete evaluation.
+Historical results use separate asset profiles and protocols.
 
 ## Historical task coverage
 

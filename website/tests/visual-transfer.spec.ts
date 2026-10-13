@@ -4,7 +4,7 @@ test("visual transfer controls and downloads agree with every paired episode", a
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
   await page.goto("/#new-experiments");
-  const section = page.locator("#new-experiments");
+  const section = page.locator("#visual-transfer");
   await expect(section.getByRole("heading", { name: "Transfer across visual conditions", exact: true })).toBeVisible();
   const csvHref = await section.getByRole("link", { name: /Results & per-training-seed rates/ }).getAttribute("href");
   const auditHref = await section.getByRole("link", { name: /Paired episode outcomes/ }).getAttribute("href");
@@ -50,10 +50,10 @@ test("visual transfer controls and downloads agree with every paired episode", a
       }
     }
   }
-  await expect(section.getByRole("link", { name: /Additional OpenHatch demonstrations/ })).toHaveAttribute("href", /WasserMan-Review-v3\/tree\/main\/diverse-demonstrations\/OpenHatch$/);
+  await expect(section.getByRole("link", { name: /OpenHatch demonstrations/ })).toHaveAttribute("href", /WasserMan-Review-v3\/tree\/main\/diverse-demonstrations\/OpenHatch$/);
   await expect(section.getByRole("link", { name: /Observation history & demonstration mixture/ })).toHaveAttribute("href", /WasserMan-Review-v3\/tree\/main\/models$/);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await expect(page.locator("#new-experiments")).toHaveCount(1);
+  await expect(page.locator("#visual-transfer")).toHaveCount(1);
   await expect(page.locator("#visual-transfer-title")).toHaveCount(1);
   await section.screenshot({ path: testInfo.outputPath("visual-transfer.png") });
   await page.getByRole("button", { name: "Switch to dark theme", exact: true }).click();
