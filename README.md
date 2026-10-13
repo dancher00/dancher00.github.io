@@ -2,6 +2,8 @@
 
 Project website and documentation for [WasserMan](https://github.com/dancher00/wasserman).
 
+To our knowledge, WasserMan is the first multi-task simulation benchmark focused on visuomotor policy learning for manipulating articulated underwater mechanisms.
+
 [Project page](https://dancher00.github.io/wasserman/) · [Benchmark code](https://github.com/dancher00/wasserman) · [Build guide](docs/website-publication.md)
 
 Version **0.1.0**.

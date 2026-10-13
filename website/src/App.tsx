@@ -1,3 +1,4 @@
+import { priorityStatement, projectAbstract } from "./projectSummary";
 import publication from "../publication.json";
 import { docsHref } from "./publicationLinks";
 import { WallTossStudy } from "./WallTossStudy";
@@ -120,11 +121,7 @@ function App() {
             <br className="desktop-break" />
             <em> Underwater Manipulation Policy Learning</em>
           </h1>
-          <p className="hero-contribution">
-            Six contact tasks connect expert replay, learned policies and controller
-            interventions. Fixed protocols and replayable physical traces make
-            each result auditable.
-          </p>
+          <p className="hero-contribution">{priorityStatement}</p>
           <div className="hero-meta">
             Isaac Sim 6.1 · Open asset profile · Fixed evaluation protocol
           </div>
@@ -466,25 +463,7 @@ function App() {
         <section className="section-block tinted">
           <div className="page-shell prose">
             <h2>Abstract</h2>
-            <p>
-              Underwater manipulation couples a floating vehicle, an articulated arm and the surrounding water.
-              Currents, buoyancy, hydrodynamic forces and actuator response affect both contact and motion,
-              so task performance depends on the robot, low-level controller and learned policy together.
-            </p>
-            <p>
-              WasserMan is a modular simulation suite for underwater vehicle–manipulator policy learning.
-              Its task catalog spans instantaneous interaction, object transport and constrained contact.
-              The suite combines per-link hydrodynamics, configurable currents, thruster dynamics,
-              low-level controllers and explicit measured success criteria. Visual ACT and Diffusion Policy
-              baselines cover PressButton, RotateValve, OpenHatch, CollectShell, PullLever and PushSlider;
-              state-based PPO is reported under a separate protocol. Shipwreck recovery and cargo-release
-              studies extend the suite to dark interiors, with historical and development results identified
-              separately. Recorded trajectories illustrate task execution; independent model rollouts establish
-              benchmark scores. Studies examine learning, recovery fine-tuning, low-level control, currents,
-              motor limits and two native robot/controller configurations. Action-interface and demonstration-budget
-              comparisons are complete for PushSlider and PullLever. Separate HotStab, CabinRecovery and CargoRelease protocols bring the total to nine tasks with ACT/DP evaluations. Wall Toss illustrates current sensitivity with a matched expert-command pair. All evidence is from simulation, with each result's scope and
-              protocol reported alongside it.
-            </p>
+            <p>{projectAbstract}</p>
           </div>
         </section>
         <section className="section-block page-shell citation">

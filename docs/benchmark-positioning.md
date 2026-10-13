@@ -1,29 +1,25 @@
 # Benchmark contribution and literature scope
 
-WasserMan provides a multi-task simulation benchmark for visuomotor learning
-of floating-base underwater contact manipulation: versioned tasks, physical
-experts, RGB demonstrations, fixed learning/evaluation contracts and controlled
-policy–controller–environment interventions.
+To our knowledge, WasserMan is the first multi-task simulation benchmark focused on visuomotor policy learning for manipulating articulated underwater mechanisms.
 
-**To our knowledge, it is the first benchmark in this scope.** This priority
-statement concerns the combination above, not the invention of underwater
-simulation, manipulation, imitation learning or bimanual robots.
+The scope is a shared learning benchmark for image-conditioned interaction with
+articulated mechanisms, including valves, hatches, levers and sliders. Versioned
+contact tasks, demonstrations, fixed training and evaluation protocols, physical
+completion tests and paired execution studies support this comparison.
 
 ## Closest prior work
 
-- [Sanz et al., 2015](https://doi.org/10.1016/j.ifacol.2015.06.002) present underwater intervention benchmarking with tracking under visibility/current variations and reconstruction. This establishes prior underwater benchmarking, while addressing a different evaluation scope.
-- [MarineGym](https://marine-gym.com/) provides GPU reinforcement-learning simulation for underwater robots, including station keeping and trajectory tracking.
-- [Bi-AQUA](https://mertcookimg.github.io/bi-aqua/) studies bilateral imitation learning and lighting variation on underwater hardware.
-- [UMI-Underwater](https://arxiv.org/abs/2603.27012) studies grasping with demonstration collection and affordance-conditioned diffusion policies on a physical platform.
-- [ULOHA](https://arxiv.org/abs/2609.19200) introduces underwater bimanual hardware and evaluates ACT, DP and SmolVLA.
+- [USIM/U0](https://arxiv.org/html/2510.07869v4) provides simulation data and closed-loop VLA evaluation for grasping, navigation, transport and tracking. Its reported task set does not include the articulated-mechanism suite evaluated here.
+- [DAVE](https://arxiv.org/html/2209.02862v1) provides underwater intervention scenarios, including bimanual manipulation. Its published evaluation demonstrates simulation infrastructure and scenarios rather than a shared multi-task visuomotor-learning comparison.
+- [AquaCap](https://arxiv.org/html/2609.23133) evaluates a Code-as-Policy agent for underwater navigation, grasping and transport.
+- [Earlier intervention research](https://skoge.folk.ntnu.no/prost/proceedings/ifac2014/media/files/2819.pdf) includes learned valve turning and underwater manipulation benchmarks. Our priority statement concerns the specialized multi-task simulation benchmark for visuomotor policy learning.
+- [Bi-AQUA](https://mertcookimg.github.io/bi-aqua/), [UMI-Underwater](https://arxiv.org/abs/2603.27012) and [ULOHA](https://arxiv.org/abs/2609.19200) study underwater robot learning on physical platforms.
 
-The related-work comparison was refreshed on 1 October 2026 using primary papers
-and project pages, with searches for underwater manipulation benchmarks,
-visuomotor benchmarks and underwater simulation learning suites. No matching
-multi-task simulation benchmark was identified in this bounded search; a search
-cannot prove an exhaustive global absence. The manuscript therefore uses
-“to our knowledge” with an explicit scope.
+The literature comparison uses primary papers and project descriptions checked
+on 14 October 2026. The priority statement is qualified by “to our knowledge”
+and applies to the scope above.
 
-The benchmark is extensible through task and platform contracts. New versions
-retain past data, scores and scientific provenance; adding tasks does not change
-the denominator or rules of an already reported comparison.
+The paired studies connect full-episode physical completion with contact,
+tracking and actuator measurements over a common observation interval, including
+unsuccessful trials. Matched expert references and complete candidate streams
+make feasibility and demonstration selection inspectable.

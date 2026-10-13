@@ -1,3 +1,4 @@
+import { priorityStatement, projectAbstract } from "./projectSummary";
 import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
 import overview from "./assets/project-overview-light.svg";
 import overviewDark from "./assets/project-overview-dark.svg";
@@ -96,7 +97,7 @@ export default function LandingPage() {
       <section className="landing-hero landing-width">
         <p className="landing-kicker">Simulation benchmark · Isaac Lab</p>
         <h1><strong>WasserMan:</strong><span>Benchmark for <em>Underwater Manipulation</em> Policy Learning</span></h1>
-        <p>A shared testbed for visual policy learning, floating-base control and underwater contact.</p>
+        <p>{priorityStatement}</p>
         <div className="landing-links"><a className="landing-button" href={publication.paper_url} target="_blank" rel="noreferrer">Paper (arXiv) ↗</a><a className="landing-button" href={docsHref()}>Read documentation ↗</a><a className="landing-button" href={publication.repository_url}>Code ↗</a><a className="landing-button" href={publication.dataset_url}>Dataset (HF) ↗</a><a className="landing-button" href={docsHref("revision-v2-packages")}>Data & models ↗</a><a className="landing-button" href="#visual-transfer">Visual transfer ↓</a><a className="landing-button" href="#overview-video">Overview video ↓</a></div>
       </section>
       <OverviewVideo />
@@ -143,7 +144,7 @@ export default function LandingPage() {
       <DeferredSection id="visual-transfer"><VisualTransferStudy /></DeferredSection>
       <section className="landing-section landing-width" id="abstract">
         <div className="landing-heading"><h2>Abstract</h2></div>
-        <div className="landing-abstract"><p>WasserMan is, to our knowledge, the first multi-task simulation benchmark for visuomotor learning of floating-base underwater contact manipulation. It includes ten implemented task environments, learned-policy results on nine tasks, two native vehicle–arm platforms and a custom bimanual configuration.</p><p>A shared six-task evaluation compares ACT, diffusion policy and chunked behavioral cloning over three independent trainings per configuration. SmolVLA adds a vision–language–action baseline on three tasks, evaluated over three training seeds and 270 test episodes. Across 3,780 episodes in the shared learning and intervention studies, controlled comparisons show that successful expert replay does not guarantee comparable learned completion across interfaces, integral control can determine task completion, and water current can change both completion and actuator effort.</p><p>The suite provides versioned task contracts, demonstrations, trained models and per-episode evidence. Paired expert-controlled platform studies achieve 30/30 for each robot on PressButton and 30/30 in each of three twin-arm RotateValve modes. These studies retain their task and asset protocols.</p></div>
+        <div className="landing-abstract"><p>{projectAbstract}</p></div>
       </section>
 
       <section className="landing-width landing-section landing-start" id="get-started" aria-labelledby="get-started-title">
