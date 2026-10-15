@@ -116,7 +116,7 @@ function App() {
       </header>
       <main id="main">
         <section className="hero page-shell" id="top">
-          <p className="eyebrow">Research preview · open-core experiments complete</p>
+          <p className="eyebrow">Simulation benchmark · Isaac Lab</p>
           <h1>
             <span>WasserMan:</span> Benchmark for
             <br className="desktop-break" />
@@ -134,14 +134,14 @@ function App() {
               Documentation ↗
             </a>
             <a className="button" href="#open-core">
-              Evidence and status ↓
+              Benchmark results ↓
             </a>
             
             <a href={publication.dataset_url}>Dataset (HF) ↗</a>
             <a href={docsHref("policy-studies")}>Policy studies ↗</a>
           </div>
           <div className="release-note">
-            <strong>Development snapshot</strong>
+            <strong>Policy baselines</strong>
             <span>
               Six open-core tasks · ACT / DP / chunked BC / SmolVLA · Three training seeds per configuration
             </span>
@@ -189,7 +189,7 @@ function App() {
           aria-label="Benchmark overview"
         >
           <h2>Historical demonstration archive</h2>
-          <p className="research-context">The films and extended task catalog below use earlier asset versions. They document prior engineering studies; they are not outcomes of the new open-core evaluation.</p>
+          <p className="research-context">The films and extended task catalog below use earlier asset versions. They document prior engineering studies; they are not outcomes of the open-core evaluation.</p>
           <div className="video-frame">
             <CinemaPlayer
               label="PressButton staged rollout"
@@ -417,7 +417,7 @@ function App() {
             <Title number="06" title="Historical results">
               Prior asset versions and exploratory studies retain their original protocols and scores. Current open-core results and paired policy studies are presented on this page.
             </Title>
-            <p><a href="#open-core">Open-core protocol and reproduction status ↑</a></p>
+            <p><a href="#open-core">Evaluation protocol ↑</a></p>
             <details className="study model-study">
               <summary><span className="research-disclosure-title"><strong>Studies and demonstrations</strong><small>Policies, control and embodiments</small></span></summary>
               <div className="study-body">
