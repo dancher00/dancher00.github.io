@@ -1,3 +1,4 @@
+import { PolicyStudies } from "./PolicyStudies";
 import { priorityStatement, projectAbstract } from "./projectSummary";
 import publication from "../publication.json";
 import { docsHref } from "./publicationLinks";
@@ -127,7 +128,7 @@ function App() {
           </div>
           <div className="resource-row">
             <a className="button primary" href={repo}>
-              Code · private preview ↗
+              Code ↗
             </a>
             <a className="button" href={docsHref()}>
               Documentation ↗
@@ -136,7 +137,8 @@ function App() {
               Evidence and status ↓
             </a>
             
-            <span className="unavailable">Dataset · not released</span>
+            <a href={publication.dataset_url}>Dataset (HF) ↗</a>
+            <a href={docsHref("policy-studies")}>Policy studies ↗</a>
           </div>
           <div className="release-note">
             <strong>Development snapshot</strong>
@@ -413,7 +415,7 @@ function App() {
         <section className="section-block research-results" id="results">
           <div className="page-shell">
             <Title number="06" title="Historical results">
-              Prior asset versions and exploratory studies retain their original protocols and scores. Current open-core evidence and remaining work are listed at the top of this page.
+              Prior asset versions and exploratory studies retain their original protocols and scores. Current open-core results and paired policy studies are presented on this page.
             </Title>
             <p><a href="#open-core">Open-core protocol and reproduction status ↑</a></p>
             <details className="study model-study">
@@ -458,8 +460,9 @@ function App() {
             <article><h3>Evaluate a model</h3><p>Download a selected checkpoint and reproduce its original task, reset cohort and evaluator.</p><a href={docsHref("reproduction")}>Recorded evaluations ↗</a></article>
             <article><h3>Extend the benchmark</h3><p>Add a task, robot, controller or policy while preserving versioned contracts and evidence.</p><a href={docsHref("add-task")}>Extension guides ↗</a></article>
           </div>
-          <p className="section-note">Private preparation release. Models and evidence can be downloaded selectively; raw training RGB is not included, and licensed robot meshes require separate authorized installation.</p>
+          <p className="section-note">Code, documentation, demonstrations and trained policies are publicly available. Hugging Face supports selective downloads; the open procedural profile uses distributable robot geometry.</p>
         </section>
+        <PolicyStudies />
         <section className="section-block tinted">
           <div className="page-shell prose">
             <h2>Abstract</h2>

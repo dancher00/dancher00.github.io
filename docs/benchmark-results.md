@@ -55,10 +55,23 @@ success response is not monotonic.
 
 [Protocol, paired contrasts and videos](../docs/current-contact-study.md).
 
-**Execution variation.** All 54 primary models were rerun on a second workstation.
-The equal-task ordering DP > ACT > BC is preserved; mean shifts are −1.5, −0.4
-and −1.9 percentage points, respectively. Individual binary outcomes agree in
-1,438/1,620 episodes. [All task/model shifts](../docs/revision-v2-execution-impact.md).
+## Paired policy and execution studies
+
+The [study guide](policy-studies.md) covers visual transfer, current-image
+controls, contact and mechanism parameters, actuator delay, arm properties,
+mechanism pose, matched observation-history and trajectory-mixture ablations,
+complete expert candidate streams, and full-episode contract analysis.
+
+Holding the first image removes completion for both tested tasks and both ACT
+and DP. With physical pose changes, the unchanged expert establishes that
+translated hatch scenes remain solvable while the learned policy fails.
+Graded placements distinguish history and trajectory-mixture variants that
+perform similarly in native conditions. Contact, tracking and actuator records
+explain responses that completion alone cannot distinguish.
+
+Each comparison retains its own reset block, native reference and physical
+task predicate. [Public records and reproduction commands](revision-v2-reproduction.md)
+connect the conclusions to their evaluated models and complete traces.
 
 ## Task environments and platforms
 

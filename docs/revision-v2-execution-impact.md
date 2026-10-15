@@ -1,38 +1,27 @@
-# Execution sensitivity of the reported conclusions
+# Contact and actuator diagnostics
 
-Same final checkpoints, three training identities and 30 task resets on two workstations. These paired repetitions do not replace primary scores.
+The benchmark reads full-horizon completion together with paired measurements
+of contact, mechanism progress, vehicle attitude, joint tracking and actuator
+use. Continuous measurements use the same first 20 seconds in each reset pair;
+completion is scored over the entire task horizon.
 
-| Model | Primary mean (%) | Repeat mean (%) | Drift (pp) |
-|---|---:|---:|---:|
-| ACT | 43.5 | 43.1 | -0.4 |
-| DP | 61.9 | 60.4 | -1.5 |
-| BC | 26.3 | 24.4 | -1.9 |
+| Intervention | Observed response | What the records distinguish |
+|---|---|---|
+| Hold the first action chunk | No completion or opposing grasp on either tested task; negligible mechanism progress | Continued action updates and interaction progress |
+| Reduce valve-arm mass and inertia to 0.8× | Policy and expert completion decrease; policy attitude error and motor effort increase | A physical change affecting both reference and learned execution |
+| Delay hatch actuators by 12 physics steps | DP completion stays unchanged while motor-force RMS and force-realization error rise | Execution demand that completion alone does not show |
+| Translate the hatch by +4 cm along Y | More early grasp, but no full-horizon completion | Contact acquisition versus completion of the mechanism motion |
+| Halve thruster capacity | Hatch completion is preserved with measurable allocation saturation | Actuator use and task completion as separate measurements |
 
-The equal-task ordering DP > ACT > BC is preserved. Across the 18 task-level pairwise model contrasts, no nonzero difference reverses direction. The ACT/DP tie on RotateValve becomes a one-episode DP advantage across 90 episodes; this is not evidence of a resolved difference.
+The stale-action and capacity comparisons use one checkpoint; the other listed
+policy contrasts use three independent training runs. Each condition has matched
+reset identities and its own native reference. These are measured responses to
+declared interventions, not an automatic diagnosis of an unobserved network fault.
 
-| Task | Model | Primary /90 | Repeat /90 | Drift (pp) | Matching /90 |
-|---|---|---:|---:|---:|---:|
-| PressButton | ACT | 41 | 46 | +5.6 | 65 |
-| PressButton | DP | 54 | 50 | -4.4 | 56 |
-| PressButton | BC | 36 | 32 | -4.4 | 68 |
-| RotateValve | ACT | 76 | 75 | -1.1 | 85 |
-| RotateValve | DP | 76 | 76 | +0.0 | 90 |
-| RotateValve | BC | 67 | 63 | -4.4 | 86 |
-| OpenHatch | ACT | 73 | 76 | +3.3 | 77 |
-| OpenHatch | DP | 90 | 90 | +0.0 | 90 |
-| OpenHatch | BC | 15 | 14 | -1.1 | 71 |
-| CollectShell | ACT | 0 | 0 | +0.0 | 90 |
-| CollectShell | DP | 30 | 24 | -6.7 | 62 |
-| CollectShell | BC | 0 | 0 | +0.0 | 90 |
-| PushSlider | ACT | 9 | 7 | -2.2 | 84 |
-| PushSlider | DP | 38 | 40 | +2.2 | 88 |
-| PushSlider | BC | 2 | 2 | +0.0 | 88 |
-| PullLever | ACT | 36 | 29 | -7.8 | 77 |
-| PullLever | DP | 46 | 46 | +0.0 | 88 |
-| PullLever | BC | 22 | 21 | -1.1 | 83 |
+Full-trajectory hatch analysis checks opening angle, motion accumulated under
+opposing grasp, ungrasped motion and the final stable hold. The translated
+episodes do not reach the required opening-angle window, explaining why early
+grasp does not produce a completed task.
 
-Outcome agreement is 1,438/1,620 (88.8%). Small aggregate drift can conceal opposing episode flips. The largest absolute task/model mean drift is 7.8 pp (PullLever ACT).
-
-The separate same-GPU seed-17 DP repeat agrees on 169/180 outcomes (93.9%); task counts change by at most one success out of 30, despite seven Shell and three Slider outcome flips. This does not identify the numerical source of execution variability. Controller, action-interface and current contrasts were not rerun across workstations in this comparison.
-
-Regenerate: `python scripts/summarize_execution_variation.py`. Source hashes and all 18 comparisons: `research/revision-v2-execution-impact.json`.
+[Policy studies](policy-studies.md) · [Evaluation traces](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3/tree/main/evaluations/diagnostic)
+· [Full-episode contract analysis](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3/tree/main/ras-closure-v4-20261012/analysis/analysis-existing)

@@ -23,8 +23,8 @@ directory for each run. The frozen primary protocol requires seeds 17, 43 and
 final-budget checkpoint for every family. The trainer checks the open asset
 profile, runtime hashes and physical dataset audit; it rejects pilot data for
 primary training. See the [protocol](revision-v2-protocol.md) for full cohorts and
-the [reproduction record](revision-v2-reproduction.md) for completed checks and
-cross-workstation limits. A task package's final checkpoints do not contain the
+the [reproduction record](revision-v2-reproduction.md) for public inputs and
+execution settings. A task package's final checkpoints do not contain the
 optimizer state needed to resume their historical intermediate updates.
 
 ## Historical CAD-profile training

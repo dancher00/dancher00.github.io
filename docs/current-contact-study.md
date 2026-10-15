@@ -41,7 +41,7 @@ are illustrations and do not replace scored episodes.
 - [Per-training data](https://github.com/dancher00/wasserman/releases/download/v0.1.0/wasserman-reproduction-sources-v0.1.0.tar.gz#research/current-contact-5090/results/training-seeds.csv)
 - [All paired effects and intervals](https://github.com/dancher00/wasserman/releases/download/v0.1.0/wasserman-reproduction-sources-v0.1.0.tar.gz#research/current-contact-5090/results/summary.json)
 - [Video provenance and selection](https://github.com/dancher00/wasserman/releases/download/v0.1.0/wasserman-reproduction-sources-v0.1.0.tar.gz#research/current-contact-5090/video-manifest.json)
-- [Private evidence archive receipt](https://github.com/dancher00/wasserman/releases/download/v0.1.0/wasserman-reproduction-sources-v0.1.0.tar.gz#research/current-contact-5090/release.json)
+- [Archived evidence receipt](https://github.com/dancher00/wasserman/releases/download/v0.1.0/wasserman-reproduction-sources-v0.1.0.tar.gz#research/current-contact-5090/release.json)
 
 The intervention estimates response to the declared direction and onset, not a
 pre-equilibrated flow field. Mechanism dynamics are unchanged. A five-second

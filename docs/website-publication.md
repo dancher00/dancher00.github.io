@@ -20,8 +20,8 @@ npm run build:publication --prefix website
 
 Scientific presentation records are bundled with the checkout; no research-archive
 download is required. The media fetcher verifies the 0.1.0 archive digest.
-During private preparation it uses Git credentials or `GITHUB_TOKEN`; after the
-repository is public, its published media release supports anonymous download.
+The published media release supports anonymous download. Git credentials or
+`GITHUB_TOKEN` can be used for API authentication when needed.
 Restoration preserves existing files that differ.
 
 The build combines the React project page and static, searchable documentation.

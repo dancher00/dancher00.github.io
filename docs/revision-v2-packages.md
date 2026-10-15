@@ -1,45 +1,48 @@
 # Data and models
 
-## Public demonstration dataset
+## Demonstrations
 
-The original six-task demonstrations are available on
-[Hugging Face: dancher00/WasserMan](https://huggingface.co/datasets/dancher00/WasserMan).
-The dataset retains all 504 collection attempts and the 480 selected demonstrations
-(76 training and 4 validation episodes per task), including lossless RGB,
-commands, measured state, physical traces and original audit records.
-The download is 35.69 GiB; one-task and one-episode downloads are supported.
-Follow the dataset card for checksummed download and restoration.
-This publication contains demonstrations; fitted models and complete policy
-evaluation packages have separate availability.
+[WasserMan on Hugging Face](https://huggingface.co/datasets/dancher00/WasserMan)
+provides the original six-task demonstration dataset: all collection attempts,
+selected successful episodes, lossless RGB, measured state, commands, physical
+traces and fixed train/validation splits. The dataset card gives selective
+download and restoration commands, file sizes and checksums. Restore only the
+task or episode you need; raw RGB expansion requires additional disk space.
 
+## Trained policies
 
-WasserMan 0.1.0 provides the runtime, task experts, collection tools, dataset audits,
-ACT/DP/BC trainers and evaluation contracts. Installation and first run require
-no pretrained visual-policy download.
+[WasserMan models](https://huggingface.co/dancher00/WasserMan-models) provides the
+primary ACT, DP and chunked-BC checkpoints, the EE-interface DP policies and the
+SmolVLA models. It includes configurations, training records, result summaries,
+a selective downloader and a native simulator launcher. SmolVLA reconstruction
+uses the pinned pretrained base specified in the model card.
 
-## Generate data and train
+Full original rollout archives are outside this model repository's scope.
+The per-file release index specifies what is included. Preserve each model's
+image transform, observation history, control rate and action interface.
 
-Follow [collection](collect-demonstrations.md) for a development episode and
-[reproduction](reproduction.md) for the fixed six-task campaign. It collects
-and audits demonstrations before training final-budget policies from public
-encoder initializations. Generated outputs remain in your chosen `artifacts/` tree.
+## Policy and execution studies
 
-## What is bundled
+[WasserMan simulation studies](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3)
+provides visual-transfer and physical-sensitivity evaluations, matched
+history and demonstration-mixture checkpoints, complete expert candidate streams,
+RGB controls, graded placement tests and full-episode physical analysis.
+The [study guide](policy-studies.md) maps each comparison to its records.
 
-The checked code contains the original protocol texts, dependency manifests,
-PressButton reference checkpoint and scientific result records in
-`assets/wasserman-runtime-v0.1.0.tar.gz`. The installer verifies their file hashes
-and restores their original paths. This reference is used by the task expert;
-it is not an ACT, DP, BC or VLA benchmark model.
+The [control-study reproduction guide](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3/blob/main/ras-closure-v4-20261012/REPRODUCE.md)
+specifies the frozen source commit, exact runtime metadata, selective checkpoint
+restoration and full-horizon evaluation commands. The
+[reset and interval records](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3/tree/main/ras-strong-closure-v5-20261013)
+document the task generators and exchange-pair cluster calculations.
 
-The separate website repository bundles scientific presentation evidence and
-provides the films and paper in its 0.1.0 release.
+## Runtime and generated data
 
-## Precomputed campaign packages
+The public code includes task experts, collection tools, dataset audits,
+ACT/DP/BC trainers and evaluation contracts. Its installer restores the
+checksummed scientific runtime bundle. Installation and a zero-action first
+run require no learned-policy download.
 
-The 60 fitted models and complete raw evaluation packages remain in the private
-research archive. They are not downloadable from the public 0.1.0 code release.
-The six-task demonstrations are now available separately on Hugging Face above. The recorded tables describe that retained campaign;
-a newly generated dataset or training run is a new reproduction, not an identical
-copy of the original artifacts. Historical CAD and task-specific studies use
-separate source and observation contracts.
+Follow [collection](collect-demonstrations.md), [training](train-policies.md)
+and [reproduction](reproduction.md) to generate a separate campaign. Historical
+CAD and task-specific studies retain their own source and observation contracts;
+the [historical-artifact guide](artifacts.md) describes those packages.

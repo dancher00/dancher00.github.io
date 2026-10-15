@@ -22,9 +22,10 @@ starting concurrent simulators while diagnosing memory or startup failures.
 
 ## Artifact download reports unavailable
 
-The repository is private. Use an authorized GitHub account with Git's credential
-helper. The downloader does not embed a token in URLs. Check the artifact ID and
-release access; do not paste credentials into logs. Files are verified by size
+The public code and HF data/model repositories support anonymous downloads.
+Check the repository, revision and file path against the package card. For an
+API rate limit, retry later or use the provider's normal login mechanism; keep
+credentials out of URLs and logs. Files are verified by size
 and SHA-256. Different existing files are preserved, so choose a fresh destination.
 
 ## Policy imports or encoder initialization fail

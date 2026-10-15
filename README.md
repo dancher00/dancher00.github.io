@@ -39,3 +39,16 @@ The Pages workflow builds and checks the site. Deployment is an explicit workflo
 ## License
 
 [Apache License 2.0](LICENSE). See [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Policy and execution studies
+
+Fixed-policy evaluations vary water appearance, lighting, RGB feedback, contact
+parameters, actuator delay, arm properties and mechanism pose. Matched expert
+references establish feasibility under the same physical task tests. Controlled
+training ablations compare observation history and expert trajectory mixtures;
+graded placement tests expose their condition-dependent effects.
+
+Complete expert candidate streams make demonstration selection inspectable.
+Contact, tracking, actuator and full-episode contract records explain execution
+beyond a completion score. The [study guide](https://dancher00.github.io/wasserman/docs/policy-studies/)
+links every comparison to its public [datasets, models and evaluation records](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3).

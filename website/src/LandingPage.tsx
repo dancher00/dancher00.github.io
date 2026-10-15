@@ -1,3 +1,4 @@
+import { PolicyStudies } from "./PolicyStudies";
 import { priorityStatement, projectAbstract } from "./projectSummary";
 import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
 import overview from "./assets/project-overview-light.svg";
@@ -142,6 +143,7 @@ export default function LandingPage() {
       </section>
       <DeferredSection id="results"><CurrentResults /></DeferredSection>
       <DeferredSection id="visual-transfer"><VisualTransferStudy /></DeferredSection>
+      <PolicyStudies />
       <section className="landing-section landing-width" id="abstract">
         <div className="landing-heading"><h2>Abstract</h2></div>
         <div className="landing-abstract"><p>{projectAbstract}</p></div>

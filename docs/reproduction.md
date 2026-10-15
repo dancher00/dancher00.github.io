@@ -23,8 +23,8 @@ not an installation smoke test.
 The orchestrator stores receipts, hashes and failed attempts. It skips completed
 jobs on resume and refuses unexplained partial outputs. Completed raw RGB is
 archived losslessly after training. Concurrency changes execution scheduling;
-it does not change the scientific cohorts. Scores may vary across workstation
-stacks; see [execution sensitivity](revision-v2-execution-impact.md).
+it does not change the scientific cohorts. Preserve the ordered reset cohort, rollout seed, source version and full
+horizon described in the [execution contract](revision-v2-reproduction.md).
 
 ## Individual stages
 
@@ -35,8 +35,8 @@ Do not select checkpoints or tune parameters using the published test resets.
 
 ## Scope
 
-This is a self-contained source workflow. Original precomputed packages remain
-in the private research archive, as explained in [data and models](revision-v2-packages.md).
+This is a self-contained source workflow. Published demonstrations, checkpoints
+and study records can also be restored from [Hugging Face](revision-v2-packages.md).
 The procedure preserves source pins and protocols; it does not promise bitwise
 identical fitted weights or success-rate replication. Historical CAD, HotStab,
 shipwreck and two-arm studies retain their separate contracts.

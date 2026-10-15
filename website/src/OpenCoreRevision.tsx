@@ -8,7 +8,7 @@ export function OpenCoreRevision() {
       <span className="eyebrow">Open procedural core</span>
       <h3>Six tasks without restricted arm CAD</h3>
       <p>The open procedural core uses distributable arm geometry and a fixed evaluation protocol. It specifies three independent training runs for ACT, diffusion policy and a simple behavioral-cloning baseline, matched training sample budgets and the same final-checkpoint rule.</p>
-      <p>All six task packages passed authenticated download, restoration and physical data-audit checks, including 480 selected demonstrations and all 60 final models. All 54 primary evaluations passed physical success rescoring. All 42 controller and 12 interface cohorts are complete. Data and model access is described in the <a href={docsHref("revision-v2-packages")}>package documentation</a>.</p>
+      <p>Demonstrations and trained ACT, DP, BC and SmolVLA policies are publicly available on Hugging Face. Task contracts, fixed splits, checkpoint configurations and per-episode physical evidence support the reported comparisons. See <a href={docsHref("revision-v2-packages")}>data and models</a> and the <a href={docsHref("policy-studies")}>paired policy studies</a>.</p>
       <div className="table-scroll">
         <table>
           <caption>Open-core success (%): mean ± sample SD across three trainings, 30 resets each</caption>
@@ -21,9 +21,9 @@ export function OpenCoreRevision() {
           )}</tbody>
         </table>
       </div>
-      <p>These compare declared implementations with equal sampled training windows, not equal compute or encoders. Zero observed SD does not establish certainty. On a second workstation, the same checkpoints agreed on 1,438 of 1,620 episode outcomes; 182 differed. One full training and evaluation were reproduced exactly in a clean checkout on the same GPU.</p>
+      <p>The comparison uses declared implementations with equal sampled training windows. Encoders, observation history and compute remain implementation-specific. Each outcome is tied to its checkpoint, ordered reset cohort, source version and full task horizon.</p>
       <a href={docsHref("revision-v2-protocol")}>Read the frozen protocol ↗</a>
-      <p><a href={docsHref("revision-v2-reproduction")}>Reproduction evidence and limits ↗</a></p>
+      <p><a href={docsHref("revision-v2-reproduction")}>Reproduction records and commands ↗</a></p>
     </div>
     <figure>
       <a href={gallery} target="_blank" rel="noreferrer" aria-label="Open full-size wrist-camera task gallery">

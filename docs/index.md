@@ -20,6 +20,7 @@ study covers three tasks. All results retain their declared contracts.
 - [Run the complete source workflow](reproduction.md).
 - [Read the frozen evaluation protocol](revision-v2-protocol.md).
 - [Compare recorded results](benchmark-results.md).
+- [Explore policy and execution studies](policy-studies.md).
 - [Inspect data and model availability](revision-v2-packages.md).
 - [Understand observations and action interfaces](data-and-interfaces.md).
 
@@ -30,7 +31,7 @@ study covers three tasks. All results retain their declared contracts.
 - [Add a task](add-task.md), [robot or controller](add-robot-controller.md), or [policy](add-policy.md).
 - [Troubleshoot](troubleshooting.md).
 
-The code and documentation live in separate repositories. Protocols, runtime
-references and scientific summaries are bundled with the code; the full internal
-research archive is not part of installation. Precomputed canonical training
-packages are not included in 0.1.0; generate data and train with the source workflow.
+The code and documentation live in separate repositories. The public code
+bundles its scientific runtime references. Demonstrations, trained models and
+evaluation records are available on [Hugging Face](revision-v2-packages.md),
+with selective downloads and study-specific reproduction instructions.

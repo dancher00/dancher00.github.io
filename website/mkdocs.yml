@@ -87,6 +87,9 @@
           "Benchmark results": "benchmark-results.md"
         },
         {
+          "Policy and execution studies": "policy-studies.md"
+        },
+        {
           "Evaluation protocol and primary results": "revision-v2-analysis.md"
         },
         {
@@ -96,7 +99,7 @@
           "Open-core protocol and evidence gates": "revision-v2-protocol.md"
         },
         {
-          "Open-core reproduction evidence": "revision-v2-reproduction.md"
+          "Reproduction records and commands": "revision-v2-reproduction.md"
         },
         {
           "Historical models and evidence": "artifacts.md"
@@ -105,7 +108,7 @@
           "Reproduce from source": "reproduction.md"
         },
         {
-          "Second-workstation results": "second-machine-results.md"
+          "Execution records": "second-machine-results.md"
         },
         {
           "Studies and limits": "benchmark.md"
@@ -117,7 +120,7 @@
           "Extended task results": "extended-studies.md"
         },
         {
-          "Execution sensitivity": "revision-v2-execution-impact.md"
+          "Contact and actuator diagnostics": "revision-v2-execution-impact.md"
         },
         {
           "Benchmark contribution": "benchmark-positioning.md"

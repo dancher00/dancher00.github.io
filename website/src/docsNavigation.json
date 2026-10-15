@@ -61,6 +61,11 @@
   },
   {
     "group": "Evaluate and reproduce",
+    "id": "policy-studies",
+    "title": "Policy and execution studies"
+  },
+  {
+    "group": "Evaluate and reproduce",
     "id": "revision-v2-analysis",
     "title": "Evaluation protocol and primary results"
   },
@@ -77,7 +82,7 @@
   {
     "group": "Evaluate and reproduce",
     "id": "revision-v2-reproduction",
-    "title": "Open-core reproduction evidence"
+    "title": "Reproduction records and commands"
   },
   {
     "group": "Evaluate and reproduce",
@@ -91,7 +96,7 @@
   },
   {
     "id": "second-machine-results",
-    "title": "Second-workstation results",
+    "title": "Execution records",
     "group": "Evaluate and reproduce"
   },
   {
@@ -111,7 +116,7 @@
   },
   {
     "id": "revision-v2-execution-impact",
-    "title": "Execution sensitivity",
+    "title": "Contact and actuator diagnostics",
     "group": "Evaluate and reproduce"
   },
   {
