@@ -95,11 +95,6 @@
     "title": "Reproduce from source"
   },
   {
-    "id": "second-machine-results",
-    "title": "Execution records",
-    "group": "Evaluate and reproduce"
-  },
-  {
     "group": "Evaluate and reproduce",
     "id": "benchmark",
     "title": "Studies and limits"
@@ -115,7 +110,7 @@
     "title": "Extended task results"
   },
   {
-    "id": "revision-v2-execution-impact",
+    "id": "execution-diagnostics",
     "title": "Contact and actuator diagnostics",
     "group": "Evaluate and reproduce"
   },

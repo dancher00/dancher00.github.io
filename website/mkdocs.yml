@@ -108,9 +108,6 @@
           "Reproduce from source": "reproduction.md"
         },
         {
-          "Execution records": "second-machine-results.md"
-        },
-        {
           "Studies and limits": "benchmark.md"
         },
         {
@@ -120,7 +117,7 @@
           "Extended task results": "extended-studies.md"
         },
         {
-          "Contact and actuator diagnostics": "revision-v2-execution-impact.md"
+          "Contact and actuator diagnostics": "execution-diagnostics.md"
         },
         {
           "Benchmark contribution": "benchmark-positioning.md"

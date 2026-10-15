@@ -2,6 +2,7 @@ import { useEffect, useState, type ReactNode, isValidElement } from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import navigation from "./docsNavigation.json";
+import redirects from "./docsRedirects.json";
 import publication from "../publication.json";
 import { ThemeToggle } from "./ThemeToggle";
 import { ProjectLogo } from "./ThemedImage";
@@ -15,7 +16,8 @@ function CodeBlock({ children }: { children?: ReactNode }) {
   return <div className="docs-code"><button type="button" aria-label="Copy command" onClick={async () => { try { await navigator.clipboard.writeText(plain(children)); setCopied(true); } catch { setCopied(false); } }}>{copied ? "Copied" : "Copy"}</button><pre>{children}</pre></div>;
 }
 export default function Documentation() {
-  const requested = new URLSearchParams(window.location.search).get("page") ?? "index";
+  const legacy = new URLSearchParams(window.location.search).get("page") ?? "index";
+  const requested = (redirects as Record<string, string>)[legacy] ?? legacy;
   const active = navigation.find(p => p.id === requested);
   const [query, setQuery] = useState("");
   const [menu, setMenu] = useState(false);

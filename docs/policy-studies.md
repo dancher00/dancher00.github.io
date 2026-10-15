@@ -71,7 +71,7 @@ The diagnostic procedure scores the full episode, then compares contact,
 mechanism progress, vehicle and joint tracking, and actuator use over matched
 early exposure. Holding the first action chunk fixed stops task completion and
 opposing grasp. Actuator delay can increase tracking error and effort while
-completion stays unchanged. The [execution diagnostics](revision-v2-execution-impact.md)
+completion stays unchanged. The [execution diagnostics](execution-diagnostics.md)
 explain how these measurements are read together.
 
 For the translated hatch, full-trajectory analysis shows that the required

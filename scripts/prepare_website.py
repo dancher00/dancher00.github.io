@@ -349,6 +349,19 @@ def finalize():
         script = f'<script src="{relative}"></script>'
         if script not in document:
             guide.write_text(document.replace("<head>", "<head>" + script, 1))
+    # Retired guide URLs resolve to current instructions without shipping old pages.
+    redirects = json.loads((SITE / "src/docsRedirects.json").read_text())
+    for old, current in redirects.items():
+        target = dist / "docs" / old / "index.html"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        relative = html.escape("../" + current + "/", quote=True)
+        canonical = html.escape(CONFIG["site_url"] + "docs/" + current + "/", quote=True)
+        target.write_text(
+            '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<title>WasserMan documentation</title><link rel="canonical" href="' + canonical + '">'
+            '<meta http-equiv="refresh" content="0;url=' + relative + '"></head>'
+            '<body><a href="' + relative + '">Continue to the current guide</a></body></html>\n'
+        )
     (dist / ".nojekyll").touch()
     (dist / "robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: " + CONFIG["site_url"] + "sitemap.xml\n")
     navigation = json.loads((SITE / "src/docsNavigation.json").read_text())
